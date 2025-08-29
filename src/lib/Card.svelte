@@ -33,7 +33,7 @@
       fetchpriority="low"
       src={`${import.meta.env.BASE_URL}assets/flags/${card.language}.svg`}
       alt={card.language}
-      class={card.owned ? "" : "grayscale"}
+      class={card.collected ? "" : "grayscale"}
       width="24"
       height="16"
       on:error={onError}
@@ -48,7 +48,7 @@
       fetchpriority="low"
       src={card.pic || placeholder}
       alt={card.title}
-      class={card.owned ? "" : "grayscale"}
+      class={card.collected ? "" : "grayscale"}
       on:error={onError}
     />
   </div>

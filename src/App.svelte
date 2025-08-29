@@ -1,13 +1,15 @@
 <script>
   import { onMount } from "svelte";
   import Grid from "./lib/Grid.svelte";
-  import LanguageFilter from "./lib/LanguageFilter.svelte";
-  import Modal from "./lib/Modal.svelte";
   import Search from "./lib/Search.svelte";
+  import LanguageFilter from "./lib/LanguageFilter.svelte";
+  import CollectedFilter from "./lib/CollectedFilter.svelte";
+  import Modal from "./lib/Modal.svelte";
   import { loadCards } from "./lib/catalogData.js";
 
   let allCards = [];
   let selectedLangs = [];
+  let selectedCollected = [];
   let query = "";
 
   let open = false;
@@ -43,18 +45,26 @@
     return haystack.includes(q);
   }
 
-  // 1) Apply query first → used for language counts
+  // 1) query
   $: queryCards = allCards.filter(c => matchesQuery(c, query));
 
-  // 2) Apply language selection on top of that
-  $: visibleCards = queryCards.filter(
+  // 2) language
+  $: languageCards = queryCards.filter(
     c => !selectedLangs.length || selectedLangs.includes(c.language)
   );
+
+  // 3) ownership
+  $: visibleCards = languageCards.filter(c => {
+    if (!selectedCollected.length) return true;
+    const key = c?.collected ? 'collected' : 'missing';
+    return selectedCollected.includes(key);
+  });
 </script>
 
 <div class="container">
   <Search bind:query />
   <LanguageFilter cards={queryCards} bind:selected={selectedLangs} />
+  <CollectedFilter cards={languageCards} bind:selected={selectedCollected} />
   <main>
     <Grid items={visibleCards} on:select={onSelect} />
     <Modal open={open} card={selected} on:close={() => { open = false; selected = null; }} />

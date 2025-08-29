@@ -3,12 +3,12 @@
 </script>
 
 <header class="header">
-  <div class="brand">Tonies Catalog</div>
+  <div class="brand">Tonies Collection</div>
   <div class="search">
     <input
       type="search"
       placeholder="Search titles, series, models…"
-      aria-label="Search catalog"
+      aria-label="Search collection"
       bind:value={query}
     />
   </div>

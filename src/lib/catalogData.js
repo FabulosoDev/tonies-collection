@@ -1,5 +1,5 @@
-const TONIES_JSON_URL = "https://raw.githubusercontent.com/toniebox-reverse-engineering/tonies-json/release/tonies.json";
-const OWNED_REL_PATH = "data/owned.json";
+const CATALOG_URL = "https://raw.githubusercontent.com/toniebox-reverse-engineering/tonies-json/release/tonies.json";
+const COLLECTED_REL_PATH = "data/collected.json";
 const IGNORED_REL_PATH = "data/ignored.json";
 
 function isModelAllowed(model) {
@@ -20,9 +20,9 @@ function isCategoryAllowed(category) {
 const baseFilter = (item) =>
   isModelAllowed(item.model) && isCategoryAllowed(item.category);
 
-function annotateOwned(catalog, ownedList) {
-  const set = new Set((ownedList ?? []).map((o) => String(o.model)));
-  return catalog.map((card) => ({ ...card, owned: set.has(String(card.model)) }));
+function annotateCollected(collection, collectedList) {
+  const set = new Set((collectedList ?? []).map((o) => String(o.model)));
+  return collection.map((card) => ({ ...card, collected: set.has(String(card.model)) }));
 }
 
 function sortByReleaseDesc(a, b) {
@@ -40,14 +40,14 @@ async function fetchJSON(url, init) {
 }
 
 export async function loadCards() {
-  const [catalogRaw, ownedRaw, ignoredRaw] = await Promise.all([
-    fetchJSON(TONIES_JSON_URL),
-    fetchJSON(getBaseUrl() + OWNED_REL_PATH),
+  const [catalogRaw, collectedRaw, ignoredRaw] = await Promise.all([
+    fetchJSON(CATALOG_URL),
+    fetchJSON(getBaseUrl() + COLLECTED_REL_PATH),
     fetchJSON(getBaseUrl() + IGNORED_REL_PATH),
   ]);
 
   const catalog = Array.isArray(catalogRaw) ? catalogRaw : (catalogRaw.items ?? []);
-  const owned   = ownedRaw   ?? [];
+  const collected = collectedRaw ?? [];
   const ignored = Array.isArray(ignoredRaw) ? ignoredRaw : [];
 
   const ignoredSet = new Set(
@@ -58,5 +58,5 @@ export async function loadCards() {
     .filter(baseFilter)
     .filter((item) => !ignoredSet.has(String(item.model).trim()));
 
-  return annotateOwned(filtered, owned).sort(sortByReleaseDesc);
+  return annotateCollected(filtered, collected).sort(sortByReleaseDesc);
 }

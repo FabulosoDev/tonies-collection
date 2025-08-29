@@ -49,7 +49,7 @@
           on:error={(e) => (e.currentTarget.src = fallbackFlag)}
         />
         <span class="name">{opt.label}</span>
-        <small class="count">{opt.count}</small>
+        <small class="count">({opt.count})</small>
       </label>
     {/each}
   </div>
@@ -79,12 +79,10 @@
   }
   .option:hover { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); border-color: var(--accent); }
 
-  /* Checkbox bleibt zugänglich, aber unsichtbar */
   .option input {
     position: absolute; opacity: 0; pointer-events: none; width: 0; height: 0;
   }
 
-  /* Flaggen-Stil: standardmäßig grau/leicht transparent */
   .flag {
     display: block;
     width: 20px; height: 14px;
@@ -94,16 +92,14 @@
     border-radius: 2px;
   }
 
-  /* wenn aktiv: volle Farbe, volle Deckkraft */
   .option.active .flag {
     filter: none;
     opacity: 1;
   }
 
-  /* aktives Chip-Design etwas deutlicher */
   .option.active {
-    background: #f4f7ff;
-    border-color: #c9d6ff;
+    background: #e6ecff;
+    border-color: #a2b7ff;
     color: #0b1324;
   }
 
