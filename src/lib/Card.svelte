@@ -1,10 +1,19 @@
 <script>
   import { createEventDispatcher } from "svelte";
+
   export let card;
+
+  const placeholder = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 
   const dispatch = createEventDispatcher();
   function handleClick() {
     dispatch("select", card);
+  }
+
+  function onError(e) {
+    if (e.currentTarget.src !== placeholder) {
+      e.currentTarget.src = placeholder;
+    }
   }
 </script>
 
@@ -27,6 +36,7 @@
       class={card.owned ? "" : "grayscale"}
       width="24"
       height="16"
+      on:error={onError}
     />
   </div>
 
@@ -36,15 +46,16 @@
       loading="lazy"
       decoding="async"
       fetchpriority="low"
-      src={card.pic}
+      src={card.pic || placeholder}
       alt={card.title}
       class={card.owned ? "" : "grayscale"}
+      on:error={onError}
     />
   </div>
 
   <!-- Episodes -->
   <div class="card-episodes">
-    <p>{card.episodes}</p>
+    <p>{card.episodes || ""}</p>
   </div>
 </div>
 

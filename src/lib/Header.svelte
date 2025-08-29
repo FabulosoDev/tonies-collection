@@ -5,7 +5,12 @@
 <header class="header">
   <div class="brand">Tonies Catalog</div>
   <div class="search">
-    <input placeholder="Search titles, tags..." bind:value={query} />
+    <input
+      type="search"
+      placeholder="Search titles, series, tags…"
+      aria-label="Search catalog"
+      bind:value={query}
+    />
   </div>
 </header>
 

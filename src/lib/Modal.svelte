@@ -4,12 +4,21 @@
   export let open = false;
   export let card = null;
 
+  const placeholder = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+
   const dispatch = createEventDispatcher();
   function close() {
     dispatch("close");
   }
+
   function onKeydown(e) {
     if (e.key === "Escape") close();
+  }
+
+  function onError(e) {
+    if (e.currentTarget.src !== placeholder) {
+      e.currentTarget.src = placeholder;
+    }
   }
 </script>
 
@@ -26,12 +35,13 @@
         loading="lazy"
         decoding="async"
         fetchpriority="high"
-        src={card.pic}
+        src={card.pic || placeholder}
         alt={card.title}
         class="modal-image"
+        on:error={onError}
       />
 
-      <h2 class="modal-title">{card.episodes}</h2>
+      <h2 class="modal-title">{card.episodes || ""}</h2>
       <p class="modal-series">{card.series}</p>
 
       <div class="row">
