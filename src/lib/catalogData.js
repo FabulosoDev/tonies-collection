@@ -21,16 +21,12 @@ const baseFilter = (item) =>
   isModelAllowed(item.model) && isCategoryAllowed(item.category);
 
 function annotateCollected(collection, collectedList) {
-  const set = new Set((collectedList ?? []).map((o) => String(o.model)));
+  const set = new Set((collectedList ?? []).map(v => String(typeof v === "string" ? v : v?.model)));
   return collection.map((card) => ({ ...card, collected: set.has(String(card.model)) }));
 }
 
 function sortByReleaseDesc(a, b) {
   return Number(b.release) - Number(a.release);
-}
-
-function getBaseUrl() {
-  return import.meta.env?.BASE_URL ?? "/";
 }
 
 async function fetchJSON(url, init) {
@@ -42,8 +38,8 @@ async function fetchJSON(url, init) {
 export async function loadCards() {
   const [catalogRaw, collectedRaw, ignoredRaw] = await Promise.all([
     fetchJSON(CATALOG_URL),
-    fetchJSON(getBaseUrl() + COLLECTED_REL_PATH),
-    fetchJSON(getBaseUrl() + IGNORED_REL_PATH),
+    fetchJSON((import.meta.env?.BASE_URL ?? "/") + COLLECTED_REL_PATH),
+    fetchJSON((import.meta.env?.BASE_URL ?? "/") + IGNORED_REL_PATH),
   ]);
 
   const catalog = Array.isArray(catalogRaw) ? catalogRaw : (catalogRaw.items ?? []);
