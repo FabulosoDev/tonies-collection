@@ -7,7 +7,7 @@
   <div class="search">
     <input
       type="search"
-      placeholder="Search titles, series, tags…"
+      placeholder="Search titles, series, models…"
       aria-label="Search catalog"
       bind:value={query}
     />

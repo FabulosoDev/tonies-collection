@@ -95,8 +95,10 @@
     display: block;
     width: 100%;
     height: auto;
+    opacity: 1;
   }
   .card-flag img.grayscale {
+    opacity: .6;
     filter: grayscale(100%);
   }
 
@@ -111,8 +113,10 @@
     max-width: 100%;
     max-height: 100%;
     display: block;
+    opacity: 1;
   }
   .card-pic img.grayscale {
+    opacity: .7;
     filter: grayscale(100%);
   }
 

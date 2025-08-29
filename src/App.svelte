@@ -1,21 +1,24 @@
 <script>
   import { onMount } from "svelte";
-  import Header from "./lib/Header.svelte";
   import Grid from "./lib/Grid.svelte";
+  import LanguageFilter from "./lib/LanguageFilter.svelte";
   import Modal from "./lib/Modal.svelte";
+  import Search from "./lib/Search.svelte";
   import { loadCards } from "./lib/catalogData.js";
 
-  let cards = [];
+  let allCards = [];
+  let selectedLangs = [];
+  let query = "";
+
   let open = false;
   let selected = null;
-  let query = "";
 
   onMount(async () => {
     try {
-      cards = await loadCards();
+      allCards = await loadCards();
     } catch (e) {
       console.error(e);
-      cards = [];
+      allCards = [];
     }
   });
 
@@ -40,13 +43,20 @@
     return haystack.includes(q);
   }
 
-  $: filtered = cards.filter((c) => matchesQuery(c, query));
+  // 1) Apply query first → used for language counts
+  $: queryCards = allCards.filter(c => matchesQuery(c, query));
+
+  // 2) Apply language selection on top of that
+  $: visibleCards = queryCards.filter(
+    c => !selectedLangs.length || selectedLangs.includes(c.language)
+  );
 </script>
 
 <div class="container">
-  <Header bind:query />
+  <Search bind:query />
+  <LanguageFilter cards={queryCards} bind:selected={selectedLangs} />
   <main>
-    <Grid items={filtered} on:select={onSelect} />
+    <Grid items={visibleCards} on:select={onSelect} />
     <Modal open={open} card={selected} on:close={() => { open = false; selected = null; }} />
   </main>
 </div>
