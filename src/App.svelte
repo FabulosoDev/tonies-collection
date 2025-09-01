@@ -17,6 +17,7 @@
 
   let open = false;
   let selected = null;
+  let filtersOpen = true;
 
   onMount(async () => {
     try {
@@ -80,11 +81,18 @@
 
 <div class="container">
   <Search bind:query />
-  <div class="filters-row">
-    <DateRangeFilter cards={queryCards} bind:start={startDate} bind:end={endDate} />
-    <LanguageFilter cards={dateCards} bind:selected={selectedLangs} />
-    <CollectedFilter cards={languageCards} bind:selected={selectedCollected} />
-  </div>
+  <details class="filterbox" bind:open={filtersOpen}>
+    <summary>
+      <span class="chev" aria-hidden="true"></span>
+      <span class="sum-label">{filtersOpen ? 'Hide filters' : 'Show filters'}</span>
+    </summary>
+
+    <div class="filters-row">
+      <DateRangeFilter cards={queryCards} bind:start={startDate} bind:end={endDate} />
+      <LanguageFilter cards={dateCards} bind:selected={selectedLangs} />
+      <CollectedFilter cards={languageCards} bind:selected={selectedCollected} />
+    </div>
+  </details>
   <main>
     <Grid items={visibleCards} on:select={onSelect} />
     <Modal open={open} card={selected} on:close={() => { open = false; selected = null; }} />
@@ -102,7 +110,49 @@
   .filters-row {
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem 1rem;     /* row gap / column gap */
+    gap: .5rem 1rem;
     align-items: flex-start;
+  }
+
+  .filterbox {
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    padding: .5rem .75rem;
+    margin: 0 0 .75rem;
+  }
+
+  .filterbox > summary {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: .25rem .25rem;
+    font-weight: 600;
+  }
+  .filterbox > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .filterbox .chev {
+    width: .6rem;
+    height: .6rem;
+    border-right: 2px solid #111;
+    border-bottom: 2px solid #111;
+    transform: rotate(-45deg);
+    transition: transform .18s ease;
+    margin-right: .25rem;
+  }
+  .filterbox[open] .chev {
+    transform: rotate(45deg);
+  }
+
+  .filterbox .filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: .75rem 1rem;
+    margin-top: .5rem;
   }
 </style>

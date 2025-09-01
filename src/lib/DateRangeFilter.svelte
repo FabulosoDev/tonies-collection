@@ -56,7 +56,7 @@
   .lbl {
     font-size: .85rem;
     line-height: 1;
-    padding: .3rem;
+    padding: .2rem;
   }
   input[type="date"] {
     position: relative;
