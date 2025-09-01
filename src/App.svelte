@@ -41,7 +41,8 @@
       card.series,
       card.episodes,
       card.model,
-      Array.isArray(card.tags) ? card.tags.join(" ") : card.tags
+      Array.isArray(card.audio_id) ? card.audio_id.join(" ") : card.audio_id,
+      Array.isArray(card.hash) ? card.hash.join(" ") : card.hash
     ]
       .filter(Boolean)
       .map((c) => String(c ?? "").toLowerCase())
