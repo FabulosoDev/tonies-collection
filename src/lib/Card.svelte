@@ -67,6 +67,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.2s ease;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
   .card:hover {
     transform: scale(1.05);
