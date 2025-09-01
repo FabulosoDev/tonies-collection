@@ -4,12 +4,15 @@
   import Search from "./lib/Search.svelte";
   import LanguageFilter from "./lib/LanguageFilter.svelte";
   import CollectedFilter from "./lib/CollectedFilter.svelte";
+  import DateRangeFilter from "./lib/DateRangeFilter.svelte";
   import Modal from "./lib/Modal.svelte";
   import { loadCards } from "./lib/catalogData.js";
 
   let allCards = [];
   let selectedLangs = [];
   let selectedCollected = [];
+  let startDate = "";
+  let endDate = "";
   let query = "";
 
   let open = false;
@@ -45,15 +48,29 @@
     return haystack.includes(q);
   }
 
+  const toStartEpoch = (s) => (s ? Math.floor(new Date(s).getTime() / 1000) : null);
+  const toEndEpoch   = (s) => (s ? Math.floor(new Date(s).getTime() / 1000) + 86399 : null);
+
   // 1) query
   $: queryCards = allCards.filter(c => matchesQuery(c, query));
 
-  // 2) language
-  $: languageCards = queryCards.filter(
+  // 2) date range
+  $: dateCards = queryCards.filter(c => {
+    const r = Number(c.release);
+    if (!Number.isFinite(r)) return false;
+    const a = toStartEpoch(startDate);
+    const b = toEndEpoch(endDate);
+    if (a && r < a) return false;
+    if (b && r > b) return false;
+    return true;
+  });
+
+  // 3) language
+  $: languageCards = dateCards.filter(
     c => !selectedLangs.length || selectedLangs.includes(c.language)
   );
 
-  // 3) ownership
+  // 4) ownership
   $: visibleCards = languageCards.filter(c => {
     if (!selectedCollected.length) return true;
     const key = c?.collected ? 'collected' : 'missing';
@@ -63,8 +80,11 @@
 
 <div class="container">
   <Search bind:query />
-  <LanguageFilter cards={queryCards} bind:selected={selectedLangs} />
-  <CollectedFilter cards={languageCards} bind:selected={selectedCollected} />
+  <div class="filters-row">
+    <DateRangeFilter cards={queryCards} bind:start={startDate} bind:end={endDate} />
+    <LanguageFilter cards={dateCards} bind:selected={selectedLangs} />
+    <CollectedFilter cards={languageCards} bind:selected={selectedCollected} />
+  </div>
   <main>
     <Grid items={visibleCards} on:select={onSelect} />
     <Modal open={open} card={selected} on:close={() => { open = false; selected = null; }} />
@@ -77,5 +97,12 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 1.25rem;
+  }
+
+  .filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 1rem;     /* row gap / column gap */
+    align-items: flex-start;
   }
 </style>

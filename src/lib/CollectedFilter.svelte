@@ -73,6 +73,7 @@
     position: relative;
     display: inline-flex;
     align-items: center;
+    height: 20px;
     gap: .4rem;
     padding: .3rem .6rem;
     border: 1px solid #e5e7eb;
@@ -90,18 +91,41 @@
     border-color: var(--accent);
   }
   .chip input {
-    position: absolute; opacity: 0; pointer-events: none; width: 0; height: 0;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
   }
-  .icon { width: 18px; height: 18px; opacity: .8; filter: grayscale(100%); }
-  .icon-collected { color: #16a34a; }
-  .icon-missing { color: #dc2626; }
-  .chip.active .icon { opacity: 1; filter: none; }
+  .icon {
+    width: 18px;
+    height: 18px;
+    opacity: .8;
+    filter: grayscale(100%);
+  }
+  .icon-collected {
+    color: #16a34a;
+  }
+  .icon-missing {
+    color: #dc2626;
+  }
+  .chip.active .icon {
+    opacity: 1;
+    filter: none;
+  }
   .chip.active {
     background: #e6ecff;
     border-color: #a2b7ff;
     color: #0b1324;
   }
-  .name { white-space: nowrap; }
-  .count { opacity: .65; font-size: .78rem; }
-  .chip.active .count { opacity: .9; }
+  .name {
+    white-space: nowrap;
+  }
+  .count {
+    opacity: .65;
+    font-size: .78rem;
+  }
+  .chip.active .count {
+    opacity: .9;
+  }
 </style>

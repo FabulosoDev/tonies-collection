@@ -58,52 +58,75 @@
 <style>
   .lang {
     --accent: #2563eb;
-    margin: .25rem 0 1rem; padding: 0; border: 0;
+    margin: .25rem 0 1rem;
+    padding: 0;
+    border: 0;
   }
-  .legend { font-weight: 600; font-size: .9rem; margin: 0 0 .4rem; }
-
+  .legend {
+    font-weight: 600;
+    font-size: .9rem;
+    margin: 0 0 .4rem;
+  }
   .row {
-    display: flex; flex-wrap: wrap; gap: .45rem; align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .45rem;
+    align-items: center;
   }
-
   .option {
     position: relative;
-    display: inline-flex; align-items: center; gap: .45rem;
+    display: inline-flex;
+    align-items: center;
+    height: 20px;
+    gap: .4rem;
     padding: .3rem .6rem;
-    border: 1px solid #e5e7eb; border-radius: 999px;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
     background: #fff;
-    font-size: .9rem; line-height: 1;
-    user-select: none; cursor: pointer;
-    transition: border-color .15s ease, background-color .15s ease, color .15s ease, filter .15s ease;
+    font-size: .9rem;
+    line-height: 1;
+    user-select: none;
+    cursor: pointer;
+    transition: border-color .15s ease, background-color .15s ease, color .15s ease;
     color: #111;
   }
-  .option:hover { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent); border-color: var(--accent); }
-
-  .option input {
-    position: absolute; opacity: 0; pointer-events: none; width: 0; height: 0;
+  .option:hover {
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent);
+    border-color: var(--accent);
   }
-
+  .option input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+  }
   .flag {
     display: block;
-    width: 20px; height: 14px;
+    width: 20px;
+    height: 14px;
     object-fit: cover;
     filter: grayscale(100%);
     opacity: .7;
     border-radius: 2px;
   }
-
   .option.active .flag {
     filter: none;
     opacity: 1;
   }
-
   .option.active {
     background: #e6ecff;
     border-color: #a2b7ff;
     color: #0b1324;
   }
-
-  .name { white-space: nowrap; }
-  .count { opacity: .65; font-size: .78rem; }
-  .option.active .count { opacity: .9; }
+  .name {
+    white-space: nowrap;
+  }
+  .count {
+    opacity: .65;
+    font-size: .78rem;
+  }
+  .option.active .count {
+    opacity: .9;
+  }
 </style>
