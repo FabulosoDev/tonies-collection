@@ -85,7 +85,7 @@
 </script>
 
 <div class="container">
-  <Search bind:query />
+  <Search cards={visibleCards} bind:query />
 
   <section class="filterbox">
     <button

@@ -1,9 +1,10 @@
 <script>
+  export let cards = [];
   export let query = "";
 </script>
 
 <header class="header">
-  <div class="brand">Tonies Collection</div>
+  <div class="brand">Tonies Collection ({cards.length})</div>
   <div class="search">
     <input
       type="search"
@@ -17,6 +18,7 @@
 <style>
   .header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
@@ -24,7 +26,7 @@
   }
 
   .brand {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.25rem;
   }
 
@@ -32,6 +34,7 @@
     flex: 1;
     display: flex;
     gap: 0.5rem;
+    min-width: fit-content;
   }
   .search input {
     width: 100%;
