@@ -17,7 +17,7 @@
 
   let open = false;
   let selected = null;
-  let filtersOpen = true;
+  let filtersOpen = false;
 
   onMount(async () => {
     try {
@@ -124,14 +124,16 @@
   }
 
   .filterbox > summary {
-    list-style: none;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: .5rem;
     cursor: pointer;
-    border-radius: 8px;
+    user-select: none;
+    border-radius: 6px;
     padding: .25rem .25rem;
     font-weight: 600;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
   .filterbox > summary::-webkit-details-marker {
     display: none;
