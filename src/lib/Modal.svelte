@@ -296,5 +296,6 @@
     font-size: 12px;
     line-height: 1.45;
     white-space: pre;
+    contain: inline-size;
   }
 </style>
