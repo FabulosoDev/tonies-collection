@@ -105,7 +105,8 @@
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1.25rem;
+    padding: .5rem;
+    box-sizing: border-box;
   }
 
   .filters-row {
