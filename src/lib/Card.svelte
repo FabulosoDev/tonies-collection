@@ -3,7 +3,8 @@
 
   export let card;
 
-  const placeholder = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+  const placeholder =
+    "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
   const dispatch = createEventDispatcher();
   function handleClick() {
@@ -67,7 +68,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.2s ease;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .card:hover {
     transform: scale(1.05);
@@ -99,7 +100,7 @@
     opacity: 1;
   }
   .card-flag img.grayscale {
-    opacity: .6;
+    opacity: 0.6;
     filter: grayscale(100%);
   }
 
@@ -117,7 +118,7 @@
     opacity: 1;
   }
   .card-pic img.grayscale {
-    opacity: .7;
+    opacity: 0.7;
     filter: grayscale(100%);
   }
 

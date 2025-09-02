@@ -12,9 +12,14 @@
   };
 
   $: bounds = (() => {
-    const nums = cards.map(c => Number(c.release)).filter(n => Number.isFinite(n) && n > 0);
+    const nums = cards
+      .map((c) => Number(c.release))
+      .filter((n) => Number.isFinite(n) && n > 0);
     if (!nums.length) return { min: "", max: "" };
-    return { min: toDateStr(Math.min(...nums)), max: toDateStr(Math.max(...nums)) };
+    return {
+      min: toDateStr(Math.min(...nums)),
+      max: toDateStr(Math.max(...nums)),
+    };
   })();
 </script>
 
@@ -35,45 +40,48 @@
 <style>
   .date {
     --accent: #2563eb;
-    margin: .25rem 0 1rem;
+    margin: 0.25rem 0 1rem;
     padding: 0;
     border: 0;
   }
   .legend {
     font-weight: 600;
-    font-size: .9rem;
-    margin: 0 0 .4rem;
+    font-size: 0.9rem;
+    margin: 0 0 0.4rem;
   }
   .row {
     display: flex;
     flex-wrap: wrap;
-    gap: .45rem;
+    gap: 0.45rem;
     align-items: center;
   }
   .field {
     flex-wrap: wrap;
   }
   .lbl {
-    font-size: .85rem;
+    font-size: 0.85rem;
     line-height: 1;
-    padding: .2rem;
+    padding: 0.2rem;
   }
   input[type="date"] {
     position: relative;
     display: inline-flex;
     align-items: center;
     height: 20px;
-    gap: .4rem;
-    padding: .3rem .6rem;
+    gap: 0.4rem;
+    padding: 0.3rem 0.6rem;
     border: 1px solid #e5e7eb;
     border-radius: 999px;
     background: #fff;
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1;
     font: inherit;
     user-select: none;
     cursor: pointer;
-    transition: border-color .15s ease, background-color .15s ease, color .15s ease;
+    transition:
+      border-color 0.15s ease,
+      background-color 0.15s ease,
+      color 0.15s ease;
     color: #111;
   }
   input[type="date"]:hover {

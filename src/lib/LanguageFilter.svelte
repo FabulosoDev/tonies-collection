@@ -3,8 +3,11 @@
   export let selected = [];
 
   export let labels = {
-    "de-de": "German", "en-gb": "English (UK)", "en-us": "English (US)",
-    "fr-fr": "French", "unknown": "Unknown"
+    "de-de": "German",
+    "en-gb": "English (UK)",
+    "en-us": "English (US)",
+    "fr-fr": "French",
+    unknown: "Unknown",
   };
   const base = import.meta.env.BASE_URL || "/";
   const labelFor = (code) => labels[code] ?? code;
@@ -17,8 +20,11 @@
       const code = c.language || "unknown";
       map.set(code, (map.get(code) || 0) + 1);
     }
-    return Array.from(map, ([code, count]) => ({ code, label: labelFor(code), count }))
-      .sort((a, b) => a.label.localeCompare(b.label));
+    return Array.from(map, ([code, count]) => ({
+      code,
+      label: labelFor(code),
+      count,
+    })).sort((a, b) => a.label.localeCompare(b.label));
   })();
 
   function toggle(code, checked) {
@@ -58,19 +64,19 @@
 <style>
   .lang {
     --accent: #2563eb;
-    margin: .25rem 0 1rem;
+    margin: 0.25rem 0 1rem;
     padding: 0;
     border: 0;
   }
   .legend {
     font-weight: 600;
-    font-size: .9rem;
-    margin: 0 0 .4rem;
+    font-size: 0.9rem;
+    margin: 0 0 0.4rem;
   }
   .row {
     display: flex;
     flex-wrap: wrap;
-    gap: .45rem;
+    gap: 0.45rem;
     align-items: center;
   }
   .option {
@@ -78,16 +84,19 @@
     display: inline-flex;
     align-items: center;
     height: 20px;
-    gap: .4rem;
-    padding: .3rem .6rem;
+    gap: 0.4rem;
+    padding: 0.3rem 0.6rem;
     border: 1px solid #e5e7eb;
     border-radius: 999px;
     background: #fff;
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1;
     user-select: none;
     cursor: pointer;
-    transition: border-color .15s ease, background-color .15s ease, color .15s ease;
+    transition:
+      border-color 0.15s ease,
+      background-color 0.15s ease,
+      color 0.15s ease;
     color: #111;
   }
   .option:hover {
@@ -107,7 +116,7 @@
     height: 14px;
     object-fit: cover;
     filter: grayscale(100%);
-    opacity: .7;
+    opacity: 0.7;
     border-radius: 2px;
   }
   .option.active .flag {
@@ -123,10 +132,10 @@
     white-space: nowrap;
   }
   .count {
-    opacity: .65;
-    font-size: .78rem;
+    opacity: 0.65;
+    font-size: 0.78rem;
   }
   .option.active .count {
-    opacity: .9;
+    opacity: 0.9;
   }
 </style>

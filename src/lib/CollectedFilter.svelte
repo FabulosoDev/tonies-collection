@@ -3,15 +3,16 @@
   export let selected = [];
 
   $: counts = (() => {
-    let collected = 0, missing = 0;
-    for (const c of cards) (c?.collected ? collected++ : missing++);
+    let collected = 0,
+      missing = 0;
+    for (const c of cards) c?.collected ? collected++ : missing++;
     return { collected, missing };
   })();
 
   function toggle(key, checked) {
     selected = checked
       ? Array.from(new Set([...selected, key]))
-      : selected.filter(k => k !== key);
+      : selected.filter((k) => k !== key);
   }
 </script>
 
@@ -19,31 +20,59 @@
   <legend class="legend">Collection</legend>
 
   <div class="row">
-    <label class="chip" class:active={selected.includes('collected')}>
+    <label class="chip" class:active={selected.includes("collected")}>
       <input
         type="checkbox"
-        checked={selected.includes('collected')}
-        on:change={(e) => toggle('collected', e.currentTarget.checked)}
+        checked={selected.includes("collected")}
+        on:change={(e) => toggle("collected", e.currentTarget.checked)}
         aria-label="Filter: collected"
       />
       <svg class="icon icon-collected" viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
-        <path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+        <path
+          d="M9 12l2 2 4-4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
       <span class="name">Collected</span>
       <small class="count">({counts.collected})</small>
     </label>
 
-    <label class="chip" class:active={selected.includes('missing')}>
+    <label class="chip" class:active={selected.includes("missing")}>
       <input
         type="checkbox"
-        checked={selected.includes('missing')}
-        on:change={(e) => toggle('missing', e.currentTarget.checked)}
+        checked={selected.includes("missing")}
+        on:change={(e) => toggle("missing", e.currentTarget.checked)}
         aria-label="Filter: missing"
       />
       <svg class="icon icon-missing" viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
-        <path d="M15 9l-6 6M9 9l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+        <path
+          d="M15 9l-6 6M9 9l6 6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
       </svg>
       <span class="name">Missing</span>
       <small class="count">({counts.missing})</small>
@@ -54,19 +83,19 @@
 <style>
   .own {
     --accent: #2563eb;
-    margin: .25rem 0 1rem;
+    margin: 0.25rem 0 1rem;
     padding: 0;
     border: 0;
   }
   .legend {
     font-weight: 600;
-    font-size: .9rem;
-    margin: 0 0 .4rem;
+    font-size: 0.9rem;
+    margin: 0 0 0.4rem;
   }
   .row {
     display: flex;
     flex-wrap: wrap;
-    gap: .45rem;
+    gap: 0.45rem;
     align-items: center;
   }
   .chip {
@@ -74,16 +103,19 @@
     display: inline-flex;
     align-items: center;
     height: 20px;
-    gap: .4rem;
-    padding: .3rem .6rem;
+    gap: 0.4rem;
+    padding: 0.3rem 0.6rem;
     border: 1px solid #e5e7eb;
     border-radius: 999px;
     background: #fff;
-    font-size: .9rem;
+    font-size: 0.9rem;
     line-height: 1;
     user-select: none;
     cursor: pointer;
-    transition: border-color .15s ease, background-color .15s ease, color .15s ease;
+    transition:
+      border-color 0.15s ease,
+      background-color 0.15s ease,
+      color 0.15s ease;
     color: #111;
   }
   .chip:hover {
@@ -100,7 +132,7 @@
   .icon {
     width: 18px;
     height: 18px;
-    opacity: .8;
+    opacity: 0.8;
     filter: grayscale(100%);
   }
   .icon-collected {
@@ -122,10 +154,10 @@
     white-space: nowrap;
   }
   .count {
-    opacity: .65;
-    font-size: .78rem;
+    opacity: 0.65;
+    font-size: 0.78rem;
   }
   .chip.active .count {
-    opacity: .9;
+    opacity: 0.9;
   }
 </style>
