@@ -42,7 +42,7 @@
       card.episodes,
       card.model,
       Array.isArray(card.audio_id) ? card.audio_id.join(" ") : card.audio_id,
-      Array.isArray(card.hash) ? card.hash.join(" ") : card.hash
+      Array.isArray(card.hash) ? card.hash.join(" ") : card.hash,
     ]
       .filter(Boolean)
       .map((c) => String(c ?? "").toLowerCase())
@@ -50,14 +50,16 @@
     return haystack.includes(q);
   }
 
-  const toStartEpoch = (s) => (s ? Math.floor(new Date(s).getTime() / 1000) : null);
-  const toEndEpoch   = (s) => (s ? Math.floor(new Date(s).getTime() / 1000) + 86399 : null);
+  const toStartEpoch = (s) =>
+    s ? Math.floor(new Date(s).getTime() / 1000) : null;
+  const toEndEpoch = (s) =>
+    s ? Math.floor(new Date(s).getTime() / 1000) + 86399 : null;
 
   // 1) query
-  $: queryCards = allCards.filter(c => matchesQuery(c, query));
+  $: queryCards = allCards.filter((c) => matchesQuery(c, query));
 
   // 2) date range
-  $: dateCards = queryCards.filter(c => {
+  $: dateCards = queryCards.filter((c) => {
     const r = Number(c.release);
     if (!Number.isFinite(r)) return false;
     const a = toStartEpoch(startDate);
@@ -69,13 +71,13 @@
 
   // 3) language
   $: languageCards = dateCards.filter(
-    c => !selectedLangs.length || selectedLangs.includes(c.language)
+    (c) => !selectedLangs.length || selectedLangs.includes(c.language)
   );
 
   // 4) ownership
-  $: visibleCards = languageCards.filter(c => {
+  $: visibleCards = languageCards.filter((c) => {
     if (!selectedCollected.length) return true;
-    const key = c?.collected ? 'collected' : 'missing';
+    const key = c?.collected ? "collected" : "missing";
     return selectedCollected.includes(key);
   });
 </script>
@@ -85,18 +87,34 @@
   <details class="filterbox" bind:open={filtersOpen}>
     <summary>
       <span class="chev" aria-hidden="true"></span>
-      <span class="sum-label">{filtersOpen ? 'Hide filters' : 'Show filters'}</span>
+      <span class="sum-label"
+        >{filtersOpen ? "Hide filters" : "Show filters"}</span
+      >
     </summary>
 
     <div class="filters-row">
-      <DateRangeFilter cards={queryCards} bind:start={startDate} bind:end={endDate} />
+      <DateRangeFilter
+        cards={queryCards}
+        bind:start={startDate}
+        bind:end={endDate}
+      />
       <LanguageFilter cards={dateCards} bind:selected={selectedLangs} />
-      <CollectedFilter cards={languageCards} bind:selected={selectedCollected} />
+      <CollectedFilter
+        cards={languageCards}
+        bind:selected={selectedCollected}
+      />
     </div>
   </details>
   <main>
     <Grid items={visibleCards} on:select={onSelect} />
-    <Modal open={open} card={selected} on:close={() => { open = false; selected = null; }} />
+    <Modal
+      {open}
+      card={selected}
+      on:close={() => {
+        open = false;
+        selected = null;
+      }}
+    />
   </main>
 </div>
 
@@ -105,32 +123,32 @@
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: .5rem;
+    padding: 0.5rem;
     box-sizing: border-box;
   }
 
   .filters-row {
     display: flex;
     flex-wrap: wrap;
-    gap: .5rem 1rem;
+    gap: 0.5rem 1rem;
     align-items: flex-start;
   }
 
   .filterbox {
     background: rgba(0, 0, 0, 0.04);
     border-radius: 6px;
-    padding: .5rem .75rem;
-    margin: 0 0 .75rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0 0.75rem;
   }
 
   .filterbox > summary {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
     cursor: pointer;
     user-select: none;
     border-radius: 6px;
-    padding: .25rem .25rem;
+    padding: 0.25rem 0.25rem;
     font-weight: 600;
     width: 100%;
     -webkit-tap-highlight-color: transparent;
@@ -140,13 +158,13 @@
   }
 
   .filterbox .chev {
-    width: .6rem;
-    height: .6rem;
+    width: 0.6rem;
+    height: 0.6rem;
     border-right: 2px solid #111;
     border-bottom: 2px solid #111;
     transform: rotate(-45deg);
-    transition: transform .18s ease;
-    margin-right: .25rem;
+    transition: transform 0.18s ease;
+    margin-right: 0.25rem;
   }
   .filterbox[open] .chev {
     transform: rotate(45deg);
@@ -156,7 +174,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: .75rem 1rem;
-    margin-top: .5rem;
+    gap: 0.75rem 1rem;
+    margin-top: 0.5rem;
   }
 </style>

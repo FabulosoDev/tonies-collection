@@ -4,7 +4,8 @@
   export let open = false;
   export let card = null;
 
-  const placeholder = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+  const placeholder =
+    "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
   const dispatch = createEventDispatcher();
   const close = () => dispatch("close");
@@ -15,22 +16,38 @@
 
   $: {
     if (open && !wasOpen) view = "info";
-    if (!open) { minContentHeight = 0; lastModel = undefined; }
-    if (open && card?.model !== lastModel) { lastModel = card?.model; minContentHeight = 0; }
+    if (!open) {
+      minContentHeight = 0;
+      lastModel = undefined;
+    }
+    if (open && card?.model !== lastModel) {
+      lastModel = card?.model;
+      minContentHeight = 0;
+    }
     wasOpen = open;
   }
 
   $: metaText = card
-    ? JSON.stringify(card, (key, value) => (key === "collected" ? undefined : value), 2)
+    ? JSON.stringify(
+        card,
+        (key, value) => (key === "collected" ? undefined : value),
+        2
+      )
     : "";
 
-  async function copyMeta() { try { await navigator.clipboard.writeText(metaText); } catch {} }
+  async function copyMeta() {
+    try {
+      await navigator.clipboard.writeText(metaText);
+    } catch {}
+  }
   function downloadMeta() {
     const name = (card?.model ? String(card.model) : "card") + ".json";
     const blob = new Blob([metaText], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
-    a.href = url; a.download = name; a.click();
+    a.href = url;
+    a.download = name;
+    a.click();
     URL.revokeObjectURL(url);
   }
 
@@ -47,7 +64,9 @@
 
   onMount(() => {
     ro = new ResizeObserver(() => measureInfo());
-    return () => { ro && ro.disconnect(); };
+    return () => {
+      ro && ro.disconnect();
+    };
   });
 
   $: if (ro) {
@@ -81,12 +100,25 @@
       <button class="modal-close" on:click={close} aria-label="Close">✕</button>
 
       <div class="seg">
-        <button class="seg-btn {view === 'info' ? 'active' : ''}" on:click={() => (view = 'info')} type="button">Info</button>
-        <button class="seg-btn {view === 'meta' ? 'active' : ''}" on:click={switchToMeta} type="button">Metadata</button>
+        <button
+          class="seg-btn {view === 'info' ? 'active' : ''}"
+          on:click={() => (view = "info")}
+          type="button">Info</button
+        >
+        <button
+          class="seg-btn {view === 'meta' ? 'active' : ''}"
+          on:click={switchToMeta}
+          type="button">Metadata</button
+        >
       </div>
 
       <!-- lock height only while in metadata -->
-      <div class="content" style={view === 'meta' && minContentHeight ? `height:${minContentHeight}px` : ''}>
+      <div
+        class="content"
+        style={view === "meta" && minContentHeight
+          ? `height:${minContentHeight}px`
+          : ""}
+      >
         {#if view === "info"}
           <section class="panel" bind:this={infoEl}>
             <img
@@ -105,7 +137,11 @@
             <div class="row">
               <div class="kv">
                 <p class="title">Release:</p>
-                <p>{new Date(Number(card.release) * 1000).toISOString().split("T")[0]}</p>
+                <p>
+                  {new Date(Number(card.release) * 1000)
+                    .toISOString()
+                    .split("T")[0]}
+                </p>
               </div>
               <div class="kv">
                 <p class="title">Model:</p>
@@ -131,7 +167,7 @@
   .modal-backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +180,7 @@
     position: relative;
     max-width: 28rem;
     width: 100%;
-    box-shadow: 0 15px 35px rgba(0,0,0,.25);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
   }
   .modal-close {
     position: absolute;
@@ -158,21 +194,23 @@
     font-size: 200%;
     line-height: 1;
   }
-  .modal-close:hover { color: #4b5563; }
+  .modal-close:hover {
+    color: #4b5563;
+  }
 
   .seg {
     display: inline-flex;
-    gap: .25rem;
+    gap: 0.25rem;
     background: #f3f4f6;
     border: 1px solid #e5e7eb;
     border-radius: 999px;
-    padding: .2rem;
-    margin-bottom: .75rem;
+    padding: 0.2rem;
+    margin-bottom: 0.75rem;
   }
   .seg-btn {
     border: 0;
     background: transparent;
-    padding: .35rem .75rem;
+    padding: 0.35rem 0.75rem;
     border-radius: 999px;
     cursor: pointer;
     font: inherit;
@@ -181,7 +219,7 @@
   }
   .seg-btn.active {
     background: #fff;
-    box-shadow: 0 1px 0 rgba(0,0,0,.06);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
     color: #111827;
   }
 
@@ -191,7 +229,7 @@
   .panel {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
     width: 100%;
     min-height: 0;
   }
@@ -202,41 +240,59 @@
     display: block;
   }
   .modal-title {
-    margin: 0 0 .625rem;
+    margin: 0 0 0.625rem;
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2;
   }
-  .modal-series { margin: 0 0 .625rem; }
-  .row { display: flex; justify-content: space-between; width: 100%; }
-  .kv { display: flex; gap: .5rem; }
-  .kv p { margin: 0; }
-  .kv .title { font-weight: 700; align-items: center; }
+  .modal-series {
+    margin: 0 0 0.625rem;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .kv {
+    display: flex;
+    gap: 0.5rem;
+  }
+  .kv p {
+    margin: 0;
+  }
+  .kv .title {
+    font-weight: 700;
+    align-items: center;
+  }
 
   .meta-actions {
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
   }
   .btn {
     border: 1px solid #e5e7eb;
     background: #fff;
-    padding: .35rem .6rem;
+    padding: 0.35rem 0.6rem;
     border-radius: 6px;
     font: inherit;
     cursor: pointer;
   }
-  .btn:hover { border-color: #cbd5e1; background: #f8fafc; }
+  .btn:hover {
+    border-color: #cbd5e1;
+    background: #f8fafc;
+  }
 
   .json {
     margin: 0;
     flex: 1 1 auto;
     min-height: 0;
     overflow: auto;
-    padding: .5rem .6rem;
+    padding: 0.5rem 0.6rem;
     border-radius: 6px;
     background: #fff;
     border: 1px solid #eef0f2;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
     font-size: 12px;
     line-height: 1.45;
     white-space: pre;

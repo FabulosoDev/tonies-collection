@@ -5,7 +5,7 @@
 
 <section class="grid">
   {#each items as card}
-    <Card card={card} on:select />
+    <Card {card} on:select />
   {/each}
 </section>
 
