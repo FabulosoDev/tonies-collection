@@ -1,5 +1,7 @@
 <script>
   import { onMount } from "svelte";
+  import { slide, fade, crossfade } from "svelte/transition";
+
   import Grid from "./lib/Grid.svelte";
   import Search from "./lib/Search.svelte";
   import LanguageFilter from "./lib/LanguageFilter.svelte";
@@ -84,27 +86,38 @@
 
 <div class="container">
   <Search bind:query />
-  <details class="filterbox" bind:open={filtersOpen}>
-    <summary>
-      <span class="chev" aria-hidden="true"></span>
-      <span class="sum-label"
-        >{filtersOpen ? "Hide filters" : "Show filters"}</span
-      >
-    </summary>
 
-    <div class="filters-row">
-      <DateRangeFilter
-        cards={queryCards}
-        bind:start={startDate}
-        bind:end={endDate}
-      />
-      <LanguageFilter cards={dateCards} bind:selected={selectedLangs} />
-      <CollectedFilter
-        cards={languageCards}
-        bind:selected={selectedCollected}
-      />
-    </div>
-  </details>
+  <section class="filterbox">
+    <button
+      class="filterbar"
+      type="button"
+      on:click={() => (filtersOpen = !filtersOpen)}
+      aria-expanded={filtersOpen}
+    >
+      <span class="chev" aria-hidden="true" class:open={filtersOpen}></span>
+      <span>{filtersOpen ? "Hide filters" : "Show filters"}</span>
+    </button>
+
+    {#if filtersOpen}
+      <div
+        class="filters-row"
+        in:slide={{ duration: 220 }}
+        out:slide={{ duration: 220 }}
+      >
+        <DateRangeFilter
+          cards={queryCards}
+          bind:start={startDate}
+          bind:end={endDate}
+        />
+        <LanguageFilter cards={dateCards} bind:selected={selectedLangs} />
+        <CollectedFilter
+          cards={languageCards}
+          bind:selected={selectedCollected}
+        />
+      </div>
+    {/if}
+  </section>
+
   <main>
     <Grid items={visibleCards} on:select={onSelect} />
     <Modal
@@ -127,13 +140,6 @@
     box-sizing: border-box;
   }
 
-  .filters-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
-    align-items: flex-start;
-  }
-
   .filterbox {
     background: rgba(0, 0, 0, 0.04);
     border-radius: 6px;
@@ -141,36 +147,35 @@
     margin: 0 0 0.75rem;
   }
 
-  .filterbox > summary {
+  .filterbar {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     cursor: pointer;
     user-select: none;
+    background: transparent;
+    border: 0;
     border-radius: 6px;
     padding: 0.25rem 0.25rem;
+    font: inherit;
     font-weight: 600;
     width: 100%;
     -webkit-tap-highlight-color: transparent;
   }
-  .filterbox > summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .filterbox .chev {
+  .chev {
     width: 0.6rem;
     height: 0.6rem;
     border-right: 2px solid #111;
     border-bottom: 2px solid #111;
     transform: rotate(-45deg);
-    transition: transform 0.18s ease;
+    transition: transform 0.22s ease;
     margin-right: 0.25rem;
   }
-  .filterbox[open] .chev {
+  .chev.open {
     transform: rotate(45deg);
   }
 
-  .filterbox .filters-row {
+  .filters-row {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
