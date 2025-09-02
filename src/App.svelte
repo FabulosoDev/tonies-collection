@@ -1,54 +1,30 @@
 <script>
   import { onMount } from "svelte";
-  import Header from "./lib/Header.svelte";
   import Grid from "./lib/Grid.svelte";
+  import Search from "./lib/Search.svelte";
+  import LanguageFilter from "./lib/LanguageFilter.svelte";
+  import CollectedFilter from "./lib/CollectedFilter.svelte";
+  import DateRangeFilter from "./lib/DateRangeFilter.svelte";
   import Modal from "./lib/Modal.svelte";
+  import { loadCards } from "./lib/catalogData.js";
 
-  let cards = [];
+  let allCards = [];
+  let selectedLangs = [];
+  let selectedCollected = [];
+  let startDate = "";
+  let endDate = "";
+  let query = "";
+
   let open = false;
   let selected = null;
-
-    // Filtering and mapping logic merged here
-  function isModelAllowed(model) {
-    model = String(model ?? "").trim();
-    return (
-      model &&
-      /^[0-9-]+$/.test(model) &&
-      ((model.includes("-") && !/^(09|10|99)/.test(model)) ||
-        (!model.includes("-") && model.startsWith("1")))
-    );
-  }
-
-  function isCategoryAllowed(category) {
-    category = String(category ?? "").trim();
-    return category && category !== "creative-tonie";
-  }
+  let filtersOpen = true;
 
   onMount(async () => {
     try {
-      const [catalogRes, ownedRes] = await Promise.all([
-        fetch(import.meta.env.BASE_URL + 'data/tonies.json', { cache: 'no-store' }),
-        fetch(import.meta.env.BASE_URL + 'data/owned.json', { cache: 'no-store' })
-      ]);
-      let catalog = await catalogRes.json();
-      let owned = await ownedRes.json();
-      cards = catalog
-        .filter(item =>
-          isModelAllowed(item.model) &&
-          isCategoryAllowed(item.category)
-        )
-        .map(card => ({
-          ...card,
-          owned: owned.some(o => o.model === card.model)
-        }))
-        .filter(card =>
-          card.language === "de-de" &&
-          !card.owned &&
-          Number(card.release) > 1704063599
-        )
-        .sort((a, b) => Number(b.release) - Number(a.release));
+      allCards = await loadCards();
     } catch (e) {
-      cards = [];
+      console.error(e);
+      allCards = [];
     }
   });
 
@@ -56,12 +32,70 @@
     selected = e.detail; // the clicked card
     open = true;
   }
+
+  function matchesQuery(card, q) {
+    if (!q) return true;
+    q = q.trim().toLowerCase();
+    const haystack = [
+      card.title,
+      card.series,
+      card.episodes,
+      card.model,
+      Array.isArray(card.audio_id) ? card.audio_id.join(" ") : card.audio_id,
+      Array.isArray(card.hash) ? card.hash.join(" ") : card.hash
+    ]
+      .filter(Boolean)
+      .map((c) => String(c ?? "").toLowerCase())
+      .join(" ");
+    return haystack.includes(q);
+  }
+
+  const toStartEpoch = (s) => (s ? Math.floor(new Date(s).getTime() / 1000) : null);
+  const toEndEpoch   = (s) => (s ? Math.floor(new Date(s).getTime() / 1000) + 86399 : null);
+
+  // 1) query
+  $: queryCards = allCards.filter(c => matchesQuery(c, query));
+
+  // 2) date range
+  $: dateCards = queryCards.filter(c => {
+    const r = Number(c.release);
+    if (!Number.isFinite(r)) return false;
+    const a = toStartEpoch(startDate);
+    const b = toEndEpoch(endDate);
+    if (a && r < a) return false;
+    if (b && r > b) return false;
+    return true;
+  });
+
+  // 3) language
+  $: languageCards = dateCards.filter(
+    c => !selectedLangs.length || selectedLangs.includes(c.language)
+  );
+
+  // 4) ownership
+  $: visibleCards = languageCards.filter(c => {
+    if (!selectedCollected.length) return true;
+    const key = c?.collected ? 'collected' : 'missing';
+    return selectedCollected.includes(key);
+  });
 </script>
 
 <div class="container">
-  <!--<Header/>-->
+  <Search bind:query />
+  <details class="filterbox" bind:open={filtersOpen}>
+    <summary>
+      <span class="chev" aria-hidden="true"></span>
+      <span class="sum-label">{filtersOpen ? 'Hide filters' : 'Show filters'}</span>
+    </summary>
+
+    <div class="filters-row">
+      <DateRangeFilter cards={queryCards} bind:start={startDate} bind:end={endDate} />
+      <LanguageFilter cards={dateCards} bind:selected={selectedLangs} />
+      <CollectedFilter cards={languageCards} bind:selected={selectedCollected} />
+    </div>
+  </details>
   <main>
-    <Grid items={cards} on:select={onSelect} />
+    <Grid items={visibleCards} on:select={onSelect} />
     <Modal open={open} card={selected} on:close={() => { open = false; selected = null; }} />
   </main>
 </div>
@@ -71,6 +105,56 @@
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1.25rem;
+    padding: .5rem;
+    box-sizing: border-box;
+  }
+
+  .filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem 1rem;
+    align-items: flex-start;
+  }
+
+  .filterbox {
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    padding: .5rem .75rem;
+    margin: 0 0 .75rem;
+  }
+
+  .filterbox > summary {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: .25rem .25rem;
+    font-weight: 600;
+  }
+  .filterbox > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .filterbox .chev {
+    width: .6rem;
+    height: .6rem;
+    border-right: 2px solid #111;
+    border-bottom: 2px solid #111;
+    transform: rotate(-45deg);
+    transition: transform .18s ease;
+    margin-right: .25rem;
+  }
+  .filterbox[open] .chev {
+    transform: rotate(45deg);
+  }
+
+  .filterbox .filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: .75rem 1rem;
+    margin-top: .5rem;
   }
 </style>

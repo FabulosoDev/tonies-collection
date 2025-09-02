@@ -1,10 +1,19 @@
 <script>
   import { createEventDispatcher } from "svelte";
+
   export let card;
+
+  const placeholder = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 
   const dispatch = createEventDispatcher();
   function handleClick() {
     dispatch("select", card);
+  }
+
+  function onError(e) {
+    if (e.currentTarget.src !== placeholder) {
+      e.currentTarget.src = placeholder;
+    }
   }
 </script>
 
@@ -24,9 +33,10 @@
       fetchpriority="low"
       src={`${import.meta.env.BASE_URL}assets/flags/${card.language}.svg`}
       alt={card.language}
-      class={card.owned ? "" : "grayscale"}
+      class={card.collected ? "" : "grayscale"}
       width="24"
       height="16"
+      on:error={onError}
     />
   </div>
 
@@ -36,15 +46,16 @@
       loading="lazy"
       decoding="async"
       fetchpriority="low"
-      src={card.pic}
+      src={card.pic || placeholder}
       alt={card.title}
-      class={card.owned ? "" : "grayscale"}
+      class={card.collected ? "" : "grayscale"}
+      on:error={onError}
     />
   </div>
 
   <!-- Episodes -->
   <div class="card-episodes">
-    <p>{card.episodes}</p>
+    <p>{card.episodes || ""}</p>
   </div>
 </div>
 
@@ -56,6 +67,7 @@
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.2s ease;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
   }
   .card:hover {
     transform: scale(1.05);
@@ -84,8 +96,10 @@
     display: block;
     width: 100%;
     height: auto;
+    opacity: 1;
   }
   .card-flag img.grayscale {
+    opacity: .6;
     filter: grayscale(100%);
   }
 
@@ -100,8 +114,10 @@
     max-width: 100%;
     max-height: 100%;
     display: block;
+    opacity: 1;
   }
   .card-pic img.grayscale {
+    opacity: .7;
     filter: grayscale(100%);
   }
 
