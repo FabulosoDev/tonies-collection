@@ -12,106 +12,22 @@
     "error": "No metadata found"
   },
   {
-    "file": "English/Other/Mo Willems The Pigeon.nfc",
-    "audio_id": "1727299133",
-    "hash": "471ad4aa9d0993cefa5c34149d1bf1723a5e7add",
-    "error": "No metadata found"
-  },
-  {
-    "file": "French/Disney/Mulan.nfc",
-    "audio_id": "1676041274",
-    "hash": "407ad3ac82c2d568cb348cb6fda1c07a3effc1bf",
-    "error": "No metadata found"
-  },
-  {
-    "file": "French/Other/Gus Le Chevalier Minus.nfc",
-    "audio_id": "1724428688",
-    "hash": "0abe73091ea0c5e4138da25a7e4283b0af663c06",
-    "error": "No metadata found"
-  },
-  {
-    "file": "French/Other/Selena Sans Chichis Ni Tralala - Le Tour Du Monde En 80 Jours (Ou Presque).nfc",
-    "audio_id": "1733302625",
-    "hash": "9375a7c207a529efa83f365c038929d01139e432",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Benjamin Bluemchen/Ein Toeroeoeoe fuer alle Faelle.nfc",
-    "audio_id": "1722519095",
-    "hash": "40493c29922ee487c422534e17a0a92d13e4c0a7",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Buehne frei fuer/Der Verdauungstrakt.nfc",
-    "audio_id": "1753171019",
-    "hash": "8238e0121423822f28e587a30f3c51eb149b91b7",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Disney/Raya und der letzte Drache.nfc",
-    "audio_id": "1750749339",
-    "hash": "036c9a765d8c2bcf354a19ffb8ff1973d3f6970c",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Feuerwehrmann Sam/Eine Insel voller Abenteuer (Penny).nfc",
-    "audio_id": "1709284570",
-    "hash": "944ca34b18c61d18c398df6e38934041bc492da3",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Gabbys Dollhouse/Eroeffnungsfeier im Puppenhaus + Kitty Fees Uebernachtungsparty.nfc",
-    "audio_id": "1753182483",
-    "hash": "5580daa921e26339c2ab558913ca4955ddf264f5",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Jurassic World/Jurassic World - Neue Abenteuer.nfc",
-    "audio_id": "1730885104",
-    "hash": "7099e5fc36c6bb41aadd742fdd697dc7750e5c21",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Lalalinos/Lalalinos - Die beste Band in Bumbaloo (Akio).nfc",
-    "audio_id": "1748958321",
-    "hash": "a50be00a2a021a9af3d2120de75ca472f8cc2624",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Lalalinos/Lalalinos - Es groovt in Bumbaloo (Scout).nfc",
-    "audio_id": "1748958033",
-    "hash": "774cf8569a78ea3c31cfa93c584d03fb7ef546fb",
-    "error": "No metadata found"
-  },
-  {
     "file": "German/Leos Tag/1, 2, 3, sei beim Aufraeumen dabei.nfc",
     "audio_id": "1703868781",
     "hash": "67a71f43c454dc9dca2caa1d86da37bd3f1144d3",
-    "error": "No metadata found"
+    "error": "Other digital content"
   },
   {
     "file": "German/PAW Patrol/Der erste Einsatz der Moto Patrol (Folge 225-227).nfc",
     "audio_id": "1753963223",
     "hash": "f274b65bee0023a33d8d30802b42dd7c50856247",
-    "error": "No metadata found"
+    "error": "Unknown physical content, now digital content"
   },
   {
     "file": "German/Pettersson und Findus/Findus zieht um.nfc",
     "audio_id": "1689753158",
     "hash": "e0f1b2b40550add8a8812d4b07996c78703103f2",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Robin Hood - Schlitzohr von Sherwood Forest/Die Schatzkiste und 3 weitere Geschichten.nfc",
-    "audio_id": "1747842051",
-    "hash": "f7397bb8399eba9f8545dee219f8cb155eec5f85",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/WAS IST WAS/Fussball - 1, 2, 3, ... Tor!.nfc",
-    "audio_id": "1701247316",
-    "hash": "b5db5441376e1744799b78d30ea742239d3716ca",
-    "error": "No metadata found"
+    "error": "Other digital content"
   },
   {
     "file": "German/Geschichten vom Loewen/Lila - Der Loewe der nicht Schreiben konnte.nfc",
@@ -282,6 +198,11 @@
     "file": "German/Unser Sandmaennchen/Nachts, wenn alles schlaeft.nfc",
     "title": "Unser Sandmännchen - Nachts, wenn alles schläft",
     "model": "01-0062"
+  },
+  {
+    "file": "German/Benjamin Bluemchen/Ein Toeroeoeoe fuer alle Faelle.nfc",
+    "title": "Benjamin Blümchen - Ein Törööö für alle Fälle",
+    "model": "01-0063"
   },
   {
     "file": "German/Die kleine Hexe/Die kleine Hexe.nfc",
@@ -1589,6 +1510,11 @@
     "model": "10001501"
   },
   {
+    "file": "French/Disney/Mulan.nfc",
+    "title": "Disney - Mulan",
+    "model": "10001502"
+  },
+  {
     "file": "French/Other/Simon - SuperLapin.nfc",
     "title": "Simon - Superlapin",
     "model": "10001509"
@@ -1612,6 +1538,11 @@
     "file": "German/Disney/Dornroeschen.nfc",
     "title": "Dornröschen - Dornröschen",
     "model": "10001680"
+  },
+  {
+    "file": "German/Jurassic World/Jurassic World - Neue Abenteuer.nfc",
+    "title": "Jurassic World: Neue Abenteuer - Folge 1: Camp Kreidezeit / Geheimnisse",
+    "model": "10001682"
   },
   {
     "file": "German/Woozle Goozle/Luft & Elektrizitaet.nfc",
@@ -2029,6 +1960,11 @@
     "model": "11000318"
   },
   {
+    "file": "French/Other/Selena Sans Chichis Ni Tralala - Le Tour Du Monde En 80 Jours (Ou Presque).nfc",
+    "title": "Séléna Sans Chichis Ni Tralala - Le Tour Du Monde En 80 Jours (Ou Presque)",
+    "model": "11000322"
+  },
+  {
     "file": "English/Marvels Spidey and His Amazing Friends/Ghost-Spider.nfc",
     "title": "Marvel's Spidey and His Amazing Friends - Ghost-Spider",
     "model": "11000358"
@@ -2172,6 +2108,21 @@
     "file": "English/Lalalinos/Scout - Move and Groove.nfc",
     "title": "Lalalinos - Scout - Move and Groove in Bumbaloo",
     "model": "11000613"
+  },
+  {
+    "file": "German/Lalalinos/Lalalinos - Es groovt in Bumbaloo (Scout).nfc",
+    "title": "Lalalinos - Es groovt in Bumbaloo (Scout)",
+    "model": "11000615"
+  },
+  {
+    "file": "German/Lalalinos/Lalalinos - Die beste Band in Bumbaloo (Akio).nfc",
+    "title": "Lalalinos - Die beste Band in Bumbaloo (Akio)",
+    "model": "11000618"
+  },
+  {
+    "file": "French/Other/Gus Le Chevalier Minus.nfc",
+    "title": "Gus Le Chevalier Minus - Gus",
+    "model": "11000629"
   },
   {
     "file": "English/Paw Patrol/Jungle Pups Chase.nfc",
@@ -2349,6 +2300,11 @@
     "model": "11000846"
   },
   {
+    "file": "English/Other/Mo Willems The Pigeon.nfc",
+    "title": "Mo Willems' The Pigeon Series - None",
+    "model": "11000855"
+  },
+  {
     "file": "English/Clever Tonies Set/Animal World/Record Breakers/Beasts and Brainiacs.nfc",
     "title": "Clever Tonies Set - Animal World: Record Breakers",
     "model": "11000881"
@@ -2367,6 +2323,11 @@
     "file": "German/Gabbys Dollhouse/Das Raumschiff + Gabby hat einen Schluckauf.nfc",
     "title": "Gabby's Dollhouse - Das Raumschiff / Gabby hat einen Schluckauf",
     "model": "11000933"
+  },
+  {
+    "file": "German/Robin Hood - Schlitzohr von Sherwood Forest/Die Schatzkiste und 3 weitere Geschichten.nfc",
+    "title": "Robin Hood - Schlitzohr von Sherwood Forest - Die Schatzkiste und 3 weitere Geschichten",
+    "model": "11000935"
   },
   {
     "file": "German/Disney/Die Unglaublichen.nfc",
@@ -2427,6 +2388,11 @@
     "file": "German/Disney/Aristocats.nfc",
     "title": "Aristocats - Aristocats",
     "model": "11001132"
+  },
+  {
+    "file": "German/Disney/Raya und der letzte Drache.nfc",
+    "title": "Raya und der letzte Drache - Raya und der letzte Drache",
+    "model": "11001133"
   },
   {
     "file": "German/Pettersson und Findus/Mein Gartenjahr - Herbst und Winter.nfc",
@@ -2519,6 +2485,11 @@
     "model": "11001782"
   },
   {
+    "file": "German/Gabbys Dollhouse/Eroeffnungsfeier im Puppenhaus + Kitty Fees Uebernachtungsparty.nfc",
+    "title": "Gabby's Dollhouse - Eröffnungsfeier im Puppenhaus / Kitty Fees Übernachtungsparty",
+    "model": "11001833"
+  },
+  {
     "file": "German/Cocomelon/Raus in die Welt mit JJ.nfc",
     "title": "Cocomelon - Raus in die Welt mit JJ",
     "model": "11001834"
@@ -2555,6 +2526,11 @@
   },
   {
     "file": "German/Buehne frei fuer/Das Skelett.nfc",
+    "title": "Bühne frei für... - Bühne frei für... - Set",
+    "model": "11002550"
+  },
+  {
+    "file": "German/Buehne frei fuer/Der Verdauungstrakt.nfc",
     "title": "Bühne frei für... - Bühne frei für... - Set",
     "model": "11002550"
   },
@@ -2682,5 +2658,15 @@
     "file": "German/TKKG Junior/Auf frischer tat ertappt.nfc",
     "title": "TKKG Junior - Gepanschter Punsch",
     "model": "2000001585"
+  },
+  {
+    "file": "German/WAS IST WAS/Fussball - 1, 2, 3, ... Tor!.nfc",
+    "title": "WAS IST WAS - Wirtschaft / Geld",
+    "model": "2000002571"
+  },
+  {
+    "file": "German/Feuerwehrmann Sam/Eine Insel voller Abenteuer (Penny).nfc",
+    "title": "Feuerwehrmann Sam - Der tapfere Retter",
+    "model": "2000002896"
   }
 ]
