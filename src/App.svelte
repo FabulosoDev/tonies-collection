@@ -24,8 +24,6 @@
 
   onMount(async () => {
     try {
-      allCards = await loadCards();
-
       const filters = loadFilters();
       if (filters) {
         query             = filters.query ?? "";
@@ -35,6 +33,8 @@
         endDate           = filters.endDate ?? "";
         filtersOpen       = filters.filtersOpen ?? false;
       }
+
+      allCards = await loadCards();
     } catch (e) {
       console.error(e);
       allCards = [];
