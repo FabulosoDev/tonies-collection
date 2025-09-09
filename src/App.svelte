@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import { slide, fade, crossfade } from "svelte/transition";
+  import { slide } from "svelte/transition";
 
   import Grid from "./lib/Grid.svelte";
   import Search from "./lib/Search.svelte";
@@ -8,6 +8,7 @@
   import CollectedFilter from "./lib/CollectedFilter.svelte";
   import DateRangeFilter from "./lib/DateRangeFilter.svelte";
   import Modal from "./lib/Modal.svelte";
+  import { loadFilters, saveFilters, debounce } from "./lib/FilterStorage.svelte";
   import { loadCards } from "./lib/catalogData.js";
 
   let allCards = [];
@@ -17,13 +18,23 @@
   let endDate = "";
   let query = "";
 
-  let open = false;
   let selected = null;
+  let modalOpen = false;
   let filtersOpen = false;
 
   onMount(async () => {
     try {
       allCards = await loadCards();
+
+      const filters = loadFilters();
+      if (filters) {
+        query             = filters.query ?? "";
+        selectedLangs     = filters.selectedLangs ?? [];
+        selectedCollected = filters.selectedCollected ?? [];
+        startDate         = filters.startDate ?? "";
+        endDate           = filters.endDate ?? "";
+        filtersOpen       = filters.filtersOpen ?? false;
+      }
     } catch (e) {
       console.error(e);
       allCards = [];
@@ -32,7 +43,7 @@
 
   function onSelect(e) {
     selected = e.detail; // the clicked card
-    open = true;
+    modalOpen = true;
   }
 
   function matchesQuery(card, q) {
@@ -56,6 +67,19 @@
     s ? Math.floor(new Date(s).getTime() / 1000) : null;
   const toEndEpoch = (s) =>
     s ? Math.floor(new Date(s).getTime() / 1000) + 86399 : null;
+
+  const saveDebounced = debounce(() => {
+    saveFilters({
+      query,
+      selectedLangs,
+      selectedCollected,
+      startDate,
+      endDate,
+      filtersOpen
+    });
+  }, 150);
+
+  $: saveDebounced(), query, selectedLangs, selectedCollected, startDate, endDate, filtersOpen;
 
   // 1) query
   $: queryCards = allCards.filter((c) => matchesQuery(c, query));
@@ -121,10 +145,10 @@
   <main>
     <Grid items={visibleCards} on:select={onSelect} />
     <Modal
-      {open}
+      open={modalOpen}
       card={selected}
       on:close={() => {
-        open = false;
+        modalOpen = false;
         selected = null;
       }}
     />
@@ -142,6 +166,7 @@
 
   .filterbox {
     background: rgba(0, 0, 0, 0.04);
+    border: 1px solid #ddd;
     border-radius: 6px;
     padding: 0.5rem 0.75rem;
     margin: 0 0 0.75rem;
