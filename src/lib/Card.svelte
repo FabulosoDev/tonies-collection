@@ -64,6 +64,7 @@
   .card {
     position: relative;
     background: rgba(0, 0, 0, 0.04);
+    border: 1px solid #ddd;
     border-radius: 6px;
     overflow: hidden;
     cursor: pointer;

@@ -166,6 +166,7 @@
 
   .filterbox {
     background: rgba(0, 0, 0, 0.04);
+    border: 1px solid #ddd;
     border-radius: 6px;
     padding: 0.5rem 0.75rem;
     margin: 0 0 0.75rem;

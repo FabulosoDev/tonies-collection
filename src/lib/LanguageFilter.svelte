@@ -64,7 +64,7 @@
 <style>
   .lang {
     --accent: #2563eb;
-    margin: 0.25rem 0 1rem;
+    margin: 0.25rem 0 0.25rem;
     padding: 0;
     border: 0;
   }
@@ -86,8 +86,8 @@
     height: 20px;
     gap: 0.4rem;
     padding: 0.3rem 0.6rem;
-    border: 1px solid #e5e7eb;
-    border-radius: 999px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     background: #fff;
     font-size: 0.9rem;
     line-height: 1;

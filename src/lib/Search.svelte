@@ -39,7 +39,7 @@
   .search input {
     width: 100%;
     padding: 0.7rem 0.9rem;
-    border-radius: 12px;
+    border-radius: 6px;
     border: 1px solid #ddd;
     background: white;
   }
