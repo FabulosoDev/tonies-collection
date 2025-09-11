@@ -440,7 +440,7 @@
     "model": "01-0180"
   },
   {
-    "file": "German/Der Raeuber Hotzenplotz/Schluss mit der Raeuberei.nfc",
+    "file": "German/Der Raeuber Hotzenplotz/Hotzenplotz 3.nfc",
     "title": "Der Räuber Hotzenplotz - Hotzenplotz 3",
     "model": "01-0181"
   },
@@ -1388,6 +1388,11 @@
     "file": "German/Schlummerbande/Gutenachtgeschichten - Schlaf schoen, kleiner Schlummerbaer.nfc",
     "title": "Schlummerbande - Gutenachtgeschichten - Schlaf schön, kleiner Schlummerbär",
     "model": "10001329"
+  },
+  {
+    "file": "German/Die Haferhorde/Immer den Nuestern nach.nfc",
+    "title": "Die Haferhorde - Immer den Nüstern nach",
+    "model": "10001330"
   },
   {
     "file": "German/PJ Masks/Los gehts Pyjamahelden.nfc",
@@ -2657,16 +2662,19 @@
   {
     "file": "German/TKKG Junior/Auf frischer tat ertappt.nfc",
     "title": "TKKG Junior - Gepanschter Punsch",
-    "model": "2000001585"
+    "model": "2000001585",
+    "error": "Other digital content"
   },
   {
     "file": "German/WAS IST WAS/Fussball - 1, 2, 3, ... Tor!.nfc",
     "title": "WAS IST WAS - Wirtschaft / Geld",
-    "model": "2000002571"
+    "model": "2000002571",
+    "error": "Other digital content"
   },
   {
     "file": "German/Feuerwehrmann Sam/Eine Insel voller Abenteuer (Penny).nfc",
     "title": "Feuerwehrmann Sam - Der tapfere Retter",
-    "model": "2000002896"
+    "model": "2000002896",
+    "error": "Other digital content"
   }
 ]
