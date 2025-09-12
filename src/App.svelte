@@ -9,14 +9,19 @@
   import DateRangeFilter from "./lib/DateRangeFilter.svelte";
   import Modal from "./lib/Modal.svelte";
   import { loadFilters, saveFilters, debounce } from "./lib/FilterStorage.svelte";
+  import FavoritesFilter from "./lib/FavoriteFilter.svelte";
+  import { loadFavorites, toggleFavorite as toggleFavStore } from "./lib/FavoriteStorage.svelte";
+
   import { loadCards } from "./lib/catalogData.js";
 
   let allCards = [];
   let selectedLangs = [];
   let selectedCollected = [];
+  let selectedFav = [];
   let startDate = "";
   let endDate = "";
   let query = "";
+  let favorites = new Set();
 
   let selected = null;
   let modalOpen = false;
@@ -29,10 +34,13 @@
         query             = filters.query ?? "";
         selectedLangs     = filters.selectedLangs ?? [];
         selectedCollected = filters.selectedCollected ?? [];
+        selectedFav       = filters.selectedFav ?? [];
         startDate         = filters.startDate ?? "";
         endDate           = filters.endDate ?? "";
         filtersOpen       = filters.filtersOpen ?? false;
       }
+
+      favorites = loadFavorites();
 
       allCards = await loadCards();
     } catch (e) {
@@ -44,6 +52,11 @@
   function onSelect(e) {
     selected = e.detail; // the clicked card
     modalOpen = true;
+  }
+
+  function onToggleFavorite(e) {
+    const { model } = e.detail;
+    favorites = toggleFavStore(favorites, model);
   }
 
   function matchesQuery(card, q) {
@@ -73,16 +86,19 @@
       query,
       selectedLangs,
       selectedCollected,
+      selectedFav,
       startDate,
       endDate,
       filtersOpen
     });
   }, 150);
 
-  $: saveDebounced(), query, selectedLangs, selectedCollected, startDate, endDate, filtersOpen;
+  $: saveDebounced(), query, selectedLangs, selectedCollected, selectedFav, startDate, endDate, filtersOpen;
+
+  $: cardsWithFav = allCards.map(c => ({ ...c, favorite: favorites.has(c.model) }));
 
   // 1) query
-  $: queryCards = allCards.filter((c) => matchesQuery(c, query));
+  $: queryCards = cardsWithFav.filter((c) => matchesQuery(c, query));
 
   // 2) date range
   $: dateCards = queryCards.filter((c) => {
@@ -101,10 +117,17 @@
   );
 
   // 4) ownership
-  $: visibleCards = languageCards.filter((c) => {
+  $: collectedCards = languageCards.filter((c) => {
     if (!selectedCollected.length) return true;
     const key = c?.collected ? "collected" : "missing";
     return selectedCollected.includes(key);
+  });
+
+  // 5) favorites
+  $: visibleCards = collectedCards.filter((c) => {
+    if (!selectedFav.length) return true;
+    const key = c.favorite ? "starred" : "unstarred";
+    return selectedFav.includes(key);
   });
 </script>
 
@@ -133,17 +156,27 @@
           bind:start={startDate}
           bind:end={endDate}
         />
-        <LanguageFilter cards={dateCards} bind:selected={selectedLangs} />
+        <LanguageFilter
+          cards={dateCards}
+          bind:selected={selectedLangs}
+        />
         <CollectedFilter
           cards={languageCards}
           bind:selected={selectedCollected}
+        />
+        <FavoritesFilter
+          cards={collectedCards}
+          bind:selected={selectedFav}
         />
       </div>
     {/if}
   </section>
 
   <main>
-    <Grid items={visibleCards} on:select={onSelect} />
+    <Grid items={visibleCards}
+      on:select={onSelect}
+      on:toggleFavorite={onToggleFavorite}
+    />
     <Modal
       open={modalOpen}
       card={selected}

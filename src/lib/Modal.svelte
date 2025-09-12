@@ -30,7 +30,7 @@
   $: metaText = card
     ? JSON.stringify(
         card,
-        (key, value) => (key === "collected" ? undefined : value),
+        (key, value) => (key === "collected" || key === "favorite" ? undefined : value),
         2
       )
     : "";
