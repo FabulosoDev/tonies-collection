@@ -1,11 +1,13 @@
 <script>
   import Card from "./Card.svelte";
+  import { createEventDispatcher } from "svelte";
   export let items = [];
+  const dispatch = createEventDispatcher();
 </script>
 
 <section class="grid">
   {#each items as card}
-    <Card {card} on:select />
+    <Card {card} on:select on:toggleFavorite={(e)=>dispatch('toggleFavorite', e.detail)} />
   {/each}
 </section>
 

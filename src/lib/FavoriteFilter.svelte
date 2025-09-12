@@ -3,85 +3,64 @@
   export let selected = [];
 
   $: counts = (() => {
-    let collected = 0,
-      missing = 0;
-    for (const c of cards) c?.collected ? collected++ : missing++;
-    return { collected, missing };
+    let starred = 0, unstarred = 0;
+    for (const c of cards) (c?.favorite ? starred++ : unstarred++);
+    return { starred, unstarred };
   })();
 
   function toggle(key, checked) {
     selected = checked
       ? Array.from(new Set([...selected, key]))
-      : selected.filter((k) => k !== key);
+      : selected.filter(k => k !== key);
   }
 </script>
 
-<fieldset class="collect">
-  <legend class="legend">Collection</legend>
+<fieldset class="fav">
+  <legend class="legend">Favorites</legend>
 
   <div class="row">
-    <label class="chip" class:active={selected.includes("collected")}>
+    <label class="chip" class:active={selected.includes("starred")}>
       <input
         type="checkbox"
-        checked={selected.includes("collected")}
-        on:change={(e) => toggle("collected", e.currentTarget.checked)}
-        aria-label="Filter: collected"
+        checked={selected.includes("starred")}
+        on:change={(e) => toggle("starred", e.currentTarget.checked)}
+        aria-label="Filter: starred"
       />
-      <svg class="icon icon-collected" viewBox="0 0 24 24" aria-hidden="true">
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        />
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
         <path
-          d="M9 12l2 2 4-4"
-          fill="none"
+          d="M12 3l2.9 5.9 6.5.9-4.7 4.5 1.1 6.5L12 18.9 6.2 20.8 7.3 14.3 2.6 9.8l6.5-.9L12 3z"
+          fill="currentColor"
           stroke="currentColor"
           stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
         />
       </svg>
-      <span class="name">Collected</span>
-      <small class="count">({counts.collected})</small>
+      <span class="name">Starred</span>
+      <small class="count">({counts.starred})</small>
     </label>
 
-    <label class="chip" class:active={selected.includes("missing")}>
+    <label class="chip" class:active={selected.includes("unstarred")}>
       <input
         type="checkbox"
-        checked={selected.includes("missing")}
-        on:change={(e) => toggle("missing", e.currentTarget.checked)}
-        aria-label="Filter: missing"
+        checked={selected.includes("unstarred")}
+        on:change={(e) => toggle("unstarred", e.currentTarget.checked)}
+        aria-label="Filter: unstarred"
       />
-      <svg class="icon icon-missing" viewBox="0 0 24 24" aria-hidden="true">
-        <circle
-          cx="12"
-          cy="12"
-          r="10"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-        />
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
         <path
-          d="M15 9l-6 6M9 9l6 6"
+          d="M12 3l2.9 5.9 6.5.9-4.7 4.5 1.1 6.5L12 18.9 6.2 20.8 7.3 14.3 2.6 9.8l6.5-.9L12 3z"
           fill="none"
           stroke="currentColor"
           stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
         />
       </svg>
-      <span class="name">Missing</span>
-      <small class="count">({counts.missing})</small>
+      <span class="name">Unstarred</span>
+      <small class="count">({counts.unstarred})</small>
     </label>
   </div>
 </fieldset>
 
 <style>
-  .collect {
+  .fav {
     --accent: #2563eb;
     margin: 0.25rem 0 0.25rem;
     padding: 0;
@@ -133,13 +112,8 @@
     width: 18px;
     height: 18px;
     opacity: 0.8;
+    color: #eab308;
     filter: grayscale(100%);
-  }
-  .icon-collected {
-    color: #16a34a;
-  }
-  .icon-missing {
-    color: #dc2626;
   }
   .chip.active .icon {
     opacity: 1;
