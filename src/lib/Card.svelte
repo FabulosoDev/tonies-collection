@@ -7,8 +7,10 @@
     "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
   const dispatch = createEventDispatcher();
-  function handleClick() {
-    dispatch("select", card);
+
+  function toggleFav(e) {
+    e.stopPropagation();
+    dispatch("toggleFavorite", { model: card.model });
   }
 
   function onError(e) {
@@ -20,9 +22,25 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-<div class="card" on:click={handleClick}>
-  <!-- Series -->
+<div class="card" on:click={() => dispatch("select", card)}>
+  <!-- Series row with star -->
   <div class="card-series">
+    <div
+      class="fav"
+      type="button"
+      aria-label={card.favorite ? "Unstar" : "Star"}
+      aria-pressed={card.favorite}
+      on:click={toggleFav}
+    >
+      <svg viewBox="0 0 24 24" class:active={card.favorite}>
+        <path
+          d="M12 3l2.9 5.9 6.5.9-4.7 4.5 1.1 6.5L12 18.9 6.2 20.8 7.3 14.3 2.6 9.8l6.5-.9L12 3z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+      </svg>
+    </div>
     <h2>{card.series}</h2>
   </div>
 
@@ -76,15 +94,42 @@
   }
 
   .card-series {
-    padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+    margin-top: 0.3rem;
+    padding: 0 2.5rem 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   .card-series h2 {
     margin: 0;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+
+  .fav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #facc15;
+    padding: 0;
+  }
+  .fav svg {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+  }
+  .fav svg.active,
+  .fav svg.active path {
+    fill: #facc15;
+    filter: none;
   }
 
   .card-flag {
@@ -128,7 +173,7 @@
   }
   .card-episodes p {
     margin: 0;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
