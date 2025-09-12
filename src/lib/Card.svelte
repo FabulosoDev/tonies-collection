@@ -34,7 +34,7 @@
     >
       <svg viewBox="0 0 24 24" class:active={card.favorite}>
         <path
-          d="M12 3l2.9 5.9 6.5.9-4.7 4.5 1.1 6.5L12 18.9 6.2 20.8 7.3 14.3 2.6 9.8l6.5-.9L12 3z"
+          d="M12 3.5 14.85 8.65 20.5 9.55 16.25 13.65 17.2 19.25 12 16.5 6.8 19.25 7.75 13.65 3.5 9.55 9.15 8.65 Z"
           fill="none"
           stroke="currentColor"
           stroke-width="2"
