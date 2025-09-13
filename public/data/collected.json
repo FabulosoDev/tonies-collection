@@ -1405,6 +1405,11 @@
     "model": "10001335"
   },
   {
+    "file": "German/Planet Omar/Planet Omar.nfc",
+    "title": "Planet Omar - Planet Omar",
+    "model": "10001336"
+  },
+  {
     "file": "German/Sesamstrasse/Ernies Mitmachmaerchen.nfc",
     "title": "Sesamstraße - Ernies Mitmachmärchen",
     "model": "10001337"
@@ -1675,6 +1680,11 @@
     "model": "10001982"
   },
   {
+    "file": "German/Ronja Raeubertochter/Ronja Raeubertochter.nfc",
+    "title": "Ronja Räubertochter - Ronja Räubertochter",
+    "model": "10001983"
+  },
+  {
     "file": "German/DC/Batman.nfc",
     "title": "Batman - Batman™",
     "model": "10001984"
@@ -1698,6 +1708,11 @@
     "file": "German/Feuerwehrmann Sam/Wettlauf gegen die Zeit.nfc",
     "title": "Feuerwehrmann Sam - Wettlauf gegen die Zeit!",
     "model": "10001991"
+  },
+  {
+    "file": "German/Mascha und der Baer/Winterschlaf fuer alle + 5 weitere quirlige und lustige Geschichten.nfc",
+    "title": "Mascha und der Bär - Winterschlaf für alle + 5 weitere quirlige und lustige Geschichten",
+    "model": "10001996"
   },
   {
     "file": "German/Bibi Blocksberg/Mami spielt verrueckt.nfc",
@@ -1900,9 +1915,19 @@
     "model": "11000266"
   },
   {
+    "file": "German/Ohrenbaer/Mulles Zaubersteinchen.nfc",
+    "title": "Ohrenbär - Mulles Zaubersteinchen",
+    "model": "11000274"
+  },
+  {
     "file": "German/Tabaluga/Drachen weinen nicht & Mondsuechtig.nfc",
     "title": "Tabaluga - Drachen weinen nicht & Mondsüchtig",
     "model": "11000279"
+  },
+  {
+    "file": "German/Lieblings-Kinderlieder/Fruehlingslieder.nfc",
+    "title": "Lieblings-Kinderlieder - Frühlingslieder",
+    "model": "11000280"
   },
   {
     "file": "German/Disney/Susi und Strolch.nfc",
@@ -1983,6 +2008,11 @@
     "file": "English/Octonauts/Peso.nfc",
     "title": "Octonauts - Peso",
     "model": "11000360"
+  },
+  {
+    "file": "German/Dino Ranch/Maechtig Aerger fuer Jon & 3 weitere Abenteuer.nfc",
+    "title": "Dino Ranch - Mächtig Ärger für Jon & 3 weitere Abenteuer",
+    "model": "11000430"
   },
   {
     "file": "German/Disney/Soul.nfc",
@@ -2380,6 +2410,11 @@
     "model": "11001060"
   },
   {
+    "file": "German/WAS IST WAS/Fussball - 1, 2, 3, ... Tor!.nfc.nfc",
+    "title": "WAS IST WAS - Fußball - 1, 2, 3, ... Tor!",
+    "model": "11001062"
+  },
+  {
     "file": "German/Sendung mit der Maus zum hoeren/Frag doch mal die Maus - Wissen fuer Kinder.nfc",
     "title": "Sendung mit der Maus zum hören - Frag doch mal … die Maus! Wissen für Kinder",
     "model": "11001064"
@@ -2468,6 +2503,11 @@
     "file": "German/Scooby-Doo/Scooby-Doo.nfc",
     "title": "Scooby-Doo - Scooby-Doo",
     "model": "11001566"
+  },
+  {
+    "file": "German/Gabbys Dollhouse/Gabby, ich habe die Kaetzchen geschrumpft! + Der Eisbaer Pete.nfc",
+    "title": "Gabby's Dollhouse - Gabby, ich habe die Kätzchen geschrumpft! / Der Eisbär Pete",
+    "model": "11001623"
   },
   {
     "file": "German/Disney/Die Monster Uni.nfc",
@@ -2620,6 +2660,11 @@
     "model": "11002916"
   },
   {
+    "file": "German/Hot Wheels/Hot Wheels.nfc",
+    "title": "Hot Wheels - Hot Wheels",
+    "model": "11002917"
+  },
+  {
     "file": "German/Als Ela das All eroberte/Als Ela das All eroberte.nfc",
     "title": "Als Ela das All eroberte - Als Ela das All eroberte",
     "model": "11002923"
@@ -2663,12 +2708,6 @@
     "file": "German/TKKG Junior/Auf frischer tat ertappt.nfc",
     "title": "TKKG Junior - Gepanschter Punsch",
     "model": "2000001585",
-    "error": "Other digital content"
-  },
-  {
-    "file": "German/WAS IST WAS/Fussball - 1, 2, 3, ... Tor!.nfc",
-    "title": "WAS IST WAS - Wirtschaft / Geld",
-    "model": "2000002571",
     "error": "Other digital content"
   },
   {
