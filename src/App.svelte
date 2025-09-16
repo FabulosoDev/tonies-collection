@@ -184,6 +184,7 @@
         modalOpen = false;
         selected = null;
       }}
+      on:toggleFavorite={onToggleFavorite}
     />
   </main>
 </div>

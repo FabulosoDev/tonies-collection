@@ -10,6 +10,12 @@
   const dispatch = createEventDispatcher();
   const close = () => dispatch("close");
 
+  function toggleFav(e) {
+    e.stopPropagation();
+    card.favorite = !card.favorite;
+    dispatch("toggleFavorite", { model: card.model });
+  }
+
   let view = "info";
   let wasOpen = false;
   let lastModel;
@@ -40,6 +46,7 @@
       await navigator.clipboard.writeText(metaText);
     } catch {}
   }
+
   function downloadMeta() {
     const name = (card?.model ? String(card.model) : "card") + ".json";
     const blob = new Blob([metaText], { type: "application/json" });
@@ -99,17 +106,36 @@
     <div class="modal">
       <button class="modal-close" on:click={close} aria-label="Close">✕</button>
 
-      <div class="seg">
-        <button
-          class="seg-btn {view === 'info' ? 'active' : ''}"
-          on:click={() => (view = "info")}
-          type="button">Info</button
-        >
-        <button
-          class="seg-btn {view === 'meta' ? 'active' : ''}"
-          on:click={switchToMeta}
-          type="button">Metadata</button
-        >
+      <div
+        class="fav modal-fav"
+        type="button"
+        aria-label={card.favorite ? "Unstar" : "Star"}
+        aria-pressed={card.favorite}
+        on:click={toggleFav}
+      >
+        <svg viewBox="0 0 24 24" class:active={card.favorite}>
+          <path
+            d="M12 3.5 14.85 8.65 20.5 9.55 16.25 13.65 17.2 19.25 12 16.5 6.8 19.25 7.75 13.65 3.5 9.55 9.15 8.65 Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+
+      <div class="seg-center">
+        <div class="seg">
+          <button
+            class="seg-btn {view === 'info' ? 'active' : ''}"
+            on:click={() => (view = "info")}
+            type="button">Info</button
+          >
+          <button
+            class="seg-btn {view === 'meta' ? 'active' : ''}"
+            on:click={switchToMeta}
+            type="button">Metadata</button
+          >
+        </div>
       </div>
 
       <!-- lock height only while in metadata -->
@@ -175,12 +201,14 @@
   }
   .modal {
     background: #fff;
-    padding: 1.25rem;
+    margin: 0 1rem;
+    padding: 1rem 1.25rem;
     border-radius: 12px;
     position: relative;
     max-width: 28rem;
     width: 100%;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .modal-close {
     position: absolute;
@@ -196,6 +224,39 @@
   }
   .modal-close:hover {
     color: #4b5563;
+  }
+  .modal-fav {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .fav {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #facc15;
+    padding: 0;
+  }
+  .fav svg {
+    width: 36px;
+    height: 36px;
+    filter: grayscale(100%);
+  }
+  .fav svg.active,
+  .fav svg.active path {
+    fill: #facc15;
+    filter: none;
+  }
+
+  .seg-center {
+    display: flex;
+    justify-content: center;
   }
 
   .seg {
