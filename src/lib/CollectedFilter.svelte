@@ -5,7 +5,7 @@
   $: counts = (() => {
     let collected = 0,
       missing = 0;
-    for (const c of cards) c?.collected ? collected++ : missing++;
+    for (const card of cards) card?.collected ? collected++ : missing++;
     return { collected, missing };
   })();
 

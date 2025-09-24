@@ -10,7 +10,7 @@
 
   function toggleFav(e) {
     e.stopPropagation();
-    dispatch("toggleFavorite", { model: card.model });
+    dispatch("toggleFavorite", { model: card.article });
   }
 
   function onError(e) {
@@ -41,7 +41,7 @@
         />
       </svg>
     </div>
-    <h2>{card.series}</h2>
+    <h2>{card.data[0].series}</h2>
   </div>
 
   <!-- Flag -->
@@ -50,8 +50,8 @@
       loading="lazy"
       decoding="async"
       fetchpriority="low"
-      src={`${import.meta.env.BASE_URL}assets/flags/${card.language}.svg`}
-      alt={card.language}
+      src={`${import.meta.env.BASE_URL}assets/flags/${card.data[0].language}.svg`}
+      alt={card.data[0].language}
       class={card.collected ? "" : "grayscale"}
       width="24"
       height="16"
@@ -65,8 +65,8 @@
       loading="lazy"
       decoding="async"
       fetchpriority="low"
-      src={card.pic || placeholder}
-      alt={card.title}
+      src={card.data[0].image || placeholder}
+      alt={card.data[0].episode}
       class={card.collected ? "" : "grayscale"}
       on:error={onError}
     />
@@ -74,7 +74,7 @@
 
   <!-- Episodes -->
   <div class="card-episodes">
-    <p>{card.episodes || ""}</p>
+    <p>{card.data[0].episode || ""}</p>
   </div>
 </div>
 
