@@ -6,7 +6,7 @@
 </script>
 
 <section class="grid">
-  {#each items as card}
+  {#each items as card (card.article)}
     <Card {card} on:select on:toggleFavorite={(e)=>dispatch('toggleFavorite', e.detail)} />
   {/each}
 </section>
