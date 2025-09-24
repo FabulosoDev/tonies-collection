@@ -7,7 +7,7 @@
   import LanguageFilter from "./lib/LanguageFilter.svelte";
   import CollectedFilter from "./lib/CollectedFilter.svelte";
   import DateRangeFilter from "./lib/DateRangeFilter.svelte";
-  import Modal from "./lib/Modal.svelte";
+  import CardModal from "./lib/CardModal.svelte";
   import SearchModal from "./lib/SearchModal.svelte";
   import { loadFilters, saveFilters, debounce } from "./lib/FilterStorage.svelte";
   import FavoritesFilter from "./lib/FavoriteFilter.svelte";
@@ -25,7 +25,7 @@
   let favorites = new Set();
 
   let selected = null;
-  let modalOpen = false;
+  let cardModalOpen = false;
   let searchModalOpen = false;
   let filtersOpen = false;
 
@@ -53,7 +53,7 @@
 
   function onSelect(e) {
     selected = e.detail; // the clicked card
-    modalOpen = true;
+    cardModalOpen = true;
   }
 
   function onToggleFavorite(e) {
@@ -233,11 +233,11 @@
       on:select={onSelect}
       on:toggleFavorite={onToggleFavorite}
     />
-    <Modal
-      open={modalOpen}
+    <CardModal
+      open={cardModalOpen}
       card={selected}
       on:close={() => {
-        modalOpen = false;
+        cardModalOpen = false;
         selected = null;
       }}
       on:toggleFavorite={onToggleFavorite}
