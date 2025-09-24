@@ -7,7 +7,8 @@
   import LanguageFilter from "./lib/LanguageFilter.svelte";
   import CollectedFilter from "./lib/CollectedFilter.svelte";
   import DateRangeFilter from "./lib/DateRangeFilter.svelte";
-  import Modal from "./lib/Modal.svelte";
+  import CardModal from "./lib/CardModal.svelte";
+  import SearchModal from "./lib/SearchModal.svelte";
   import { loadFilters, saveFilters, debounce } from "./lib/FilterStorage.svelte";
   import FavoritesFilter from "./lib/FavoriteFilter.svelte";
   import { loadFavorites, toggleFavorite as toggleFavStore } from "./lib/FavoriteStorage.svelte";
@@ -24,7 +25,8 @@
   let favorites = new Set();
 
   let selected = null;
-  let modalOpen = false;
+  let cardModalOpen = false;
+  let searchModalOpen = false;
   let filtersOpen = false;
 
   onMount(async () => {
@@ -51,7 +53,7 @@
 
   function onSelect(e) {
     selected = e.detail; // the clicked card
-    modalOpen = true;
+    cardModalOpen = true;
   }
 
   function onToggleFavorite(e) {
@@ -62,6 +64,58 @@
   function matchesQuery(card, q) {
     if (!q) return true;
     q = q.trim().toLowerCase();
+
+    // Handle age filter
+    if (q.startsWith('a:')) {
+      const ageQuery = q.split(':')[1].trim();
+      const age = card.data[0].age;
+      const op = ageQuery.match(/^[<>]=?/)?.[0] ?? '=';
+      const num = parseInt(ageQuery.replace(/^[<>]=?/, ''));
+      switch (op) {
+      case '<=': return age <= num;
+      case '>=': return age >= num;
+      case '<': return age < num;
+      case '>': return age > num;
+      default: return age === num;
+      }
+    }
+
+    // Handle release filter
+    if (q.startsWith('r:')) {
+      const releaseQuery = q.split(':')[1].trim();
+      const release = card.data[0].release;
+      const op = releaseQuery.match(/^[<>]=?/)?.[0] ?? '=';
+      const num = parseInt(releaseQuery.replace(/^[<>]=?/, ''));
+      switch (op) {
+      case '<=': return release <= num;
+      case '>=': return release >= num;
+      case '<': return release < num;
+      case '>': return release > num;
+      default: return release === num;
+      }
+    }
+
+    // Handle runtime filter
+    if (q.startsWith('t:')) {
+      const runtimeQuery = q.split(':')[1].trim();
+      const runtime = card.data[0].runtime;
+      const op = runtimeQuery.match(/^[<>]=?/)?.[0] ?? '=';
+      const num = parseInt(runtimeQuery.replace(/^[<>]=?/, ''));
+      switch (op) {
+      case '<=': return runtime <= num;
+      case '>=': return runtime >= num;
+      case '<': return runtime < num;
+      case '>': return runtime > num;
+      default: return runtime === num;
+      }
+    }
+
+    // Handle empty ids filter
+    if (q === 'noids') {
+      return !card.data[0].ids || card.data[0].ids.length === 0;
+    }
+
+    // Regular search
     const haystack = [
       card.data[0].episode,
       card.data[0].series,
@@ -131,7 +185,10 @@
 </script>
 
 <div class="container">
-  <Search cards={visibleCards} bind:query />
+  <Search cards={visibleCards}
+    bind:query
+    on:openInfo={() => searchModalOpen = true}
+  />
 
   <section class="filterbox">
     <button
@@ -176,14 +233,18 @@
       on:select={onSelect}
       on:toggleFavorite={onToggleFavorite}
     />
-    <Modal
-      open={modalOpen}
+    <CardModal
+      open={cardModalOpen}
       card={selected}
       on:close={() => {
-        modalOpen = false;
+        cardModalOpen = false;
         selected = null;
       }}
       on:toggleFavorite={onToggleFavorite}
+    />
+    <SearchModal
+      open={searchModalOpen}
+      on:close={() => searchModalOpen = false}
     />
   </main>
 </div>
