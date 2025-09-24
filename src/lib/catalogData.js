@@ -1,9 +1,9 @@
-const CATALOG_URL = "https://raw.githubusercontent.com/toniebox-reverse-engineering/tonies-json/release/tonies.json";
+const CATALOG_URL = "https://raw.githubusercontent.com/toniebox-reverse-engineering/tonies-json/release/toniesV2.json";
 const COLLECTED_REL_PATH = "data/collected.json";
 const IGNORED_REL_PATH = "data/ignored.json";
 
-function isModelAllowed(model) {
-  model = String(model ?? "").trim();
+function isModelAllowed(item) {
+  const model = String(item.article ?? "").trim();
   return (
     model &&
     /^[0-9-]+$/.test(model) &&
@@ -12,21 +12,21 @@ function isModelAllowed(model) {
   );
 }
 
-function isCategoryAllowed(category) {
-  category = String(category ?? "").trim();
+function isCategoryAllowed(item) {
+  const category = String(item.data[0].category ?? "").trim();
   return category && category !== "creative-tonie";
 }
 
 const baseFilter = (item) =>
-  isModelAllowed(item.model) && isCategoryAllowed(item.category);
+  isModelAllowed(item) && isCategoryAllowed(item);
 
 function annotateCollected(collection, collectedList) {
   const set = new Set((collectedList ?? []).map(v => String(typeof v === "string" ? v : v?.model)));
-  return collection.map((card) => ({ ...card, collected: set.has(String(card.model)) }));
+  return collection.map((card) => ({ ...card, collected: set.has(String(card.article)) }));
 }
 
 function sortByReleaseDesc(a, b) {
-  return Number(b.release) - Number(a.release);
+  return Number(b.data[0].release) - Number(a.data[0].release);
 }
 
 async function fetchJSON(url, init) {
@@ -52,7 +52,7 @@ export async function loadCards() {
 
   const filtered = catalog
     .filter(baseFilter)
-    .filter((item) => !ignoredSet.has(String(item.model).trim()));
+    .filter((item) => !ignoredSet.has(String(item.article).trim()));
 
   return annotateCollected(filtered, collected).sort(sortByReleaseDesc);
 }

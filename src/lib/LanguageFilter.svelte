@@ -16,8 +16,8 @@
 
   $: languageOptions = (() => {
     const map = new Map();
-    for (const c of cards) {
-      const code = c.language || "unknown";
+    for (const card of cards) {
+      const code = card.data[0].language || "unknown";
       map.set(code, (map.get(code) || 0) + 1);
     }
     return Array.from(map, ([code, count]) => ({
@@ -30,7 +30,7 @@
   function toggle(code, checked) {
     selected = checked
       ? Array.from(new Set([...selected, code]))
-      : selected.filter((c) => c !== code);
+      : selected.filter((card) => card !== code);
   }
 </script>
 

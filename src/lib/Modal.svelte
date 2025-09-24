@@ -13,7 +13,7 @@
   function toggleFav(e) {
     e.stopPropagation();
     card.favorite = !card.favorite;
-    dispatch("toggleFavorite", { model: card.model });
+    dispatch("toggleFavorite", { model: card.article });
   }
 
   let view = "info";
@@ -26,8 +26,8 @@
       minContentHeight = 0;
       lastModel = undefined;
     }
-    if (open && card?.model !== lastModel) {
-      lastModel = card?.model;
+    if (open && card?.article !== lastModel) {
+      lastModel = card?.article;
       minContentHeight = 0;
     }
     wasOpen = open;
@@ -48,7 +48,7 @@
   }
 
   function downloadMeta() {
-    const name = (card?.model ? String(card.model) : "card") + ".json";
+    const name = (card?.article ? String(card.article) : "card") + ".json";
     const blob = new Blob([metaText], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
@@ -151,27 +151,27 @@
               loading="lazy"
               decoding="async"
               fetchpriority="low"
-              src={card.pic || placeholder}
-              alt={card.title}
+              src={card.data[0].image || placeholder}
+              alt={card.data[0].episode}
               class="modal-image"
               on:error={onError}
               on:load={measureInfo}
             />
-            <h2 class="modal-title">{card.episodes || ""}</h2>
-            <p class="modal-series">{card.series}</p>
+            <h2 class="modal-title">{card.data[0].episode || ""}</h2>
+            <p class="modal-series">{card.data[0].series || ""}</p>
 
             <div class="row">
               <div class="kv">
                 <p class="title">Release:</p>
                 <p>
-                  {new Date(Number(card.release) * 1000)
+                  {new Date(Number(card.data[0].release) * 1000)
                     .toISOString()
                     .split("T")[0]}
                 </p>
               </div>
               <div class="kv">
                 <p class="title">Model:</p>
-                <p>{card.model}</p>
+                <p>{card.article}</p>
               </div>
             </div>
           </section>

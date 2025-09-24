@@ -13,7 +13,7 @@
 
   $: bounds = (() => {
     const nums = cards
-      .map((c) => Number(c.release))
+      .map((card) => Number(card.data[0].release))
       .filter((n) => Number.isFinite(n) && n > 0);
     if (!nums.length) return { min: "", max: "" };
     return {

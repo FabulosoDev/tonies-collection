@@ -63,15 +63,14 @@
     if (!q) return true;
     q = q.trim().toLowerCase();
     const haystack = [
-      card.title,
-      card.series,
-      card.episodes,
-      card.model,
-      Array.isArray(card.audio_id) ? card.audio_id.join(" ") : card.audio_id,
-      Array.isArray(card.hash) ? card.hash.join(" ") : card.hash,
+      card.data[0].episode,
+      card.data[0].series,
+      card.article,
+      card.data[0].ids.map(id => id['audio-id']).join(" "),
+      card.data[0].ids.map(id => id.hash).join(" "),
     ]
       .filter(Boolean)
-      .map((c) => String(c ?? "").toLowerCase())
+      .map((card) => String(card ?? "").toLowerCase())
       .join(" ");
     return haystack.includes(q);
   }
@@ -95,14 +94,14 @@
 
   $: saveDebounced(), query, selectedLangs, selectedCollected, selectedFav, startDate, endDate, filtersOpen;
 
-  $: cardsWithFav = allCards.map(c => ({ ...c, favorite: favorites.has(c.model) }));
+  $: cardsWithFav = allCards.map(card => ({ ...card, favorite: favorites.has(card.article) }));
 
   // 1) query
-  $: queryCards = cardsWithFav.filter((c) => matchesQuery(c, query));
+  $: queryCards = cardsWithFav.filter((card) => matchesQuery(card, query));
 
   // 2) date range
-  $: dateCards = queryCards.filter((c) => {
-    const r = Number(c.release);
+  $: dateCards = queryCards.filter((card) => {
+    const r = Number(card.data[0].release);
     if (!Number.isFinite(r)) return false;
     const a = toStartEpoch(startDate);
     const b = toEndEpoch(endDate);
@@ -113,20 +112,20 @@
 
   // 3) language
   $: languageCards = dateCards.filter(
-    (c) => !selectedLangs.length || selectedLangs.includes(c.language)
+    (card) => !selectedLangs.length || selectedLangs.includes(card.data[0].language)
   );
 
   // 4) ownership
-  $: collectedCards = languageCards.filter((c) => {
+  $: collectedCards = languageCards.filter((card) => {
     if (!selectedCollected.length) return true;
-    const key = c?.collected ? "collected" : "missing";
+    const key = card?.collected ? "collected" : "missing";
     return selectedCollected.includes(key);
   });
 
   // 5) favorites
-  $: visibleCards = collectedCards.filter((c) => {
+  $: visibleCards = collectedCards.filter((card) => {
     if (!selectedFav.length) return true;
-    const key = c.favorite ? "starred" : "unstarred";
+    const key = card?.favorite ? "starred" : "unstarred";
     return selectedFav.includes(key);
   });
 </script>

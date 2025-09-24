@@ -4,7 +4,7 @@
 
   $: counts = (() => {
     let starred = 0, unstarred = 0;
-    for (const c of cards) (c?.favorite ? starred++ : unstarred++);
+    for (const card of cards) (card?.favorite ? starred++ : unstarred++);
     return { starred, unstarred };
   })();
 
