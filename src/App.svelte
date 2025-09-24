@@ -62,6 +62,58 @@
   function matchesQuery(card, q) {
     if (!q) return true;
     q = q.trim().toLowerCase();
+
+    // Handle age filter
+    if (q.startsWith('age:') || q.startsWith('a:')) {
+      const ageQuery = q.split(':')[1].trim();
+      const age = card.data[0].age;
+      const op = ageQuery.match(/^[<>]=?/)?.[0] ?? '=';
+      const num = parseInt(ageQuery.replace(/^[<>]=?/, ''));
+      switch (op) {
+      case '<=': return age <= num;
+      case '>=': return age >= num;
+      case '<': return age < num;
+      case '>': return age > num;
+      default: return age === num;
+      }
+    }
+
+    // Handle release filter
+    if (q.startsWith('release:') || q.startsWith('r:')) {
+      const releaseQuery = q.split(':')[1].trim();
+      const release = card.data[0].release;
+      const op = releaseQuery.match(/^[<>]=?/)?.[0] ?? '=';
+      const num = parseInt(releaseQuery.replace(/^[<>]=?/, ''));
+      switch (op) {
+      case '<=': return release <= num;
+      case '>=': return release >= num;
+      case '<': return release < num;
+      case '>': return release > num;
+      default: return release === num;
+      }
+    }
+
+    // Handle runtime filter
+    if (q.startsWith('runtime:') || q.startsWith('t:')) {
+      const runtimeQuery = q.split(':')[1].trim();
+      const runtime = card.data[0].runtime;
+      const op = runtimeQuery.match(/^[<>]=?/)?.[0] ?? '=';
+      const num = parseInt(runtimeQuery.replace(/^[<>]=?/, ''));
+      switch (op) {
+      case '<=': return runtime <= num;
+      case '>=': return runtime >= num;
+      case '<': return runtime < num;
+      case '>': return runtime > num;
+      default: return runtime === num;
+      }
+    }
+
+    // Handle empty ids filter
+    if (q === 'noids' || q === 'ids:none') {
+      return !card.data[0].ids || card.data[0].ids.length === 0;
+    }
+
+    // Regular search
     const haystack = [
       card.data[0].episode,
       card.data[0].series,
