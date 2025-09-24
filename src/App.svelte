@@ -8,6 +8,7 @@
   import CollectedFilter from "./lib/CollectedFilter.svelte";
   import DateRangeFilter from "./lib/DateRangeFilter.svelte";
   import Modal from "./lib/Modal.svelte";
+  import SearchModal from "./lib/SearchModal.svelte";
   import { loadFilters, saveFilters, debounce } from "./lib/FilterStorage.svelte";
   import FavoritesFilter from "./lib/FavoriteFilter.svelte";
   import { loadFavorites, toggleFavorite as toggleFavStore } from "./lib/FavoriteStorage.svelte";
@@ -25,6 +26,7 @@
 
   let selected = null;
   let modalOpen = false;
+  let searchModalOpen = false;
   let filtersOpen = false;
 
   onMount(async () => {
@@ -64,7 +66,7 @@
     q = q.trim().toLowerCase();
 
     // Handle age filter
-    if (q.startsWith('age:') || q.startsWith('a:')) {
+    if (q.startsWith('a:')) {
       const ageQuery = q.split(':')[1].trim();
       const age = card.data[0].age;
       const op = ageQuery.match(/^[<>]=?/)?.[0] ?? '=';
@@ -79,7 +81,7 @@
     }
 
     // Handle release filter
-    if (q.startsWith('release:') || q.startsWith('r:')) {
+    if (q.startsWith('r:')) {
       const releaseQuery = q.split(':')[1].trim();
       const release = card.data[0].release;
       const op = releaseQuery.match(/^[<>]=?/)?.[0] ?? '=';
@@ -94,7 +96,7 @@
     }
 
     // Handle runtime filter
-    if (q.startsWith('runtime:') || q.startsWith('t:')) {
+    if (q.startsWith('t:')) {
       const runtimeQuery = q.split(':')[1].trim();
       const runtime = card.data[0].runtime;
       const op = runtimeQuery.match(/^[<>]=?/)?.[0] ?? '=';
@@ -109,7 +111,7 @@
     }
 
     // Handle empty ids filter
-    if (q === 'noids' || q === 'ids:none') {
+    if (q === 'noids') {
       return !card.data[0].ids || card.data[0].ids.length === 0;
     }
 
@@ -183,7 +185,10 @@
 </script>
 
 <div class="container">
-  <Search cards={visibleCards} bind:query />
+  <Search cards={visibleCards}
+    bind:query
+    on:openInfo={() => searchModalOpen = true}
+  />
 
   <section class="filterbox">
     <button
@@ -236,6 +241,10 @@
         selected = null;
       }}
       on:toggleFavorite={onToggleFavorite}
+    />
+    <SearchModal
+      open={searchModalOpen}
+      on:close={() => searchModalOpen = false}
     />
   </main>
 </div>
