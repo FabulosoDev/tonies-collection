@@ -184,7 +184,7 @@
   });
 </script>
 
-<div class="container" class:modal-open={cardModalOpen || searchModalOpen}>
+<div class="container">
   <Search cards={visibleCards}
     bind:query
     on:openInfo={() => searchModalOpen = true}
@@ -300,10 +300,5 @@
     align-items: flex-start;
     gap: 0.75rem 1rem;
     margin-top: 0.5rem;
-  }
-
-  .modal-open {
-    overflow: hidden;
-    height: 100vh;
   }
 </style>
