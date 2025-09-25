@@ -12,30 +12,6 @@
     "error": "No metadata found"
   },
   {
-    "file": "German/Book Tonies/Ein Maedchen namens Willow/Ein Maedchen namens Willow.nfc",
-    "audio_id": "1756110871",
-    "hash": "78ececb6d41ef6d7ddfc2b09c4e3073fa620948a",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Book Tonies/Kannawoniwasein/Kannawoniwasein.nfc",
-    "audio_id": "1754475844",
-    "hash": "d0321b8a7dd02ff6c5c688cf6786b11309589925",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Book Tonies/Wie man 13 wird/Wie man 13 wird und ueberlebt.nfc",
-    "audio_id": "1754904949",
-    "hash": "18f5dbe29e17453626e8996d96bb8c6980ff4d81",
-    "error": "No metadata found"
-  },
-  {
-    "file": "German/Europa-Park/Ed & Edda - Grand Prix of Europe.nfc",
-    "audio_id": "1753791403",
-    "hash": "bc1b9a258a7e69dc3643d19b650400aece91d178",
-    "error": "No metadata found"
-  },
-  {
     "file": "German/PAW Patrol/Der erste Einsatz der Moto Patrol (Folge 225-227).nfc",
     "audio_id": "1753963223",
     "hash": "f274b65bee0023a33d8d30802b42dd7c50856247",
@@ -458,6 +434,11 @@
     "model": "01-0167"
   },
   {
+    "file": "German/Unter meinem Bett/Unter meinem Bett 4.nfc",
+    "title": "Unter meinem Bett - Unter meinem Bett 4",
+    "model": "01-0170"
+  },
+  {
     "file": "German/Lieblings-Kinderlieder/Kindgartenlieder.nfc",
     "title": "Lieblings-Kinderlieder - Kindergartenlieder",
     "model": "01-0171"
@@ -531,6 +512,11 @@
     "file": "German/Die Biene Maja/Majas Geburt (Maja).nfc",
     "title": "Die Biene Maja - Majas Geburt",
     "model": "01-0197"
+  },
+  {
+    "file": "German/Gorilla Club/1-2-3-4!.nfc",
+    "title": "Gorilla Club - 1-2-3-4!",
+    "model": "01-0199"
   },
   {
     "file": "German/Feuerwehrmann Sam/In Pontypandy ist was los (Sam).nfc",
@@ -693,6 +679,11 @@
     "model": "10000245"
   },
   {
+    "file": "German/Heavysaurus/Rock n Rarrr Music.nfc",
+    "title": "Heavysaurus - Rock'n Rarrr Music",
+    "model": "10000246"
+  },
+  {
     "file": "German/Pumuckl/Spuk in der Werkstatt & Das verkaufte Bett.nfc",
     "title": "Pumuckl - Spuk in der Werkstatt/Das verkaufte Bett",
     "model": "10000247"
@@ -768,6 +759,11 @@
     "model": "10000285"
   },
   {
+    "file": "German/Kai Lueftners Kuerbiskopp/Ein musikalisches Roadmovie.nfc",
+    "title": "Kai Lüftners Kürbiskopp - Ein musikalisches Roadmovie",
+    "model": "10000287"
+  },
+  {
     "file": "German/Lieblings-Kinderlieder/Halloween & Spuk.nfc",
     "title": "Lieblings-Kinderlieder - Halloween & Spuk",
     "model": "10000289"
@@ -783,7 +779,7 @@
     "model": "10000298"
   },
   {
-    "file": "German/Lieblings-Meisterstuecke/Lieblings-Meisterstuecke - Der Nussknacker.nfc",
+    "file": "German/Lieblings-Meisterstuecke/Der Nussknacker.nfc",
     "title": "Lieblings-Meisterstücke - Der Nussknacker",
     "model": "10000300"
   },
@@ -811,6 +807,11 @@
     "file": "German/Miffy/Miffy.nfc",
     "title": "Miffy - Miffy",
     "model": "10000331"
+  },
+  {
+    "file": "German/Beethoven fuer Kids/Beethoven fuer Kids - Gelesen von Daniel Hope.nfc",
+    "title": "Beethoven für Kids - Beethoven für Kids - Gelesen von Daniel Hope",
+    "model": "10000333"
   },
   {
     "file": "German/Disney/Winnie Puuh auf groser Reise.nfc",
@@ -938,6 +939,11 @@
     "model": "10000501"
   },
   {
+    "file": "German/Unter meinem Bett/Unter meinem Bett 5.nfc",
+    "title": "Unter meinem Bett - Unter meinem Bett 5",
+    "model": "10000507"
+  },
+  {
     "file": "German/Giraffenaffen/Die Giraffenaffen Lieblingslieder.nfc",
     "title": "Giraffenaffen - Die Giraffenaffen Lieblingslieder",
     "model": "10000508"
@@ -1043,6 +1049,11 @@
     "model": "10000614"
   },
   {
+    "file": "German/Lieblings-Meisterstuecke/Schwanensee.nfc",
+    "title": "Lieblings-Meisterstücke - Schwanensee",
+    "model": "10000616"
+  },
+  {
     "file": "German/Miraculous/Miraculous - Aller Anfang ist schwer.nfc",
     "title": "Miraculous - Miraculous - Aller Anfang ist schwer",
     "model": "10000617"
@@ -1066,6 +1077,11 @@
     "file": "English/Disney/Mickey Mouse.nfc",
     "title": "Disney - Mickey Mouse",
     "model": "10000638"
+  },
+  {
+    "file": "German/Mog, der vergessliche Kater/Die schoensten Geschichten.nfc",
+    "title": "Mog, der vergessliche Kater - Die schönsten Geschichten",
+    "model": "10000640"
   },
   {
     "file": "German/Das magische Baumhaus/Im Tal der Dinosaurier.nfc",
@@ -1353,6 +1369,11 @@
     "model": "10000994"
   },
   {
+    "file": "German/Unter meinem Bett/Unter meinem Bett 6.nfc",
+    "title": "Unter meinem Bett - Unter meinem Bett 6",
+    "model": "10000995"
+  },
+  {
     "file": "German/Disney/Die Eiskoenigin - Olaf taut auf.nfc",
     "title": "Die Eiskönigin – Olaf taut auf - Die Eiskönigin - Olaf taut auf",
     "model": "10000996"
@@ -1571,6 +1592,11 @@
     "file": "German/PAW Patrol/Der Piratenschatz  (Rubble).nfc",
     "title": "PAW Patrol - Der Piratenschatz",
     "model": "10001472"
+  },
+  {
+    "file": "German/Leos Tag/Achtung, fertig, Zaehneputzen!.nfc",
+    "title": "Leos Tag - Achtung, fertig, Zähneputzen!",
+    "model": "10001473"
   },
   {
     "file": "French/Disney/Vaiana.nfc",
@@ -2668,6 +2694,16 @@
     "model": "11001876"
   },
   {
+    "file": "German/Adventskalender/Adventskalender 2025 - Floeckchen und die verschwundenen Weihnachtslichter.nfc",
+    "title": "Adventskalender - Adventskalender 2025 – Flöckchen und die verschwundenen Weihnachtslichter",
+    "model": "11001916"
+  },
+  {
+    "file": "German/Europa-Park/Ed & Edda - Grand Prix of Europe.nfc",
+    "title": "Europa-Park - Ed & Edda – Grand Prix of Europe",
+    "model": "11002141"
+  },
+  {
     "file": "German/BiBiBiber hat da mal ne Frage/Sind Dinos wirklich alle tot.nfc",
     "title": "BiBiBiber hat da mal 'ne Frage - Sind Dinos wirklich alle tot?",
     "model": "11002458"
@@ -2816,6 +2852,21 @@
     "file": "German/Wieso Weshalb Warum/Profiwissen - Retter im Einsatz.nfc",
     "title": "Wieso? Weshalb? Warum? Profiwissen - Set - Wieso? Weshalb? Warum? Profiwissen - Set",
     "model": "11003255"
+  },
+  {
+    "file": "German/Book Tonies/Kannawoniwasein/Kannawoniwasein.nfc",
+    "title": "Kannawoniwasein - Kannawoniwasein",
+    "model": "11003564"
+  },
+  {
+    "file": "German/Book Tonies/Wie man 13 wird/Wie man 13 wird und ueberlebt.nfc",
+    "title": "Wie man 13 wird - Wie man 13 wird und überlebt",
+    "model": "11003565"
+  },
+  {
+    "file": "German/Book Tonies/Ein Maedchen namens Willow/Ein Maedchen namens Willow.nfc",
+    "title": "Ein Mädchen namens Willow - Ein Mädchen namens Willow",
+    "model": "11003587"
   },
   {
     "file": "German/TKKG Junior/Auf frischer tat ertappt.nfc",
