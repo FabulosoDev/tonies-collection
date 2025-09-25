@@ -29,6 +29,9 @@
   let searchModalOpen = false;
   let filtersOpen = false;
 
+  // Disable body scroll when any modal is open
+  $: typeof document !== 'undefined' && document.body.toggleAttribute('modal-open', cardModalOpen || searchModalOpen);
+
   onMount(async () => {
     try {
       const filters = loadFilters();
@@ -250,6 +253,20 @@
 </div>
 
 <style>
+  :global(html) {
+    scrollbar-gutter: stable;
+  }
+
+  :global(body) {
+    overflow: auto;
+    touch-action: auto;
+  }
+
+  :global(body[modal-open]) {
+    overflow: hidden;
+    touch-action: none;
+  }
+
   .container {
     width: 100%;
     max-width: 1400px;
