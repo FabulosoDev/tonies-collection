@@ -244,6 +244,11 @@
     "model": "01-0098"
   },
   {
+    "file": "German/Die Schule der magischen Tiere/Die Schule der magischen Tiere.nfc",
+    "title": "Die Schule der magischen Tiere - Die Schule der magischen Tiere",
+    "model": "01-0100"
+  },
+  {
     "file": "German/Die drei Ausrufezeichen/Mission Pferdeshow.nfc",
     "title": "Die drei !!! - Mission Pferdeshow",
     "model": "01-0102"
@@ -1344,6 +1349,11 @@
     "model": "10000937"
   },
   {
+    "file": "German/Disney/Cars 2.nfc",
+    "title": "Disney - Cars 2",
+    "model": "10000989"
+  },
+  {
     "file": "German/Lieblings-Kinderlieder/Jahreszeitenlieder.nfc",
     "title": "Lieblings-Kinderlieder - Jahreszeitenlieder",
     "model": "10000990"
@@ -1589,6 +1599,11 @@
     "model": "10001409"
   },
   {
+    "file": "German/Lieblings-Klassiker/Pinocchio (Neuauflage 2024).nfc",
+    "title": "Lieblings-Klassiker - Pinocchio (Neuauflage 2024)",
+    "model": "10001471"
+  },
+  {
     "file": "German/PAW Patrol/Der Piratenschatz  (Rubble).nfc",
     "title": "PAW Patrol - Der Piratenschatz",
     "model": "10001472"
@@ -1652,6 +1667,11 @@
     "file": "French/Other/Simon - SuperLapin.nfc",
     "title": "Simon - Superlapin",
     "model": "10001509"
+  },
+  {
+    "file": "German/Schlummerbande/Schlummerente - Eine Klangreise durch den Schlummerwald (Limited Edition).nfc",
+    "title": "Schlummerbande - Schlummerente - Eine Klangreise durch den Schlummerwald (Limited Edition)",
+    "model": "11001517"
   },
   {
     "file": "English/Dr Seuss/Green Eggs & Ham.nfc",
@@ -2509,6 +2529,11 @@
     "model": "11000936"
   },
   {
+    "file": "German/Pettersson und Findus/Mein Gartenjahr - Fruehling & Sommer.nfc",
+    "title": "Pettersson und Findus - Mein Gartenjahr - Frühling & Sommer",
+    "model": "11000940"
+  },
+  {
     "file": "German/Dreamworks/Trolls - Gemeinsam Stark.nfc",
     "title": "Trolls - Gemeinsam Stark",
     "model": "11000949"
@@ -2574,7 +2599,7 @@
     "model": "11001133"
   },
   {
-    "file": "German/Pettersson und Findus/Mein Gartenjahr - Herbst und Winter.nfc",
+    "file": "German/Pettersson und Findus/Mein Gartenjahr - Herbst & Winter.nfc",
     "title": "Pettersson und Findus - Findus erklärt die Welt - Mein Gartenjahr - Herbst und Winter",
     "model": "11001134"
   },
