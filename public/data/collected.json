@@ -44,6 +44,11 @@
     "model": "01-0003"
   },
   {
+    "file": "German/Die Olchi-Detektive/Das Erbe der Piraten.nfc",
+    "title": "Die Olchi-Detektive - Das Erbe der Piraten",
+    "model": "01-0004"
+  },
+  {
     "file": "German/Der kleine Rabe Socke/Alles erlaubt.nfc",
     "title": "Der kleine Rabe Socke - Alles erlaubt?",
     "model": "01-0005"
@@ -94,6 +99,11 @@
     "model": "01-0019"
   },
   {
+    "file": "German/Die Olchis/Die Olchis werden Fussballmeister.nfc",
+    "title": "Die Olchis - Die Olchis werden Fußballmeister",
+    "model": "01-0020"
+  },
+  {
     "file": "German/Unter meinem Bett/Unter meinem Bett 1.nfc",
     "title": "Unter meinem Bett - Unter meinem Bett 1",
     "model": "01-0021"
@@ -129,6 +139,11 @@
     "model": "01-0031"
   },
   {
+    "file": "German/Griechische Sagen/Griechische Sagen.nfc",
+    "title": "Griechische Sagen - Griechische Sagen",
+    "model": "01-0034"
+  },
+  {
     "file": "German/Der kleine Rabe Socke/Alles vermurkst.nfc",
     "title": "Der kleine Rabe Socke - Alles vermurkst!",
     "model": "01-0035"
@@ -144,6 +159,11 @@
     "model": "01-0039"
   },
   {
+    "file": "German/Unter meinem Bett/Unter meinem Bett 2.nfc",
+    "title": "Unter meinem Bett - Unter meinem Bett 2",
+    "model": "01-0040"
+  },
+  {
     "file": "German/Die drei Fragezeichen Kids/Panik im Paradies.nfc",
     "title": "Die drei ??? Kids - Panik im Paradies",
     "model": "01-0041"
@@ -157,6 +177,16 @@
     "file": "German/Der kleine Drache Kokosnuss/Hoerspiel zur TV-Serie 02.nfc",
     "title": "Der kleine Drache Kokosnuss - Hörspiel zur TV-Serie 02",
     "model": "01-0044"
+  },
+  {
+    "file": "German/Der kleine Hui Buh/Wie Hui Buh seine Rasselkette bekam & Die Halloween-Party.nfc",
+    "title": "Der kleine Hui Buh - Wie Hui Buh seine Rasselkette bekam/Die Halloween-Party",
+    "model": "01-0046"
+  },
+  {
+    "file": "German/Die Olchi-Detektive/Ritter der Popelrunde.nfc",
+    "title": "Die Olchi-Detektive - Ritter der Popelrunde",
+    "model": "01-0047"
   },
   {
     "file": "German/Lieblings-Kinderlieder/Schlaflieder.nfc",
@@ -494,6 +524,16 @@
     "model": "01-0186"
   },
   {
+    "file": "German/Raeuber Ratte/Raeuber Ratte & Superwurm.nfc",
+    "title": "Räuber Ratte - Räuber Ratte/Superwurm",
+    "model": "01-0187"
+  },
+  {
+    "file": "German/Safiras/Nanami und das traumhafte Tuch & Ninazu und das gruene Zauberbonbon.nfc",
+    "title": "Safiras - Nanami und das traumhafte Tuch/Ninazu und das grüne Zauberbonbon",
+    "model": "01-0188"
+  },
+  {
     "file": "German/Disney/Bambi.nfc",
     "title": "Disney - Bambi",
     "model": "01-0189"
@@ -517,6 +557,11 @@
     "file": "German/Die Biene Maja/Majas Geburt (Maja).nfc",
     "title": "Die Biene Maja - Majas Geburt",
     "model": "01-0197"
+  },
+  {
+    "file": "German/Der kleine Hui Buh/Der blubbernde Brotteig & Alarm in der Geheimzentrale.nfc",
+    "title": "Der kleine Hui Buh - Der blubbernde Brotteig/Alarm in der Geheimzentrale",
+    "model": "01-0198"
   },
   {
     "file": "German/Gorilla Club/1-2-3-4!.nfc",
@@ -587,6 +632,11 @@
     "file": "German/Lieblings-Kinderlieder/Zaehllieder.nfc",
     "title": "Lieblings-Kinderlieder - Zähllieder",
     "model": "10000130"
+  },
+  {
+    "file": "German/Fuenf Freunde/Fuenf Freunde auf der Suche nach Timmy.nfc",
+    "title": "Fünf Freunde - Fünf Freunde auf der Suche nach Timmy",
+    "model": "10000131"
   },
   {
     "file": "German/Lieblings-Maerchen/Der gestiefelte Kater und vier weitere Maerchen.nfc",
@@ -922,6 +972,11 @@
     "file": "German/Bibi & Tina/Das Waisenfohlen.nfc",
     "title": "Bibi & Tina - Das Waisenfohlen",
     "model": "10000493"
+  },
+  {
+    "file": "German/Dreamworks/Trolls - Finde dein Glueck.nfc",
+    "title": "Trolls - Finde dein Glück",
+    "model": "10000495"
   },
   {
     "file": "English/Disney/The Jungle Book.nfc",
@@ -1304,6 +1359,11 @@
     "model": "10000899"
   },
   {
+    "file": "German/Der kleine Nick/Der kleine Nick ist der Beste.nfc",
+    "title": "Der kleine Nick - Der kleine Nick ist der Beste",
+    "model": "10000907"
+  },
+  {
     "file": "German/Die kleine Raupe Nimmersatt/Schlaf gut! Die kleine Raupe Nimmersatt und weitere Geschichten.nfc",
     "title": "Die kleine Raupe Nimmersatt - Schlaf gut! Die kleine Raupe Nimmersatt und weitere Geschichten",
     "model": "10000908"
@@ -1364,8 +1424,8 @@
     "model": "10000991"
   },
   {
-    "file": "German/Schlummerbande/Einschlafmelodien - Schlummerschaf im Zauberwald.nfc",
-    "title": "Schlummerbande - Einschlafmelodien - Schlummerschaf im Zauberwald",
+    "file": "German/Schlummerbande/Schlummerschaf - Einschlafmelodien aus dem Zauberwald.nfc",
+    "title": "Schlummerbande - Schlummerschaf - Einschlafmelodien aus dem Zauberwald",
     "model": "10000992"
   },
   {
@@ -1529,6 +1589,11 @@
     "model": "10001332"
   },
   {
+    "file": "German/Lieblings-Kinderlieder/Weihnachtslieder 2 (Neuauflage 2022).nfc",
+    "title": "Lieblings-Kinderlieder - Weihnachtslieder 2",
+    "model": "10001334"
+  },
+  {
     "file": "German/Die Glubschis/Miss Crayon auf heisser Spur.nfc",
     "title": "Die Glubschis - Miss Crayon auf heißer Spur",
     "model": "10001335"
@@ -1667,11 +1732,6 @@
     "file": "French/Other/Simon - SuperLapin.nfc",
     "title": "Simon - Superlapin",
     "model": "10001509"
-  },
-  {
-    "file": "German/Schlummerbande/Schlummerente - Eine Klangreise durch den Schlummerwald (Limited Edition).nfc",
-    "title": "Schlummerbande - Schlummerente - Eine Klangreise durch den Schlummerwald (Limited Edition)",
-    "model": "11001517"
   },
   {
     "file": "English/Dr Seuss/Green Eggs & Ham.nfc",
@@ -1867,6 +1927,11 @@
     "file": "German/Bibi Blocksberg/Die Junghexenbande.nfc",
     "title": "Bibi Blocksberg - Die Junghexenbande",
     "model": "10001998"
+  },
+  {
+    "file": "German/Karmas Welt/Karmas Welt.nfc",
+    "title": "Karmas Welt - Karmas Welt",
+    "model": "10002000"
   },
   {
     "file": "German/Billie, der Regenbogentiger/Billie, der Regenbogentiger.nfc",
@@ -2414,6 +2479,11 @@
     "model": "11000777"
   },
   {
+    "file": "German/Schlummerbande/Schlummerschaf - Einschlafmelodien von der Weide.nfc",
+    "title": "Schlummerbande - Schlummerschaf – Einschlafmelodien von der Weide",
+    "model": "11000789"
+  },
+  {
     "file": "German/Schlummerbande/Schlummerwal - Einschlafmelodien aus dem Ozean.nfc",
     "title": "Schlummerbande - Schlummerwal - Einschlafmelodien aus dem Ozean",
     "model": "11000790"
@@ -2457,6 +2527,11 @@
     "file": "German/Coole Jobs/4 Raketenwissenschaft - Gegen die Schwerkraft.nfc",
     "title": "Coole Jobs - Coole Jobs - Set",
     "model": "11000801"
+  },
+  {
+    "file": "German/Tierisch!/Tierisch! Rekordverdaechtig - Huebsche Helden und verrueckte Verwandler.nfc",
+    "title": "Tierisch! - Tierisch! Rekordverdächtig - Set",
+    "model": "11000806"
   },
   {
     "file": "German/Benjamin Bluemchen/Gute-Nacht-Geschichten - Pluesch.nfc",
@@ -2634,14 +2709,24 @@
     "model": "11001321"
   },
   {
-    "file": "German/Schlummerbande/Schlummeroktopus - Gutenachtgeschichte aus dem Ozean.nfc",
+    "file": "German/Schlummerbande/Schlummeroktopus - Eine Gutenachtgeschichte aus dem Ozean.nfc",
     "title": "Schlummerbande - Schlummeroktopus - Eine Gutenachtgeschichte aus dem Ozean",
     "model": "11001329"
+  },
+  {
+    "file": "German/Lichterkinder/Lernen mit LIKI und LUMI - Wir bleiben gesund.nfc",
+    "title": "Lichterkinder - Lernen mit LIKI und LUMI – Set",
+    "model": "11001333"
   },
   {
     "file": "German/BiBiBiber hat da mal ne Frage/Warum leuchten Sterne.nfc",
     "title": "BiBiBiber hat da mal 'ne Frage - Warum leuchten Sterne?",
     "model": "11001338"
+  },
+  {
+    "file": "German/Schlummerbande/Schlummerente - Eine Klangreise durch den Schlummerwald (Limited Edition).nfc",
+    "title": "Schlummerbande - Schlummerente - Eine Klangreise durch den Schlummerwald (Limited Edition)",
+    "model": "11001517"
   },
   {
     "file": "German/Bibi & Tina/Die Heukrise (Neuauflage 2025).nfc",
