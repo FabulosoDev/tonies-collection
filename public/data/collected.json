@@ -18,12 +18,6 @@
     "error": "Unknown physical content, now digital content"
   },
   {
-    "file": "German/Pettersson und Findus/Findus zieht um.nfc",
-    "audio_id": "1689753158",
-    "hash": "e0f1b2b40550add8a8812d4b07996c78703103f2",
-    "error": "Other digital content"
-  },
-  {
     "file": "German/Geschichten vom Loewen/Lila - Der Loewe der nicht Schreiben konnte.nfc",
     "title": "Geschichten vom Löwen - Die Geschichte vom Löwen, der nicht schreiben konnte",
     "model": "01-0000"
@@ -284,6 +278,11 @@
     "model": "01-0102"
   },
   {
+    "file": "German/Die drei Ausrufezeichen/Das rote Phantom.nfc",
+    "title": "Die drei !!! - Das rote Phantom",
+    "model": "01-0103"
+  },
+  {
     "file": "German/Eule findet den Beat/Ein Entdeckerflug durch die Musikwelt.nfc",
     "title": "Eule findet den Beat - Ein Entdeckerflug durch die Musikwelt",
     "model": "01-0104"
@@ -359,6 +358,11 @@
     "model": "01-0124"
   },
   {
+    "file": "German/Die Gaeng/D!e Gaeng.nfc",
+    "title": "Die Gäng - D!e Gäng",
+    "model": "01-0126"
+  },
+  {
     "file": "German/Lieselotte/Ein Geburtstagsfest fuer Lieselotte und andere Geschichten.nfc",
     "title": "Lieselotte - Ein Geburtstagsfest für Lieselotte und andere Geschichten",
     "model": "01-0127"
@@ -409,6 +413,11 @@
     "model": "01-0144"
   },
   {
+    "file": "German/Jim Knopf/Teil 1 Von Lummerland bis China.nfc",
+    "title": "Jim Knopf - Teil 1: Von Lummerland bis China",
+    "model": "01-0145"
+  },
+  {
     "file": "German/Lieblings-Maerchen/Rotkaeppchen und 4 weitere Maerchen.nfc",
     "title": "Lieblings-Märchen - Rotkäppchen und 4 weitere Märchen",
     "model": "01-0147"
@@ -454,6 +463,11 @@
     "model": "01-0161"
   },
   {
+    "file": "German/Die Punkies/Buehne frei fuer die Punkies.nfc",
+    "title": "Die Punkies - Bühne frei für die Punkies",
+    "model": "01-0162"
+  },
+  {
     "file": "German/Volker Rosin/Der Gorilla mit der Sonnenbrille.nfc",
     "title": "Volker Rosin - Der Gorilla mit der Sonnenbrille",
     "model": "01-0164"
@@ -467,6 +481,11 @@
     "file": "German/Bobo Siebenschlaefer/Bobo beim Kinderarzt.nfc",
     "title": "Bobo Siebenschläfer - Bobo beim Kinderarzt und weitere Folgen",
     "model": "01-0167"
+  },
+  {
+    "file": "German/Der kleine Drache Kokosnuss/Hoerspiel zur TV-Serie 04.nfc",
+    "title": "Der kleine Drache Kokosnuss - Hörspiel zur TV-Serie 04",
+    "model": "01-0168"
   },
   {
     "file": "German/Unter meinem Bett/Unter meinem Bett 4.nfc",
@@ -547,6 +566,11 @@
     "file": "German/Fuer Hund und Katz ist auch noch Platz/Fuer Hund und Katz ist auch noch Platz.nfc",
     "title": "Für Hund und Katz ist auch noch Platz - Für Hund und Katz ist auch noch Platz/Wo ist Mami?",
     "model": "01-0191"
+  },
+  {
+    "file": "German/Pettersson und Findus/Findus zieht um.nfc",
+    "title": "Pettersson und Findus - Findus zieht um",
+    "model": "01-0193"
   },
   {
     "file": "German/Lieblings-Kinderlieder/Weihnachtslieder 2.nfc",
@@ -639,6 +663,11 @@
     "model": "10000131"
   },
   {
+    "file": "German/Fuenf Freunde/Fuenf Freunde und der Grossalarm in Kirrin.nfc",
+    "title": "Fünf Freunde - Fünf Freunde und der Großalarm in Kirrin",
+    "model": "10000133"
+  },
+  {
     "file": "German/Lieblings-Maerchen/Der gestiefelte Kater und vier weitere Maerchen.nfc",
     "title": "Lieblings-Märchen - Der gestiefelte Kater und vier weitere Märchen",
     "model": "10000135"
@@ -657,6 +686,11 @@
     "file": "German/Disney/Toy Story.nfc",
     "title": "Disney - Toy Story",
     "model": "10000142"
+  },
+  {
+    "file": "German/Mein Lotta-Leben/Alles voller Kaninchen.nfc",
+    "title": "Mein Lotta-Leben - Alles voller Kaninchen",
+    "model": "10000145"
   },
   {
     "file": "German/Der Traumzauberbaum/Geschichtenlieder.nfc",
@@ -692,6 +726,16 @@
     "file": "German/Die drei Fragezeichen/Der Super-Papagei.nfc",
     "title": "Die drei ??? - Der Super-Papagei",
     "model": "10000158"
+  },
+  {
+    "file": "German/TKKG Junior/Giftige Schokolade.nfc",
+    "title": "TKKG Junior - Giftige Schokolade",
+    "model": "10000165"
+  },
+  {
+    "file": "German/Sven van Thom/Tanz den Spatz.nfc",
+    "title": "Sven van Thom - Tanz den Spatz",
+    "model": "10000199"
   },
   {
     "file": "German/Lieblings-Klassiker/Robinson Crusoe und vier weitere Klassiker.nfc",
@@ -802,6 +846,11 @@
     "file": "German/Bakabu/Beste Freunde.nfc",
     "title": "Bakabu - Beste Freunde",
     "model": "10000275"
+  },
+  {
+    "file": "German/Fredrik Vahle/Zugabe.nfc",
+    "title": "Fredrik Vahle - Zugabe",
+    "model": "10000278"
   },
   {
     "file": "German/Kasperli/Kasperli - Es haet en Dieb im Zoo - Die Insel vom Pirat Ohnibart.nfc",
@@ -1074,6 +1123,11 @@
     "model": "10000572"
   },
   {
+    "file": "German/Hanni und Nanni/Hanni und Nanni voll im Trend.nfc",
+    "title": "Hanni und Nanni - Hanni und Nanni voll im Trend",
+    "model": "10000579"
+  },
+  {
     "file": "German/100% Wolf/100% Wolf.nfc",
     "title": "100% Wolf - 100% Wolf - Das Original-Hörspiel zum Kinofilm",
     "model": "10000581"
@@ -1312,6 +1366,11 @@
     "file": "English/Other/The Elf on the Shelf.nfc",
     "title": "The Elf on the Shelf - None",
     "model": "10000820"
+  },
+  {
+    "file": "German/Lieblings-Kinderlieder/Geburtstagslieder (Neuauflage 2021).nfc",
+    "title": "Lieblings-Kinderlieder - Geburtstagslieder",
+    "model": "10000831"
   },
   {
     "file": "French/Disney/Le Livre de la Jungle.nfc",
@@ -1934,6 +1993,11 @@
     "model": "10002000"
   },
   {
+    "file": "German/Adventskalender/Adventskalender 2024 - Ein Fest fuer die Waldfreunde.nfc",
+    "title": "Adventskalender - Ein Fest für die Waldfreunde",
+    "model": "10002002"
+  },
+  {
     "file": "German/Billie, der Regenbogentiger/Billie, der Regenbogentiger.nfc",
     "title": "Billie, der Regenbogentiger - Billie, der Regenbogentiger",
     "model": "10002008"
@@ -2024,6 +2088,11 @@
     "model": "10002268"
   },
   {
+    "file": "German/Adventskalender/Adventskalender 2023 - Wuensch dir was kleines Rentier.nfc",
+    "title": "Adventskalender - Wünsch dir was, kleines Rentier - Adventskalender-Weihnachtshörspiel",
+    "model": "11000173"
+  },
+  {
     "file": "German/Weihnachtshoerspiel/Wuensch dir was kleines Rentier.nfc",
     "title": "Adventskalender - Wünsch dir was, kleines Rentier - Adventskalender-Weihnachtshörspiel",
     "model": "11000173"
@@ -2032,6 +2101,11 @@
     "file": "English/CoComelon/Getting Ready with JJ.nfc",
     "title": "CoComelon - Getting Ready with JJ",
     "model": "11000175"
+  },
+  {
+    "file": "German/Die Gluecksfuechse/Zwei Wunscherfueller auf leisen Pfoten.nfc",
+    "title": "Spenden Fuchs - Zwei Wunscherfüller auf leisen Pfoten",
+    "model": "11000184"
   },
   {
     "file": "German/Pippi Langstrumpf/Pippi Langstrumpf - Das Hoerspiel (Neuauflage 2025).nfc",
@@ -2122,6 +2196,11 @@
     "file": "German/Lichterkinder/Laternen- und Herbstlieder.nfc",
     "title": "Lichterkinder - Laternen- und Herbstlieder",
     "model": "11000251"
+  },
+  {
+    "file": "German/Weihnachtsmann und Co.KG/Die magische Perle, Rudolph ist verschwunden.nfc",
+    "title": "Weihnachtsmann & Co. KG - Die magische Perle & Rudolph ist verschwunden",
+    "model": "11000261"
   },
   {
     "file": "English/Other/Carmen Sandiego.nfc",
@@ -2227,6 +2306,11 @@
     "file": "English/Octonauts/Peso.nfc",
     "title": "Octonauts - Peso",
     "model": "11000360"
+  },
+  {
+    "file": "German/Disney/Mickys grosses Weihnachtsfest.nfc",
+    "title": "Micky Maus & Freunde - Mickys großes Weihnachtsfest – Eingeschneit im Haus der Maus",
+    "model": "11000423"
   },
   {
     "file": "German/Dino Ranch/Maechtig Aerger fuer Jon & 3 weitere Abenteuer.nfc",
@@ -2479,6 +2563,16 @@
     "model": "11000777"
   },
   {
+    "file": "German/WAS IST WAS/Erfindungen - Bionik.nfc",
+    "title": "WAS IST WAS - WAS IST WAS - Set",
+    "model": "11000788"
+  },
+  {
+    "file": "German/WAS IST WAS/Roboter & Androiden - Supercomputer.nfc",
+    "title": "WAS IST WAS - WAS IST WAS - Set",
+    "model": "11000788"
+  },
+  {
     "file": "German/Schlummerbande/Schlummerschaf - Einschlafmelodien von der Weide.nfc",
     "title": "Schlummerbande - Schlummerschaf – Einschlafmelodien von der Weide",
     "model": "11000789"
@@ -2644,12 +2738,17 @@
     "model": "11001035"
   },
   {
+    "file": "German/Benjamin Bluemchen/Benjamin als Weihnachtsmann.nfc",
+    "title": "Benjamin Blümchen - Benjamin als Weihnachtsmann",
+    "model": "11001036"
+  },
+  {
     "file": "German/Clever Tonies/Little People, Big Dreams - Frida Kahlo, Rosa Parks, Marie Curie, Amelia Earhart.nfc",
     "title": "Little People - Big Dreams - Little People, Big Dreams - Frida Kahlo, Rosa Parks, Marie Curie, Amelia Earhart",
     "model": "11001060"
   },
   {
-    "file": "German/WAS IST WAS/Fussball - 1, 2, 3, ... Tor!.nfc.nfc",
+    "file": "German/WAS IST WAS/Fussball - 1, 2, 3, ... Tor!.nfc",
     "title": "WAS IST WAS - Fußball - 1, 2, 3, ... Tor!",
     "model": "11001062"
   },
@@ -2712,6 +2811,11 @@
     "file": "German/Schlummerbande/Schlummeroktopus - Eine Gutenachtgeschichte aus dem Ozean.nfc",
     "title": "Schlummerbande - Schlummeroktopus - Eine Gutenachtgeschichte aus dem Ozean",
     "model": "11001329"
+  },
+  {
+    "file": "German/Lichterkinder/Lernen mit LIKI und LUMI - Rechnen von 0 bis 10.nfc",
+    "title": "Lichterkinder - Lernen mit LIKI und LUMI – Set",
+    "model": "11001333"
   },
   {
     "file": "German/Lichterkinder/Lernen mit LIKI und LUMI - Wir bleiben gesund.nfc",
@@ -2807,6 +2911,21 @@
     "file": "German/Adventskalender/Adventskalender 2025 - Floeckchen und die verschwundenen Weihnachtslichter.nfc",
     "title": "Adventskalender - Adventskalender 2025 – Flöckchen und die verschwundenen Weihnachtslichter",
     "model": "11001916"
+  },
+  {
+    "file": "German/MIRA und das fliegende Haus/MIRA und das fliegende Haus - Ich bin cool!.nfc",
+    "title": "MIRA und das fliegende Haus - MIRA und das fliegende Haus - Set",
+    "model": "11001986"
+  },
+  {
+    "file": "German/MIRA und das fliegende Haus/MIRA und das fliegende Haus - Ich bin schoen!.nfc",
+    "title": "MIRA und das fliegende Haus - MIRA und das fliegende Haus - Set",
+    "model": "11001986"
+  },
+  {
+    "file": "German/MIRA und das fliegende Haus/MIRA und das fliegende Haus - Ich liebe mich!.nfc",
+    "title": "MIRA und das fliegende Haus - MIRA und das fliegende Haus - Set",
+    "model": "11001986"
   },
   {
     "file": "German/Europa-Park/Ed & Edda - Grand Prix of Europe.nfc",
