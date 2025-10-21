@@ -1,6 +1,7 @@
 const CATALOG_URL = "https://raw.githubusercontent.com/toniebox-reverse-engineering/tonies-json/release/toniesV2.json";
 const COLLECTED_REL_PATH = "data/collected.json";
 const IGNORED_REL_PATH = "data/ignored.json";
+const PRE_COLLECTED_REL_PATH = "data/pre-collected.json";
 
 function isModelAllowed(item) {
   const model = String(item.article ?? "").trim();
@@ -36,15 +37,17 @@ async function fetchJSON(url, init) {
 }
 
 export async function loadCards() {
-  const [catalogRaw, collectedRaw, ignoredRaw] = await Promise.all([
+  const [catalogRaw, collectedRaw, ignoredRaw, preCollectedRaw] = await Promise.all([
     fetchJSON(CATALOG_URL),
     fetchJSON((import.meta.env?.BASE_URL ?? "/") + COLLECTED_REL_PATH),
     fetchJSON((import.meta.env?.BASE_URL ?? "/") + IGNORED_REL_PATH),
+    fetchJSON((import.meta.env?.BASE_URL ?? "/") + PRE_COLLECTED_REL_PATH),
   ]);
 
   const catalog = Array.isArray(catalogRaw) ? catalogRaw : (catalogRaw.items ?? []);
   const collected = collectedRaw ?? [];
   const ignored = Array.isArray(ignoredRaw) ? ignoredRaw : [];
+  const preCollected = Array.isArray(preCollectedRaw) ? preCollectedRaw : [];
 
   const ignoredSet = new Set(
     ignored.map((m) => String(m).trim()).filter(Boolean)
@@ -54,5 +57,7 @@ export async function loadCards() {
     .filter(baseFilter)
     .filter((item) => !ignoredSet.has(String(item.article).trim()));
 
-  return annotateCollected(filtered, collected).sort(sortByReleaseDesc);
+  const mergedCollected = [...preCollected, ...collected];
+
+  return annotateCollected(filtered, mergedCollected).sort(sortByReleaseDesc);
 }

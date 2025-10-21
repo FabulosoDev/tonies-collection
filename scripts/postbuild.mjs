@@ -9,7 +9,8 @@ const outDir = process.argv[2] || process.env.OUT_DIR || "dist";
 
 const targets = [
   "data/collected.json",
-  "data/ignored.json"
+  "data/ignored.json",
+  "data/pre-collected.json"
 ].map(p => join(project, outDir, p));
 
 async function exists(p) { try { await stat(p); return true; } catch { return false; } }
