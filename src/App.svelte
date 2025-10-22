@@ -44,6 +44,7 @@
         selectedLangs     = filters.selectedLangs ?? [];
         selectedCollected = filters.selectedCollected ?? [];
         selectedFav       = filters.selectedFav ?? [];
+        selectedSort      = filters.selectedSort ?? { prop: '', direction: 'asc' };
         startDate         = filters.startDate ?? "";
         endDate           = filters.endDate ?? "";
         filtersOpen       = filters.filtersOpen ?? false;

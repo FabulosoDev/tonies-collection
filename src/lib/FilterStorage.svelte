@@ -8,18 +8,14 @@
       if (!raw) return null;
       const { savedAt, data } = JSON.parse(raw);
       if (!savedAt || Date.now() - savedAt > TTL_MS) return null;
-      return {
-        ...data,
-        selectedSort: data.selectedSort ?? { prop: '', direction: 'asc' },
-      };
+      return data ?? null;
     } catch {
       return null;
     }
   }
 
-  export function saveFilters(filters) {
+  export function saveFilters(data) {
     try {
-      data.selectedSort = filters.selectedSort;
       localStorage.setItem(KEY, JSON.stringify({ savedAt: Date.now(), data }));
     } catch {
       /* ignore */
