@@ -11,6 +11,7 @@
   import SearchModal from "./lib/SearchModal.svelte";
   import { loadFilters, saveFilters, debounce } from "./lib/FilterStorage.svelte";
   import FavoritesFilter from "./lib/FavoriteFilter.svelte";
+  import SortFilter from "./lib/SortFilter.svelte";
   import { loadFavorites, toggleFavorite as toggleFavStore } from "./lib/FavoriteStorage.svelte";
 
   import { loadCards } from "./lib/catalogData.js";
@@ -23,6 +24,9 @@
   let endDate = "";
   let query = "";
   let favorites = new Set();
+  let sortBy = "";
+  let sortDirection = "asc";
+  let selectedSort = { prop: '', direction: 'asc' };
 
   let selected = null;
   let cardModalOpen = false;
@@ -75,11 +79,11 @@
       const op = ageQuery.match(/^[<>]=?/)?.[0] ?? '=';
       const num = parseInt(ageQuery.replace(/^[<>]=?/, ''));
       switch (op) {
-      case '<=': return age <= num;
-      case '>=': return age >= num;
-      case '<': return age < num;
-      case '>': return age > num;
-      default: return age === num;
+        case '<=': return age <= num;
+        case '>=': return age >= num;
+        case '<': return age < num;
+        case '>': return age > num;
+        default: return age === num;
       }
     }
 
@@ -90,11 +94,11 @@
       const op = releaseQuery.match(/^[<>]=?/)?.[0] ?? '=';
       const num = parseInt(releaseQuery.replace(/^[<>]=?/, ''));
       switch (op) {
-      case '<=': return release <= num;
-      case '>=': return release >= num;
-      case '<': return release < num;
-      case '>': return release > num;
-      default: return release === num;
+        case '<=': return release <= num;
+        case '>=': return release >= num;
+        case '<': return release < num;
+        case '>': return release > num;
+        default: return release === num;
       }
     }
 
@@ -105,11 +109,11 @@
       const op = runtimeQuery.match(/^[<>]=?/)?.[0] ?? '=';
       const num = parseInt(runtimeQuery.replace(/^[<>]=?/, ''));
       switch (op) {
-      case '<=': return runtime <= num;
-      case '>=': return runtime >= num;
-      case '<': return runtime < num;
-      case '>': return runtime > num;
-      default: return runtime === num;
+        case '<=': return runtime <= num;
+        case '>=': return runtime >= num;
+        case '<': return runtime < num;
+        case '>': return runtime > num;
+        default: return runtime === num;
       }
     }
 
@@ -126,9 +130,10 @@
       card.data[0].ids.map(id => id['audio-id']).join(" "),
       card.data[0].ids.map(id => id.hash).join(" "),
     ]
-      .filter(Boolean)
-      .map((card) => String(card ?? "").toLowerCase())
-      .join(" ");
+    .filter(Boolean)
+    .map((card) => String(card ?? "").toLowerCase())
+    .join(" ");
+
     return haystack.includes(q);
   }
 
@@ -143,13 +148,14 @@
       selectedLangs,
       selectedCollected,
       selectedFav,
+      selectedSort,
       startDate,
       endDate,
       filtersOpen
     });
   }, 150);
 
-  $: saveDebounced(), query, selectedLangs, selectedCollected, selectedFav, startDate, endDate, filtersOpen;
+  $: saveDebounced(), query, selectedLangs, selectedCollected, selectedFav, selectedSort, startDate, endDate, filtersOpen;
 
   $: cardsWithFav = allCards.map(card => ({ ...card, favorite: favorites.has(card.article) }));
 
@@ -185,6 +191,40 @@
     const key = card?.favorite ? "starred" : "unstarred";
     return selectedFav.includes(key);
   });
+
+  // 6) sorting
+  $: sortedCards = (() => {
+    const sortProp = selectedSort.prop || sortBy;
+    const sortDir = selectedSort.prop ? selectedSort.direction : sortDirection;
+    if (!sortProp) return visibleCards;
+    const getValue = (card, prop) => {
+      switch (prop) {
+        case 'article':
+          return card.article;
+        case 'model':
+          return card.article;
+        case 'release':
+          return card.data[0].release;
+        case 'series':
+          return card.data[0].series;
+        case 'episode':
+          return card.data[0].episode;
+        default:
+          return card.data[0][prop];
+      }
+    };
+    return [...visibleCards].sort((a, b) => {
+      const valA = getValue(a, sortProp);
+      const valB = getValue(b, sortProp);
+      let cmp;
+      if (typeof valA === 'number' && typeof valB === 'number') {
+        cmp = valA - valB;
+      } else {
+        cmp = String(valA).localeCompare(String(valB));
+      }
+      return sortDir === "desc" ? -cmp : cmp;
+    });
+  })();
 </script>
 
 <div class="container">
@@ -227,12 +267,15 @@
           cards={collectedCards}
           bind:selected={selectedFav}
         />
+        <SortFilter
+          bind:selected={selectedSort}
+        />
       </div>
     {/if}
   </section>
 
   <main>
-    <Grid items={visibleCards}
+    <Grid items={sortedCards}
       on:select={onSelect}
       on:toggleFavorite={onToggleFavorite}
     />
