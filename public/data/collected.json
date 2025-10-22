@@ -2933,6 +2933,11 @@
     "model": "11002458"
   },
   {
+    "file": "German/Schlummerbande/Nachtlicht Tonie - Schlummerpinguin.nfc",
+    "title": "Schlummerbande - Nachtlicht Tonie - Schlummerpinguin",
+    "model": "11002521"
+  },
+  {
     "file": "German/Buehne frei fuer/Das Immunsystem.nfc",
     "title": "Bühne frei für... - Bühne frei für... - Set",
     "model": "11002550"
@@ -2956,6 +2961,11 @@
     "file": "German/KLE!NE EXPERTEN/KLE!NE EXPERTEN muhen mit Kuehen.nfc",
     "title": "KLE!NE EXPERTEN - KLE!NE EXPERTEN muhen mit Kühen",
     "model": "11002563"
+  },
+  {
+    "file": "German/Teenage Mutant Ninja Turtles/Die Abenteuer der Teenage Mutant Ninja Turtles - Leonardo.nfc",
+    "title": "Teenage Mutant Ninja Turtles - Die Abenteuer der Teenage Mutant Ninja Turtles: Leonardo",
+    "model": "11002597"
   },
   {
     "file": "German/Sunspeed Explorers/Gruenes Kopenhagen.nfc",
@@ -3091,6 +3101,21 @@
     "file": "German/Book Tonies/Ein Maedchen namens Willow/Ein Maedchen namens Willow.nfc",
     "title": "Ein Mädchen namens Willow - Ein Mädchen namens Willow",
     "model": "11003587"
+  },
+  {
+    "file": "German/Clever Tonies/GEOlino/GEOlino Mini - Alles ueber Polizei, Feuerwehr und Rettung.nfc",
+    "title": "GEOlino - GEOlino Mini - Alles über Polizei, Feuerwehr und Rettung",
+    "model": "11003771"
+  },
+  {
+    "file": "German/Lichterkinder/Lichterkinder - Das kleine 1x1.nfc",
+    "title": "Lichterkinder - Lichterkinder - Das kleine 1x1",
+    "model": "11003772"
+  },
+  {
+    "file": "German/MIRA und das fliegende Haus/MIRA und das fliegende Haus - Der Familienzauber.nfc",
+    "title": "MIRA und das fliegende Haus - MIRA und das fliegende Haus - Der Familienzauber",
+    "model": "11003773"
   },
   {
     "file": "German/TKKG Junior/Auf frischer tat ertappt.nfc",
