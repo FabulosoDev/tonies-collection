@@ -63,6 +63,11 @@
     "model": "01-0009"
   },
   {
+    "file": "German/Conni/Conni kommt in den Kindergarten & Conni macht das Seepferdchen.nfc",
+    "title": "Conni - Conni kommt in den Kindergarten / Conni macht das Seepferdchen",
+    "model": "01-0010"
+  },
+  {
     "file": "German/Conni/Conni auf dem Bauernhof - Conni und das neue Baby.nfc",
     "title": "Conni - Conni auf dem Bauernhof / Conni und das neue Baby",
     "model": "01-0011"
@@ -211,6 +216,11 @@
     "file": "German/Ich - einfach unverbesserlich/Ich - einfach unverbesserlich 1.nfc",
     "title": "Ich - einfach unverbesserlich - Ich - einfach unverbesserlich 1",
     "model": "01-0059"
+  },
+  {
+    "file": "German/Heidi/Freunde fuer immer.nfc",
+    "title": "Heidi - Freunde für immer",
+    "model": "01-0061"
   },
   {
     "file": "German/Unser Sandmaennchen/Nachts, wenn alles schlaeft.nfc",
@@ -418,6 +428,11 @@
     "model": "01-0145"
   },
   {
+    "file": "German/Heidi/Ein Wolf im Doerfli.nfc",
+    "title": "Heidi - Ein Wolf im Dörfli",
+    "model": "01-0146"
+  },
+  {
     "file": "German/Lieblings-Maerchen/Rotkaeppchen und 4 weitere Maerchen.nfc",
     "title": "Lieblings-Märchen - Rotkäppchen und 4 weitere Märchen",
     "model": "01-0147"
@@ -436,6 +451,11 @@
     "file": "German/Felix/Briefe von Felix.nfc",
     "title": "Felix - Briefe von Felix",
     "model": "01-0151"
+  },
+  {
+    "file": "German/Die Haferhorde/Volle Maehne!.nfc",
+    "title": "Die Haferhorde - Volle Mähne!",
+    "model": "01-0154"
   },
   {
     "file": "German/Lieblings-Kinderlieder/Tierlieder.nfc",
@@ -668,6 +688,11 @@
     "model": "10000133"
   },
   {
+    "file": "German/Fuenf Freunde/Fuenf Freunde und die doppelte Erfindung.nfc",
+    "title": "Fünf Freunde - Fünf Freunde und die doppelte Erfindung",
+    "model": "10000134"
+  },
+  {
     "file": "German/Lieblings-Maerchen/Der gestiefelte Kater und vier weitere Maerchen.nfc",
     "title": "Lieblings-Märchen - Der gestiefelte Kater und vier weitere Märchen",
     "model": "10000135"
@@ -723,6 +748,11 @@
     "model": "10000154"
   },
   {
+    "file": "German/TKKG Junior/Der rote Retter.nfc",
+    "title": "TKKG Junior - Der rote Retter",
+    "model": "10000156"
+  },
+  {
     "file": "German/Die drei Fragezeichen/Der Super-Papagei.nfc",
     "title": "Die drei ??? - Der Super-Papagei",
     "model": "10000158"
@@ -731,6 +761,11 @@
     "file": "German/TKKG Junior/Giftige Schokolade.nfc",
     "title": "TKKG Junior - Giftige Schokolade",
     "model": "10000165"
+  },
+  {
+    "file": "German/Kosmo und Klax/Freundschaftsgeschichten.nfc",
+    "title": "Kosmo und Klax - Freundschaftsgeschichten",
+    "model": "10000175"
   },
   {
     "file": "German/Sven van Thom/Tanz den Spatz.nfc",
@@ -1443,6 +1478,11 @@
     "model": "10000912"
   },
   {
+    "file": "German/Das kleine Hoerbuch vom grossen Glueck/Das kleine Hoerbuch vom grossen Glueck - Die Gluecksfee.nfc",
+    "title": "Das kleine Hörbuch vom großen Glück - Das kleine Hörbuch vom großen Glück - Die Glücksfee",
+    "model": "10000913"
+  },
+  {
     "file": "German/PJ Masks/Zeit ein Held zu sein.nfc",
     "title": "PJ Masks - Zeit ein Held zu sein",
     "model": "10000928"
@@ -1596,6 +1636,11 @@
     "file": "German/Lieblings-Kinderlieder/Schlaflieder 2.nfc",
     "title": "Lieblings-Kinderlieder - Schlaflieder 2",
     "model": "10001259"
+  },
+  {
+    "file": "German/Snoefrid aus dem Wiesental/Das wahrlich grosse Geheimnis von Appelgarden.nfc",
+    "title": "Snöfrid aus dem Wiesental - Das wahrlich große Geheimnis von Appelgarden",
+    "model": "10001264"
   },
   {
     "file": "French/Other/Les Fables De La Fontaine.nfc",
@@ -3096,6 +3141,11 @@
     "file": "German/Book Tonies/Wie man 13 wird/Wie man 13 wird und ueberlebt.nfc",
     "title": "Wie man 13 wird - Wie man 13 wird und überlebt",
     "model": "11003565"
+  },
+  {
+    "file": "German/Lieblings-Literatur/Eine Weihnachtsgeschichte.nfc",
+    "title": "Lieblings-Literatur - Eine Weihnachtsgeschichte",
+    "model": "11003586"
   },
   {
     "file": "German/Book Tonies/Ein Maedchen namens Willow/Ein Maedchen namens Willow.nfc",
