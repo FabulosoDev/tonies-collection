@@ -358,6 +358,11 @@
     "model": "01-0120"
   },
   {
+    "file": "German/Maulwurf/Vom kleinen Maulwurf, der wissen wollte, wer ihm auf den Kopf gemacht hat - Die Rache des Hans-Heinerich.nfc",
+    "title": "Maulwurf - Vom kleinen Maulwurf, der wissen wollte, wer ihm auf den Kopf gemacht hat/Die Rache des Hans-Heinerich",
+    "model": "01-0122"
+  },
+  {
     "file": "German/Rotz 'n' Roll Radio/Jubel, Trubel, Heiserkeit.nfc",
     "title": "Rotz 'n' Roll Radio - Jubel, Trubel, Heiserkeit",
     "model": "01-0123"
@@ -696,6 +701,11 @@
     "file": "German/Lieblings-Maerchen/Der gestiefelte Kater und vier weitere Maerchen.nfc",
     "title": "Lieblings-Märchen - Der gestiefelte Kater und vier weitere Märchen",
     "model": "10000135"
+  },
+  {
+    "file": "German/Lieblings-Maerchen/Sterntaler und 4 weitere Maerchen.nfc",
+    "title": "Lieblings-Märchen - Sterntaler und 4 weitere Märchen",
+    "model": "10000137"
   },
   {
     "file": "German/Die Biene Maja/Der Schmetterlingsball (Willi).nfc",
@@ -1438,6 +1448,11 @@
     "model": "10000895"
   },
   {
+    "file": "German/Wie kleine Tiere schlafen gehen/Wie kleine Tiere schlafen gehen - Wie kleine Kinder schlafen gehen.nfc",
+    "title": "Wie kleine Tiere schlafen gehen - Wie kleine Tiere schlafen gehen / Wie kleine Kinder schlafen gehen",
+    "model": "10000896"
+  },
+  {
     "file": "German/Michel aus Loenneberga/Der Tag, an dem Michel besonders nett sein wollte.nfc",
     "title": "Michel aus Lönneberga - Der Tag, an dem Michel besonders nett sein wollte",
     "model": "10000897"
@@ -1688,6 +1703,11 @@
     "model": "10001330"
   },
   {
+    "file": "German/Lieblings-Kinderlieder/Spiel- und Bewegungslieder 2 (Neuauflage 2023).nfc",
+    "title": "Lieblings-Kinderlieder - Spiel- und Bewegungslieder 2 (Neuauflage 2023)",
+    "model": "10001331"
+  },
+  {
     "file": "German/PJ Masks/Los gehts Pyjamahelden.nfc",
     "title": "PJ Masks - Los geht’s Pyjamahelden",
     "model": "10001332"
@@ -1736,6 +1756,11 @@
     "file": "German/Disney/Pocahontas.nfc",
     "title": "Disney - Pocahontas",
     "model": "10001368"
+  },
+  {
+    "file": "German/Lieblings-Maerchen/Rapunzel (Neuauflage 2023).nfc",
+    "title": "Lieblings-Märchen - Rapunzel (Neuauflage 2023)",
+    "model": "10001377"
   },
   {
     "file": "German/Disney/Schneewittchen und die sieben Zwerge.nfc",
@@ -1923,6 +1948,11 @@
     "model": "10001714"
   },
   {
+    "file": "German/Lieblings-Kinderlieder/Zaehllieder (Neuauflage 2023).nfc",
+    "title": "Lieblings-Kinderlieder - Zähllieder (Neuauflage 2023)",
+    "model": "10001721"
+  },
+  {
     "file": "German/Miraculous/Der Betrueger  - Der Valentinstag.nfc",
     "title": "Miraculous - Der Betrüger / Der Valentinstag",
     "model": "10001722"
@@ -2043,6 +2073,11 @@
     "model": "10002002"
   },
   {
+    "file": "German/Lieblings-Maerchen/Der gestiefelte Kater (Neuauflage 2023).nfc",
+    "title": "Lieblings-Märchen - Der gestiefelte Kater (Neuauflage 2023)",
+    "model": "10002003"
+  },
+  {
     "file": "German/Billie, der Regenbogentiger/Billie, der Regenbogentiger.nfc",
     "title": "Billie, der Regenbogentiger - Billie, der Regenbogentiger",
     "model": "10002008"
@@ -2071,6 +2106,11 @@
     "file": "German/Conni/Conni kommt in den Kindergarten & Conni geht aufs Toepfchen.nfc",
     "title": "Conni - Conni kommt in den Kindergarten/ Conni geht aufs Töpfchen",
     "model": "10002020"
+  },
+  {
+    "file": "German/Secret Science Club/Abwehrstark - Rund um Viren, Abwehrkraefte und Immunhelfer! mit Oezlem & Ugur.nfc",
+    "title": "Secret Science Club - Secret Science Club: Abwehrstark - Rund um Viren, Abwehrkräfte und Immunhelfer! mit Özlem & Ugur",
+    "model": "10002023"
   },
   {
     "file": "German/Steiff Soft Cuddly Friends/Joshi T-Rex.nfc",
@@ -2663,6 +2703,11 @@
     "model": "11000801"
   },
   {
+    "file": "German/Tierisch!/Tierisch! Rekordverdaechtig - Kraftprotze und Superhirne.nfc",
+    "title": "Tierisch! - Tierisch! Rekordverdächtig - Set",
+    "model": "11000806"
+  },
+  {
     "file": "German/Tierisch!/Tierisch! Rekordverdaechtig - Huebsche Helden und verrueckte Verwandler.nfc",
     "title": "Tierisch! - Tierisch! Rekordverdächtig - Set",
     "model": "11000806"
@@ -2801,6 +2846,11 @@
     "file": "German/Der kleine Drache Kokosnuss/Der kleine Drache Kokosnuss feiert Weihnachten. Englisch lernen.nfc",
     "title": "Der kleine Drache Kokosnuss - Der kleine Drache Kokosnuss feiert Weihnachten. Englisch lernen mit dem kleinen Drachen Kokosnuss.",
     "model": "11001072"
+  },
+  {
+    "file": "German/Disney/Zoomania 1 & 2.nfc",
+    "title": "Zoomania - Zoomania 1 + 2",
+    "model": "11001131"
   },
   {
     "file": "German/Disney/Aristocats.nfc",
@@ -3038,6 +3088,11 @@
     "model": "11002660"
   },
   {
+    "file": "German/Disney/Wicked.nfc",
+    "title": "Wicked - Wicked",
+    "model": "11002663"
+  },
+  {
     "file": "German/Book Tonies/Kurt, Einhorn wider Willen/Wer moechte schon ein Einhorn sein.nfc",
     "title": "Kurt, Einhorn wider Willen - Wer möchte schon ein Einhorn sein?",
     "model": "11002700"
@@ -3076,6 +3131,11 @@
     "file": "German/Book Tonies/Emmi & Einschwein/Einhorn kann jeder!.nfc",
     "title": "Emmi & Einschwein - Emmi & Einschwein - Einhorn kann jeder!",
     "model": "11002710"
+  },
+  {
+    "file": "German/Die Schluempfe/Der doppelte Papa Schlumpf & 3 weitere schlumpfige Abenteuer.nfc",
+    "title": "Die Schlümpfe - Der doppelte Papa Schlumpf & 3 weitere schlumpfige Abenteuer",
+    "model": "11002722"
   },
   {
     "file": "German/Rolf Zuckowski/Rolfs neue Schulweg-Hitparade.nfc",
@@ -3141,6 +3201,16 @@
     "file": "German/Book Tonies/Wie man 13 wird/Wie man 13 wird und ueberlebt.nfc",
     "title": "Wie man 13 wird - Wie man 13 wird und überlebt",
     "model": "11003565"
+  },
+  {
+    "file": "German/Freddy und Flo/Gruseln sich vor gar nix!.nfc",
+    "title": "Freddy und Flo - Gruseln sich vor gar nix!",
+    "model": "11003566"
+  },
+  {
+    "file": "German/Grimm und Moehrchen/Grimm und Moehrchen - Ein Zesel zieht ein.nfc",
+    "title": "Grimm und Möhrchen - Grimm und Möhrchen – Ein Zesel zieht ein",
+    "model": "11003569"
   },
   {
     "file": "German/Lieblings-Literatur/Eine Weihnachtsgeschichte.nfc",
