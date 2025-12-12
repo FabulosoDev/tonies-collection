@@ -41,9 +41,26 @@
       )
     : "";
 
+  let copySuccess = false;
+  let modelCopySuccess = false;
+
   async function copyMeta() {
     try {
       await navigator.clipboard.writeText(metaText);
+      copySuccess = true;
+      setTimeout(() => {
+        copySuccess = false;
+      }, 800);
+    } catch {}
+  }
+
+  async function copyModel() {
+    try {
+      await navigator.clipboard.writeText(String(card.article));
+      modelCopySuccess = true;
+      setTimeout(() => {
+        modelCopySuccess = false;
+      }, 800);
     } catch {}
   }
 
@@ -93,6 +110,12 @@
   function onError(e) {
     if (e.currentTarget.src !== placeholder) {
       e.currentTarget.src = placeholder;
+    }
+  }
+
+  function openWebsite() {
+    if (card.data[0].web) {
+      window.open(card.data[0].web, "_blank");
     }
   }
 </script>
@@ -171,15 +194,39 @@
               </div>
               <div class="kv">
                 <p class="title">Model:</p>
-                <p>{card.article}</p>
+                <button
+                  type="button"
+                  class="model-copy-btn"
+                  class:copied={modelCopySuccess}
+                  on:click={copyModel}
+                  aria-label="Copy model"
+                >
+                  {modelCopySuccess ? "✓ Copied" : card.article}
+                </button>
               </div>
             </div>
           </section>
         {:else}
           <section class="panel">
             <div class="meta-actions">
-              <button type="button" class="btn" on:click={copyMeta}>Copy</button>
-              <button type="button" class="btn" on:click={downloadMeta}>Download</button>
+              <button
+                type="button"
+                class="btn"
+                class:copied={copySuccess}
+                on:click={copyMeta}
+              >
+                {copySuccess ? "✓ Copied" : "📋 Copy"}
+              </button>
+              <button
+                type="button"
+                class="btn"
+                on:click={downloadMeta}>⬇️ Download</button>
+              {#if card.data[0].web}
+                <button
+                  type="button"
+                  class="btn"
+                  on:click={openWebsite}>🌍 Web</button>
+              {/if}
             </div>
             <pre class="json"><code>{metaText}</code></pre>
           </section>
@@ -337,10 +384,29 @@
     border-radius: 6px;
     font: inherit;
     cursor: pointer;
+    transition: all 0.3s ease;
   }
   .btn:hover {
     border-color: #cbd5e1;
     background: #f8fafc;
+  }
+  .btn.copied {
+    background: #dcfce7;
+    border-color: #86efac;
+    color: #166534;
+  }
+
+  .model-copy-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    color: inherit;
+    transition: all 0.3s ease;
+  }
+  .model-copy-btn.copied {
+    color: #166534;
   }
 
   .json {
