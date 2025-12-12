@@ -2688,6 +2688,11 @@
     "model": "11000788"
   },
   {
+    "file": "German/WAS IST WAS/Staedte der Zukunft - Wolkenkratzer.nfc",
+    "title": "WAS IST WAS - WAS IST WAS - Set",
+    "model": "11000788"
+  },
+  {
     "file": "German/WAS IST WAS/Unser Koerper - Das Gehirn.nfc",
     "title": "WAS IST WAS - WAS IST WAS - Set",
     "model": "11000788"
@@ -2868,6 +2873,11 @@
     "model": "11001036"
   },
   {
+    "file": "German/Lieblings-Kinderlieder/Herbst- und Laternenlieder.nfc",
+    "title": "Lieblings-Kinderlieder - Herbst- und Laternenlieder",
+    "model": "11001037"
+  },
+  {
     "file": "German/Clever Tonies/Little People, Big Dreams - Frida Kahlo, Rosa Parks, Marie Curie, Amelia Earhart.nfc",
     "title": "Little People - Big Dreams - Little People, Big Dreams - Frida Kahlo, Rosa Parks, Marie Curie, Amelia Earhart",
     "model": "11001060"
@@ -2909,6 +2919,11 @@
   },
   {
     "file": "German/Checker Tobi/Der grosse Gefuehle-Check Freude, Wut, Traurigkeit - Das check ich fuer euch!.nfc",
+    "title": "Checker Tobi - Checker Tobi - Set",
+    "model": "11001135"
+  },
+  {
+    "file": "German/Checker Tobi/Der grosse Gesundheits-Check Viren, Fitness, Vitamine - Das check ich fuer euch!.nfc",
     "title": "Checker Tobi - Checker Tobi - Set",
     "model": "11001135"
   },
@@ -2988,6 +3003,16 @@
     "model": "11001566"
   },
   {
+    "file": "German/Sing Kinderlieder/Timmy Traktor & seine Freunde Ferien auf dem Bauernhof.nfc",
+    "title": "Sing Kinderlieder - Timmy Traktor & seine Freunde: Ferien auf dem Bauernhof",
+    "model": "11001567"
+  },
+  {
+    "file": "German/Lichterkinder/Lichterkinder Schlaflieder.nfc",
+    "title": "Lichterkinder - Lichterkinder Schlaflieder",
+    "model": "11001622"
+  },
+  {
     "file": "German/Gabbys Dollhouse/Gabby, ich habe die Kaetzchen geschrumpft! + Der Eisbaer Pete.nfc",
     "title": "Gabby's Dollhouse - Gabby, ich habe die Kätzchen geschrumpft! / Der Eisbär Pete",
     "model": "11001623"
@@ -3043,6 +3068,11 @@
     "model": "11001916"
   },
   {
+    "file": "German/Leos Tag/Hoppala, wer schnieft denn da.nfc",
+    "title": "Leos Tag - Hoppala, wer schnieft denn da?",
+    "model": "11001920"
+  },
+  {
     "file": "German/MIRA und das fliegende Haus/MIRA und das fliegende Haus - Ich bin cool!.nfc",
     "title": "MIRA und das fliegende Haus - MIRA und das fliegende Haus - Set",
     "model": "11001986"
@@ -3056,6 +3086,16 @@
     "file": "German/MIRA und das fliegende Haus/MIRA und das fliegende Haus - Ich liebe mich!.nfc",
     "title": "MIRA und das fliegende Haus - MIRA und das fliegende Haus - Set",
     "model": "11001986"
+  },
+  {
+    "file": "German/MIRA und das fliegende Haus/MIRA und das fliegende Haus - Meine Gefuehle sind okay!.nfc",
+    "title": "MIRA und das fliegende Haus - MIRA und das fliegende Haus - Set",
+    "model": "11001986"
+  },
+  {
+    "file": "German/PAW Patrol/Ryder.nfc",
+    "title": "PAW Patrol - Ryder",
+    "model": "11001988"
   },
   {
     "file": "German/Europa-Park/Ed & Edda - Grand Prix of Europe.nfc",
@@ -3096,6 +3136,11 @@
     "file": "German/KLE!NE EXPERTEN/KLE!NE EXPERTEN muhen mit Kuehen.nfc",
     "title": "KLE!NE EXPERTEN - KLE!NE EXPERTEN muhen mit Kühen",
     "model": "11002563"
+  },
+  {
+    "file": "German/Dora/Dora.nfc",
+    "title": "Dora - Dora",
+    "model": "11002595"
   },
   {
     "file": "German/Teenage Mutant Ninja Turtles/Die Abenteuer der Teenage Mutant Ninja Turtles - Leonardo.nfc",
@@ -3231,6 +3276,11 @@
     "file": "German/Wieso Weshalb Warum/Profiwissen - Retter im Einsatz.nfc",
     "title": "Wieso? Weshalb? Warum? Profiwissen - Set - Wieso? Weshalb? Warum? Profiwissen - Set",
     "model": "11003255"
+  },
+  {
+    "file": "German/Astrid Lindgren/Weihnachten mit Astrid Lindgren - Die schoensten Geschichten von Pippi Langstrumpf, Michel, Madita, den Kindern aus Bullerbue u. a.nfc",
+    "title": "Astrid Lindgren - Weihnachten mit Astrid Lindgren - Die schönsten Geschichten von Pippi Langstrumpf, Michel, Madita, den Kindern aus Bullerbü u. a.",
+    "model": "11003545"
   },
   {
     "file": "German/Book Tonies/Kannawoniwasein/Kannawoniwasein.nfc",
