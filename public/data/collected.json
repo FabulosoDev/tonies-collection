@@ -518,7 +518,7 @@
     "model": "01-0170"
   },
   {
-    "file": "German/Lieblings-Kinderlieder/Kindgartenlieder.nfc",
+    "file": "German/Lieblings-Kinderlieder/Kindergartenlieder.nfc",
     "title": "Lieblings-Kinderlieder - Kindergartenlieder",
     "model": "01-0171"
   },
@@ -728,6 +728,11 @@
     "model": "10000145"
   },
   {
+    "file": "German/Minimusiker/Lieder fuer dich.nfc",
+    "title": "Minimusiker - Lieder für dich",
+    "model": "10000146"
+  },
+  {
     "file": "German/Der Traumzauberbaum/Geschichtenlieder.nfc",
     "title": "Der Traumzauberbaum - Geschichtenlieder",
     "model": "10000148"
@@ -933,6 +938,11 @@
     "model": "10000300"
   },
   {
+    "file": "German/Lindbergh/Die abenteuerliche Geschichte einer fliegenden Maus.nfc",
+    "title": "Lindbergh - Die abenteuerliche Geschichte einer fliegenden Maus",
+    "model": "10000301"
+  },
+  {
     "file": "German/Die drei Raeuber/Die drei Raeuber.nfc",
     "title": "Die drei Räuber - Die drei Räuber",
     "model": "10000302"
@@ -963,9 +973,19 @@
     "model": "10000333"
   },
   {
-    "file": "German/Disney/Winnie Puuh auf groser Reise.nfc",
+    "file": "German/Disney/Winnie Puuh auf grosser Reise.nfc",
     "title": "Winnie Puuh - Winnie Puuh auf großer Reise",
     "model": "10000334"
+  },
+  {
+    "file": "German/Peter Hase und seine Freunde/Ein Geschichten-Schatz.nfc",
+    "title": "Peter Hase und seine Freunde - Ein Geschichten-Schatz",
+    "model": "10000337"
+  },
+  {
+    "file": "German/LEA/LEAs Welt.nfc",
+    "title": "LEA - LEAs Welt",
+    "model": "10000361"
   },
   {
     "file": "German/Der kleine Koenig/Der kleine Koenig sagt Gute Nacht.nfc",
@@ -1116,6 +1136,11 @@
     "file": "German/Feuerwehrmann Sam/Eine Insel voller Abenteuer (Penny).nfc",
     "title": "Feuerwehrmann Sam - Eine Insel voller Abenteuer",
     "model": "10000524"
+  },
+  {
+    "file": "German/Rund um die Welt mit Fuchs und Schaf/Osaka & Serengeti.nfc",
+    "title": "Rund um die Welt mit Fuchs und Schaf - Osaka & Serengeti",
+    "model": "10000525"
   },
   {
     "file": "German/Disney/Vaiana.nfc",
@@ -1298,7 +1323,7 @@
     "model": "10000681"
   },
   {
-    "file": "German/Disney/Mickys total verruecktes Fusballspiel.nfc",
+    "file": "German/Disney/Mickys total verruecktes Fussballspiel.nfc",
     "title": "Disney - Mickys total verrücktes Fußballspiel",
     "model": "10000683"
   },
@@ -1468,6 +1493,11 @@
     "model": "10000899"
   },
   {
+    "file": "German/Das kleine WIR/Das kleine WIR.nfc",
+    "title": "Das kleine WIR - Das kleine WIR",
+    "model": "10000906"
+  },
+  {
     "file": "German/Der kleine Nick/Der kleine Nick ist der Beste.nfc",
     "title": "Der kleine Nick - Der kleine Nick ist der Beste",
     "model": "10000907"
@@ -1498,12 +1528,17 @@
     "model": "10000913"
   },
   {
+    "file": "German/Minimusiker/Lieder fuer dich 2.nfc",
+    "title": "Minimusiker - Lieder für dich 2",
+    "model": "10000927"
+  },
+  {
     "file": "German/PJ Masks/Zeit ein Held zu sein.nfc",
     "title": "PJ Masks - Zeit ein Held zu sein",
     "model": "10000928"
   },
   {
-    "file": "German/My Little Pony/Eine neue Generation.nfc",
+    "file": "German/My Little Pony/Das Original-Hoerspiel zum Film.nfc",
     "title": "My Little Pony - My Little Pony - Das Original-Hörspiel zum Film",
     "model": "10000929"
   },
@@ -2433,7 +2468,7 @@
     "model": "11000441"
   },
   {
-    "file": "German/Marvel Spidey und seine Super-Freunde/Spidey und seine Super-Freunde - Das Spidey Team & 3 weitere spannende Abenteue.nfc",
+    "file": "German/Marvel Spidey und seine Super-Freunde/Spidey und seine Super-Freunde - Das Spidey Team & 3 weitere spannende Abenteuer.nfc",
     "title": "MARVEL Spidey und seine Super-Freunde - Spidey und seine Super-Freunde - Das Spidey Team & 3 weitere spannende Abenteuer",
     "model": "11000462"
   },
@@ -2653,6 +2688,11 @@
     "model": "11000788"
   },
   {
+    "file": "German/WAS IST WAS/Unser Koerper - Das Gehirn.nfc",
+    "title": "WAS IST WAS - WAS IST WAS - Set",
+    "model": "11000788"
+  },
+  {
     "file": "German/Schlummerbande/Schlummerschaf - Einschlafmelodien von der Weide.nfc",
     "title": "Schlummerbande - Schlummerschaf – Einschlafmelodien von der Weide",
     "model": "11000789"
@@ -2703,12 +2743,12 @@
     "model": "11000801"
   },
   {
-    "file": "German/Tierisch!/Tierisch! Rekordverdaechtig - Kraftprotze und Superhirne.nfc",
+    "file": "German/Tierisch!/Tierisch! Rekordverdaechtig - Huebsche Helden und verrueckte Verwandler.nfc",
     "title": "Tierisch! - Tierisch! Rekordverdächtig - Set",
     "model": "11000806"
   },
   {
-    "file": "German/Tierisch!/Tierisch! Rekordverdaechtig - Huebsche Helden und verrueckte Verwandler.nfc",
+    "file": "German/Tierisch!/Tierisch! Rekordverdaechtig - Kraftprotze und Superhirne.nfc",
     "title": "Tierisch! - Tierisch! Rekordverdächtig - Set",
     "model": "11000806"
   },
@@ -3206,6 +3246,11 @@
     "file": "German/Freddy und Flo/Gruseln sich vor gar nix!.nfc",
     "title": "Freddy und Flo - Gruseln sich vor gar nix!",
     "model": "11003566"
+  },
+  {
+    "file": "German/Der Weihnachtosaurus/Der Weihnachtosaurus.nfc",
+    "title": "Der Weihnachtosaurus - Der Weihnachtosaurus",
+    "model": "11003568"
   },
   {
     "file": "German/Grimm und Moehrchen/Grimm und Moehrchen - Ein Zesel zieht ein.nfc",
