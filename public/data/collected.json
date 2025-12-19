@@ -138,6 +138,11 @@
     "model": "01-0031"
   },
   {
+    "file": "German/Heidi/Die Reise zum Grossvater.nfc",
+    "title": "Heidi - Die Reise zum Großvater",
+    "model": "01-0032"
+  },
+  {
     "file": "German/Griechische Sagen/Griechische Sagen.nfc",
     "title": "Griechische Sagen - Griechische Sagen",
     "model": "01-0034"
@@ -146,6 +151,11 @@
     "file": "German/Der kleine Rabe Socke/Alles vermurkst.nfc",
     "title": "Der kleine Rabe Socke - Alles vermurkst!",
     "model": "01-0035"
+  },
+  {
+    "file": "German/Bibi & Tina/Die Wildpferde - Teil 2.nfc",
+    "title": "Bibi & Tina - Die Wildpferde – Teil 2",
+    "model": "01-0037"
   },
   {
     "file": "German/WAS IST WAS/Dinosaurier - Ausgestorbene Tiere.nfc",
@@ -166,6 +176,11 @@
     "file": "German/Die drei Fragezeichen Kids/Panik im Paradies.nfc",
     "title": "Die drei ??? Kids - Panik im Paradies",
     "model": "01-0041"
+  },
+  {
+    "file": "German/Die drei Fragezeichen Kids/Radio Rocky Beach.nfc",
+    "title": "Die drei ??? Kids - Radio Rocky Beach",
+    "model": "01-0042"
   },
   {
     "file": "German/Die drei Fragezeichen Kids/Invasion der Fliegen.nfc",
@@ -253,6 +268,11 @@
     "model": "01-0081"
   },
   {
+    "file": "German/Der kleine Prinz/Der Kleine Prinz.nfc",
+    "title": "Der kleine Prinz - Der Kleine Prinz",
+    "model": "01-0082"
+  },
+  {
     "file": "German/Leo Lausemaus/Das Original-Hoerspiel zu den Buechern 1.nfc",
     "title": "Leo Lausemaus - Das Original-Hörspiel zu den Büchern 1",
     "model": "01-0083"
@@ -321,6 +341,11 @@
     "file": "German/Der kleine Rabe Socke/Alles Schule.nfc",
     "title": "Der kleine Rabe Socke - Alles Schule!",
     "model": "01-0110"
+  },
+  {
+    "file": "German/Bibi Blocksberg/Der Affe ist los.nfc",
+    "title": "Bibi Blocksberg - Der Affe ist los",
+    "model": "01-0111"
   },
   {
     "file": "German/Anne Kaffeekanne/12 Lieder zum Singen, Spielen und Tanzen.nfc",
@@ -493,6 +518,11 @@
     "model": "01-0162"
   },
   {
+    "file": "German/Kleiner Eisbaer/Lars, hilf mir fliegen! - Lars rettet die Rentiere.nfc",
+    "title": "Kleiner Eisbär - Lars, hilf mir fliegen!/ Lars rettet die Rentiere",
+    "model": "01-0163"
+  },
+  {
     "file": "German/Volker Rosin/Der Gorilla mit der Sonnenbrille.nfc",
     "title": "Volker Rosin - Der Gorilla mit der Sonnenbrille",
     "model": "01-0164"
@@ -556,6 +586,11 @@
     "file": "German/Der Raeuber Hotzenplotz/Hotzenplotz 3.nfc",
     "title": "Der Räuber Hotzenplotz - Hotzenplotz 3",
     "model": "01-0181"
+  },
+  {
+    "file": "German/TKKG Junior/Vorsicht bissig!.nfc",
+    "title": "TKKG Junior - Vorsicht: bissig!",
+    "model": "01-0182"
   },
   {
     "file": "German/Disney/Cars.nfc",
@@ -1361,6 +1396,11 @@
     "file": "English/Disney/Winnie the Pooh.nfc",
     "title": "Disney - Winnie the Pooh",
     "model": "10000700"
+  },
+  {
+    "file": "German/Mia and me/Ankunft in Centopia & Eine neue Hoffnung.nfc",
+    "title": "Mia and me - Ankunft in Centopia / Eine neue Hoffnung",
+    "model": "10000722"
   },
   {
     "file": "English/Paw Patrol/Skye.nfc",
@@ -3048,7 +3088,7 @@
     "model": "11001834"
   },
   {
-    "file": "German/Der kleine Prinz/Der kleine Prinz - Der kleine Prinz (Neuauflage 2025).nfc",
+    "file": "German/Der kleine Prinz/Der kleine Prinz (Neuauflage 2025).nfc",
     "title": "Der kleine Prinz - Der kleine Prinz (Neuauflage 2025)",
     "model": "11001861"
   },
@@ -3136,6 +3176,26 @@
     "file": "German/KLE!NE EXPERTEN/KLE!NE EXPERTEN muhen mit Kuehen.nfc",
     "title": "KLE!NE EXPERTEN - KLE!NE EXPERTEN muhen mit Kühen",
     "model": "11002563"
+  },
+  {
+    "file": "German/Loewenzahn/Loewenzahn - Abenteuer im Feuerland.nfc",
+    "title": "Löwenzahn - Löwenzahn - Set",
+    "model": "11002581"
+  },
+  {
+    "file": "German/Loewenzahn/Loewenzahn - Der doppelte Bankraeuber.nfc",
+    "title": "Löwenzahn - Löwenzahn - Set",
+    "model": "11002581"
+  },
+  {
+    "file": "German/Loewenzahn/Loewenzahn - Ein Dino im Garten.nfc",
+    "title": "Löwenzahn - Löwenzahn - Set",
+    "model": "11002581"
+  },
+  {
+    "file": "German/Loewenzahn/Loewenzahn - Ein Gas unter Druck.nfc",
+    "title": "Löwenzahn - Löwenzahn - Set",
+    "model": "11002581"
   },
   {
     "file": "German/Dora/Dora.nfc",
