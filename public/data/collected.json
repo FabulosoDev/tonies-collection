@@ -773,6 +773,11 @@
     "model": "10000148"
   },
   {
+    "file": "German/Unser Sandmaennchen/Abends im Walde.nfc",
+    "title": "Unser Sandmännchen - Abends im Walde",
+    "model": "10000149"
+  },
+  {
     "file": "German/Wieso Weshalb Warum Junior/Die Feuerwehr - Die Rettungsfahrzeuge.nfc",
     "title": "Wieso? Weshalb? Warum? junior - Die Feuerwehr/Die Rettungsfahrzeuge",
     "model": "10000150"
@@ -1493,6 +1498,11 @@
     "model": "10000880"
   },
   {
+    "file": "English/Wild Kratts/Chris Kratt.nfc",
+    "title": "Wild Kratts - Chris",
+    "model": "10000882"
+  },
+  {
     "file": "German/Das NEINhorn/Das NEINhorn und die SchLANGEWEILE.nfc",
     "title": "Das NEINhorn - Das NEINhorn & Das NEINhorn und die SchLANGEWEILE",
     "model": "10000890"
@@ -1956,6 +1966,11 @@
     "file": "German/Disney/Dornroeschen.nfc",
     "title": "Dornröschen - Dornröschen",
     "model": "10001680"
+  },
+  {
+    "file": "German/Mama Muh/Mama Muh und die Kraehe.nfc",
+    "title": "Mama Muh - Mama Muh und die Krähe",
+    "model": "10001681"
   },
   {
     "file": "German/Jurassic World/Jurassic World - Neue Abenteuer.nfc",
@@ -2466,6 +2481,11 @@
     "file": "German/Disney/Mickys grosses Weihnachtsfest.nfc",
     "title": "Micky Maus & Freunde - Mickys großes Weihnachtsfest – Eingeschneit im Haus der Maus",
     "model": "11000423"
+  },
+  {
+    "file": "German/Peppa Pig/Das Schulfest & 7 weitere Geschichten.nfc",
+    "title": "Peppa Pig - Das Schulfest & 7 weitere Geschichten",
+    "model": "11000425"
   },
   {
     "file": "German/Dino Ranch/Maechtig Aerger fuer Jon & 3 weitere Abenteuer.nfc",
@@ -3138,6 +3158,11 @@
     "model": "11001988"
   },
   {
+    "file": "German/Bibi Blocksberg/Ausgehext!.nfc",
+    "title": "Bibi Blocksberg - Ausgehext!",
+    "model": "11002078"
+  },
+  {
     "file": "German/Europa-Park/Ed & Edda - Grand Prix of Europe.nfc",
     "title": "Europa-Park - Ed & Edda – Grand Prix of Europe",
     "model": "11002141"
@@ -3336,6 +3361,11 @@
     "file": "German/Wieso Weshalb Warum/Profiwissen - Retter im Einsatz.nfc",
     "title": "Wieso? Weshalb? Warum? Profiwissen - Set - Wieso? Weshalb? Warum? Profiwissen - Set",
     "model": "11003255"
+  },
+  {
+    "file": "German/Astrid Lindgren/Kalle Blomquist - Meisterdetektiv.nfc",
+    "title": "Astrid Lindgren - Kalle Blomquist - Meisterdetektiv",
+    "model": "11003544"
   },
   {
     "file": "German/Astrid Lindgren/Weihnachten mit Astrid Lindgren - Die schoensten Geschichten von Pippi Langstrumpf, Michel, Madita, den Kindern aus Bullerbue u. a.nfc",
