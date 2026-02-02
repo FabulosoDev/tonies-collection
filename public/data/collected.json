@@ -153,6 +153,11 @@
     "model": "01-0035"
   },
   {
+    "file": "German/Bibi & Tina/Die Wildpferde - Teil 1.nfc",
+    "title": "Bibi & Tina - Die Wildpferde – Teil 1",
+    "model": "01-0036"
+  },
+  {
     "file": "German/Bibi & Tina/Die Wildpferde - Teil 2.nfc",
     "title": "Bibi & Tina - Die Wildpferde – Teil 2",
     "model": "01-0037"
@@ -228,6 +233,11 @@
     "model": "01-0053"
   },
   {
+    "file": "German/Mia and me/Mia und die Elfen.nfc",
+    "title": "Mia and me - Mia und die Elfen",
+    "model": "01-0054"
+  },
+  {
     "file": "German/Ich - einfach unverbesserlich/Ich - einfach unverbesserlich 1.nfc",
     "title": "Ich - einfach unverbesserlich - Ich - einfach unverbesserlich 1",
     "model": "01-0059"
@@ -301,6 +311,11 @@
     "file": "German/Die Schule der magischen Tiere/Die Schule der magischen Tiere.nfc",
     "title": "Die Schule der magischen Tiere - Die Schule der magischen Tiere",
     "model": "01-0100"
+  },
+  {
+    "file": "German/Die drei Ausrufezeichen/Das Geheimnis der alten Villa.nfc",
+    "title": "Die drei !!! - Das Geheimnis der alten Villa",
+    "model": "01-0101"
   },
   {
     "file": "German/Die drei Ausrufezeichen/Mission Pferdeshow.nfc",
@@ -1023,6 +1038,11 @@
     "model": "10000337"
   },
   {
+    "file": "German/Wir sind nachher wieder da, wir muessen kurz nach Afrika/Wir sind nachher wieder da, wir muessen kurz nach Afrika.nfc",
+    "title": "Wir sind nachher wieder da, wir müssen kurz nach Afrika - Wir sind nachher wieder da, wir müssen kurz nach Afrika",
+    "model": "10000360"
+  },
+  {
     "file": "German/LEA/LEAs Welt.nfc",
     "title": "LEA - LEAs Welt",
     "model": "10000361"
@@ -1651,6 +1671,11 @@
     "file": "German/Peppa Pig/Die schoensten Geschichten von Schorsch.nfc",
     "title": "Peppa Pig - Die schönsten Geschichten von Schorsch",
     "model": "10000997"
+  },
+  {
+    "file": "German/Die kleine Hexe/Die neugierige kleine Hexe & Die kleine Hexe hat Geburtstag.nfc",
+    "title": "Die kleine Hexe - Die neugierige kleine Hexe / Die kleine Hexe hat Geburtstag",
+    "model": "10000998"
   },
   {
     "file": "German/Volker Rosin/Das singende Kaenguru.nfc",
