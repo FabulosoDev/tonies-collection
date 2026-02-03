@@ -438,6 +438,11 @@
     "model": "01-0130"
   },
   {
+    "file": "German/Bummelkasten/Irgendwas Bestimmtes.nfc",
+    "title": "Bummelkasten - Irgendwas Bestimmtes",
+    "model": "01-0133"
+  },
+  {
     "file": "German/Stockmann/Stockmann.nfc",
     "title": "Stockmann - Stockmann",
     "model": "01-0137"
@@ -653,6 +658,11 @@
     "model": "01-0194"
   },
   {
+    "file": "German/Fuenf Freunde/Fuenf Freunde und die verlassene Jagdhuette.nfc",
+    "title": "Fünf Freunde - Fünf Freunde und die verlassene Jagdhütte",
+    "model": "01-0196"
+  },
+  {
     "file": "German/Die Biene Maja/Majas Geburt (Maja).nfc",
     "title": "Die Biene Maja - Majas Geburt",
     "model": "01-0197"
@@ -861,6 +871,11 @@
     "file": "German/Weisst du eigentlich, wie lieb ich dich hab/Weisst du eigentlich, wie lieb ich dich hab.nfc",
     "title": "Weißt du eigentlich, wie lieb ich dich hab - Weißt du eigentlich, wie lieb ich dich hab?",
     "model": "10000223"
+  },
+  {
+    "file": "German/Lieblings-Kinderlieder/Spiel- und Bewegungslieder 2.nfc",
+    "title": "Lieblings-Kinderlieder - Spiel- und Bewegungslieder 2",
+    "model": "10000230"
   },
   {
     "file": "German/Petzi/Petzi - Drei Landratten bauen ein Schiff.nfc",
