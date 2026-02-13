@@ -8,7 +8,7 @@
   import CollectedFilter from "./lib/CollectedFilter.svelte";
   import DateRangeFilter from "./lib/DateRangeFilter.svelte";
   import CardModal from "./lib/CardModal.svelte";
-  import SearchModal from "./lib/SearchModal.svelte";
+  import InfoModal from "./lib/InfoModal.svelte";
   import { loadFilters, saveFilters, debounce } from "./lib/FilterStorage.svelte";
   import FavoritesFilter from "./lib/FavoriteFilter.svelte";
   import SortFilter from "./lib/SortFilter.svelte";
@@ -30,11 +30,11 @@
 
   let selected = null;
   let cardModalOpen = false;
-  let searchModalOpen = false;
+  let infoModalOpen = false;
   let filtersOpen = false;
 
   // Disable body scroll when any modal is open
-  $: typeof document !== 'undefined' && document.body.toggleAttribute('modal-open', cardModalOpen || searchModalOpen);
+  $: typeof document !== 'undefined' && document.body.toggleAttribute('modal-open', cardModalOpen || infoModalOpen);
 
   onMount(async () => {
     try {
@@ -231,7 +231,7 @@
 <div class="container">
   <Search cards={visibleCards}
     bind:query
-    on:openInfo={() => searchModalOpen = true}
+    on:openInfo={() => infoModalOpen = true}
   />
 
   <section class="filterbox">
@@ -289,9 +289,9 @@
       }}
       on:toggleFavorite={onToggleFavorite}
     />
-    <SearchModal
-      open={searchModalOpen}
-      on:close={() => searchModalOpen = false}
+    <InfoModal
+      open={infoModalOpen}
+      on:close={() => infoModalOpen = false}
     />
   </main>
 </div>

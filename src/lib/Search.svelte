@@ -17,7 +17,7 @@
       aria-label="Search collection"
       bind:value={query}
     />
-    <button class="info-btn" on:click={openInfo} aria-label="Search help" title="Search Query Filters">?</button>
+    <button class="info-btn" on:click={openInfo} aria-label="Query help" title="Query help">?</button>
   </div>
 </header>
 
