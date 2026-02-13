@@ -41,7 +41,8 @@
     }
   }
 
-  $: if (open && !qrCodeImage) {
+  $: if (open) {
+    qrCodeImage = "";
     generateQRCode();
   }
 
