@@ -23,15 +23,12 @@
       const favArray = Array.from(favorites);
       const jsonString = JSON.stringify(favArray);
 
-      // Compress and encode
       const compressed = pako.deflate(jsonString);
       base64Data = btoa(String.fromCharCode.apply(null, compressed));
 
-      // Create URL with compressed favorites parameter
-      const origin = typeof window !== 'undefined' ? window.location.origin : '';
-      const favoritesUrl = `${origin}/?f=${encodeURIComponent(base64Data)}`;
+      const origin = `${window.location.origin}${import.meta.env.BASE_URL}`;
+      const favoritesUrl = `${origin}?f=${encodeURIComponent(base64Data)}`;
 
-      // Generate QR code as data URL
       qrCodeImage = await QRCode.toDataURL(favoritesUrl, {
         errorCorrectionLevel: "H",
         type: "image/png",
@@ -66,7 +63,7 @@
         <section class="panel">
           <div class="qr-content">
             <p class="description">
-              Scan this QR code to share your favorites collection as base64-encoded JSON.
+              Scan this QR code to share your favorites.
             </p>
 
             {#if qrCodeImage}
