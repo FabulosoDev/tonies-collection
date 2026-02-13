@@ -146,9 +146,10 @@
   }
   .card-flag img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 24px;
+    height: 16px;
     opacity: 1;
+    border-radius: 4px;
   }
   .card-flag img.grayscale {
     opacity: 0.6;

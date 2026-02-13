@@ -112,12 +112,11 @@
   }
   .flag {
     display: block;
-    width: 20px;
-    height: 14px;
-    object-fit: cover;
+    width: 24px;
+    height: 16px;
     filter: grayscale(100%);
     opacity: 0.7;
-    border-radius: 2px;
+    border-radius: 4px;
   }
   .option.active .flag {
     filter: none;
