@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { slide } from "svelte/transition";
+  import pako from "pako";
 
   import Grid from "./lib/Grid.svelte";
   import Search from "./lib/Search.svelte";
@@ -9,10 +10,11 @@
   import DateRangeFilter from "./lib/DateRangeFilter.svelte";
   import CardModal from "./lib/CardModal.svelte";
   import InfoModal from "./lib/InfoModal.svelte";
+  import QrModal from "./lib/QrModal.svelte";
   import { loadFilters, saveFilters, debounce } from "./lib/FilterStorage.svelte";
   import FavoritesFilter from "./lib/FavoriteFilter.svelte";
   import SortFilter from "./lib/SortFilter.svelte";
-  import { loadFavorites, toggleFavorite as toggleFavStore } from "./lib/FavoriteStorage.svelte";
+  import { loadFavorites, saveFavorites, toggleFavorite as toggleFavStore } from "./lib/FavoriteStorage.svelte";
 
   import { loadCards } from "./lib/catalogData.js";
 
@@ -31,10 +33,11 @@
   let selected = null;
   let cardModalOpen = false;
   let infoModalOpen = false;
+  let qrModalOpen = false;
   let filtersOpen = false;
 
   // Disable body scroll when any modal is open
-  $: typeof document !== 'undefined' && document.body.toggleAttribute('modal-open', cardModalOpen || infoModalOpen);
+  $: typeof document !== 'undefined' && document.body.toggleAttribute('modal-open', cardModalOpen || infoModalOpen || qrModalOpen);
 
   onMount(async () => {
     try {
@@ -50,7 +53,31 @@
         filtersOpen       = filters.filtersOpen ?? false;
       }
 
-      favorites = loadFavorites();
+      // Check for favorites in URL query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const favoritesParam = urlParams.get('f');
+
+      if (favoritesParam) {
+        try {
+          // Decompress and parse
+          const binaryString = atob(decodeURIComponent(favoritesParam));
+          const bytes = new Uint8Array(binaryString.length);
+          for (let i = 0; i < binaryString.length; i++) {
+            bytes[i] = binaryString.charCodeAt(i);
+          }
+          const decompressed = pako.inflate(bytes, { to: 'string' });
+          const favArray = JSON.parse(decompressed);
+          favorites = new Set(favArray);
+          saveFavorites(favorites);
+          // Clean up URL
+          window.history.replaceState({}, document.title, window.location.pathname);
+        } catch (e) {
+          console.error("Failed to load favorites from URL:", e);
+          favorites = loadFavorites();
+        }
+      } else {
+        favorites = loadFavorites();
+      }
 
       allCards = await loadCards();
     } catch (e) {
@@ -232,6 +259,7 @@
   <Search cards={visibleCards}
     bind:query
     on:openInfo={() => infoModalOpen = true}
+    on:openQr={() => qrModalOpen = true}
   />
 
   <section class="filterbox">
@@ -292,6 +320,10 @@
     <InfoModal
       open={infoModalOpen}
       on:close={() => infoModalOpen = false}
+    />
+    <QrModal
+      open={qrModalOpen}
+      on:close={() => qrModalOpen = false}
     />
   </main>
 </div>

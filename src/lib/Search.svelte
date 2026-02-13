@@ -6,6 +6,7 @@
 
   const dispatch = createEventDispatcher();
   const openInfo = () => dispatch("openInfo");
+  const openQr = () => dispatch("openQr");
 </script>
 
 <header class="header">
@@ -18,6 +19,9 @@
       bind:value={query}
     />
     <button class="info-btn" on:click={openInfo} aria-label="Query help" title="Query help">?</button>
+    <button class="info-btn qr-btn" on:click={openQr} aria-label="Favorites QR Code" title="Favorites QR Code">
+      <img src={`${import.meta.env.BASE_URL}assets/qrcode.svg`} alt="QR Code" class="qr-icon"/>
+    </button>
   </div>
 </header>
 
@@ -73,5 +77,15 @@
   .info-btn:hover {
     box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent);
     border-color: var(--accent);
+  }
+
+  .qr-btn {
+    padding: 0.5rem 0.7rem;
+  }
+
+  .qr-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
   }
 </style>
