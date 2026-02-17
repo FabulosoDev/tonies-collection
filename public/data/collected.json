@@ -133,7 +133,12 @@
     "model": "01-0028"
   },
   {
-    "file": "German/Wiki/Wasser auf die Muehlen.nfc",
+    "file": "German/Bibi Blocksberg/Die grosse Hexenparty.nfc",
+    "title": "Bibi Blocksberg - Die große Hexenparty",
+    "model": "01-0030"
+  },
+  {
+    "file": "German/Wickie/Wasser auf die Muehlen.nfc",
     "title": "Wickie - Wasser auf die Mühlen",
     "model": "01-0031"
   },
@@ -236,6 +241,11 @@
     "file": "German/Mia and me/Mia und die Elfen.nfc",
     "title": "Mia and me - Mia und die Elfen",
     "model": "01-0054"
+  },
+  {
+    "file": "German/Prinzessin Lillifee/Prinzessin Lillifee.nfc",
+    "title": "Prinzessin Lillifee - Prinzessin Lillifee",
+    "model": "01-0058"
   },
   {
     "file": "German/Ich - einfach unverbesserlich/Ich - einfach unverbesserlich 1.nfc",
@@ -341,6 +351,11 @@
     "file": "German/Kaptn Sharky/Kaeptn Sharky und das Seeungeheuer.nfc",
     "title": "Käpt'n Sharky - Käpt'n Sharky und das Seeungeheuer",
     "model": "01-0106"
+  },
+  {
+    "file": "German/Liliane Susewind/Ein Meerschwein ist nicht gern allein.nfc",
+    "title": "Liliane Susewind - Ein Meerschwein ist nicht gern allein",
+    "model": "01-0107"
   },
   {
     "file": "German/Unter meinem Bett/Unter meinem Bett 3.nfc",
@@ -833,6 +848,11 @@
     "model": "10000156"
   },
   {
+    "file": "German/Wickie/Tanz mit dem Wolf und sechs weitere Episoden.nfc",
+    "title": "Wickie - Tanz mit dem Wolf und sechs weitere Episoden",
+    "model": "10000157"
+  },
+  {
     "file": "German/Die drei Fragezeichen/Der Super-Papagei.nfc",
     "title": "Die drei ??? - Der Super-Papagei",
     "model": "10000158"
@@ -971,6 +991,11 @@
     "file": "German/Fredrik Vahle/Zugabe.nfc",
     "title": "Fredrik Vahle - Zugabe",
     "model": "10000278"
+  },
+  {
+    "file": "German/Janosch/Als Tiger und Baer beinahe das Beste verpassten.nfc",
+    "title": "Janosch - Als Tiger und Bär beinahe das Beste verpassten",
+    "model": "10000279"
   },
   {
     "file": "German/Kasperli/Kasperli - Es haet en Dieb im Zoo - Die Insel vom Pirat Ohnibart.nfc",
@@ -1496,6 +1521,11 @@
     "file": "English/Dr Seuss/The Cat in the Hat.nfc",
     "title": "Dr. Seuss - The Cat in the Hat",
     "model": "10000792"
+  },
+  {
+    "file": "German/Der magische Blumenladen/Ein Geheimnis kommt selten allein.nfc",
+    "title": "Der magische Blumenladen - Ein Geheimnis kommt selten allein",
+    "model": "10000794"
   },
   {
     "file": "English/National Geographic Kids/Astronaut.nfc",
