@@ -253,6 +253,11 @@
     "model": "01-0059"
   },
   {
+    "file": "German/Wickie/Die Koenigin der Winde.nfc",
+    "title": "Wickie - Die Königin der Winde",
+    "model": "01-0060"
+  },
+  {
     "file": "German/Heidi/Freunde fuer immer.nfc",
     "title": "Heidi - Freunde für immer",
     "model": "01-0061"
@@ -461,6 +466,11 @@
     "file": "German/Stockmann/Stockmann.nfc",
     "title": "Stockmann - Stockmann",
     "model": "01-0137"
+  },
+  {
+    "file": "German/Lieblings-Kinderlieder/Englische Lieder.nfc",
+    "title": "Lieblings-Kinderlieder - Englische Lieder",
+    "model": "01-0138"
   },
   {
     "file": "German/Der kleine Siebenschlaefer/Die Geschichte vom kleinen Siebenschlaefer, der nicht einschlafen konnte.nfc",
@@ -1298,6 +1308,11 @@
     "model": "10000579"
   },
   {
+    "file": "German/Hanni und Nanni/Hanni und Nanni im Hochzeitsrausch.nfc",
+    "title": "Hanni und Nanni - Hanni und Nanni im Hochzeitsrausch",
+    "model": "10000580"
+  },
+  {
     "file": "German/100% Wolf/100% Wolf.nfc",
     "title": "100% Wolf - 100% Wolf - Das Original-Hörspiel zum Kinofilm",
     "model": "10000581"
@@ -1803,6 +1818,11 @@
     "model": "10001243"
   },
   {
+    "file": "German/Lieblings-Kinderlieder/Schlaflieder 2 (Neuauflage 2021).nfc",
+    "title": "Lieblings-Kinderlieder - Schlaflieder 2",
+    "model": "10001259"
+  },
+  {
     "file": "German/Lieblings-Kinderlieder/Schlaflieder 2.nfc",
     "title": "Lieblings-Kinderlieder - Schlaflieder 2",
     "model": "10001259"
@@ -2148,6 +2168,11 @@
     "model": "10001872"
   },
   {
+    "file": "German/Lieblings-Kinderlieder/Reiselieder (Neuauflage 2023).nfc",
+    "title": "Lieblings-Kinderlieder - Reiselieder (Neuauflage 2023)",
+    "model": "10001898"
+  },
+  {
     "file": "French/Other/Mes Mythes Preferes - La Mythologie Grecque.nfc",
     "title": "Mes Mythes Préférés - La Mythologie Grecque",
     "model": "10001903"
@@ -2441,6 +2466,11 @@
     "file": "German/Weihnachtsmann und Co.KG/Die magische Perle, Rudolph ist verschwunden.nfc",
     "title": "Weihnachtsmann & Co. KG - Die magische Perle & Rudolph ist verschwunden",
     "model": "11000261"
+  },
+  {
+    "file": "German/Pippi Langstrumpf/Pippi Langstrumpf 2 - Pippi Langstrumpf geht an Bord.nfc",
+    "title": "Pippi Langstrumpf - Pippi Langstrumpf 2 - Pippi Langstrumpf geht an Bord",
+    "model": "11000262"
   },
   {
     "file": "English/Other/Carmen Sandiego.nfc",
@@ -2988,6 +3018,11 @@
     "model": "11000976"
   },
   {
+    "file": "German/Green Team/Mission Rettung in der Luft mit John, der Schnee-Eule.nfc",
+    "title": "Green Team - Green Team - Mission: Rettung in der Luft mit John, der Schnee-Eule",
+    "model": "11000977"
+  },
+  {
     "file": "German/Green Team/Mission Rettung in den Bergen mit Uli, dem Leoparden.nfc",
     "title": "Green Team - Green Team - Mission: Rettung in den Bergen mit Uli, dem Leoparden",
     "model": "11000978"
@@ -3238,6 +3273,26 @@
     "model": "11002141"
   },
   {
+    "file": "German/Lieblings-Kinderlieder/Kindergartenlieder (Neuauflage 2026).nfc",
+    "title": "Lieblings-Kinderlieder - Kindergartenlieder",
+    "model": "11002274"
+  },
+  {
+    "file": "German/Cocomelon/Spiel und Spass mit JJ.nfc",
+    "title": "Cocomelon - Spiel und Spaß mit JJ",
+    "model": "11002277"
+  },
+  {
+    "file": "German/Schlummerbande/Schlummerjaguar - Einschlafmelodien aus dem Schlummerdschungel.nfc",
+    "title": "Schlummerbande - Schlummerjaguar - Einschlafmelodien aus dem Schlummerdschungel",
+    "model": "11002362"
+  },
+  {
+    "file": "German/Schlummerbande/Schlummerkrokodil - Eine Gutenachtgeschichte aus dem Schlummerdschungel.nfc",
+    "title": "Schlummerbande - Schlummerkrokodil - Eine Gutenachtgeschichte aus dem Schlummerdschungel",
+    "model": "11002390"
+  },
+  {
     "file": "German/BiBiBiber hat da mal ne Frage/Sind Dinos wirklich alle tot.nfc",
     "title": "BiBiBiber hat da mal 'ne Frage - Sind Dinos wirklich alle tot?",
     "model": "11002458"
@@ -3246,6 +3301,11 @@
     "file": "German/Schlummerbande/Nachtlicht Tonie - Schlummerpinguin.nfc",
     "title": "Schlummerbande - Nachtlicht Tonie - Schlummerpinguin",
     "model": "11002521"
+  },
+  {
+    "file": "German/Giraffenaffen/Die Giraffenaffen Partyhits.nfc",
+    "title": "Giraffenaffen - Die Giraffenaffen Partyhits",
+    "model": "11002526"
   },
   {
     "file": "German/Buehne frei fuer/Das Immunsystem.nfc",
@@ -3398,6 +3458,11 @@
     "model": "11002923"
   },
   {
+    "file": "German/Disney/Oben.nfc",
+    "title": "Oben - Oben",
+    "model": "11002926"
+  },
+  {
     "file": "German/Book Tonies/Lieblings-Literatur/In 80 Tagen um die Welt.nfc",
     "title": "Lieblings-Literatur - In 80 Tagen um die Welt",
     "model": "11002988"
@@ -3441,6 +3506,11 @@
     "file": "German/Astrid Lindgren/Weihnachten mit Astrid Lindgren - Die schoensten Geschichten von Pippi Langstrumpf, Michel, Madita, den Kindern aus Bullerbue u. a.nfc",
     "title": "Astrid Lindgren - Weihnachten mit Astrid Lindgren - Die schönsten Geschichten von Pippi Langstrumpf, Michel, Madita, den Kindern aus Bullerbü u. a.",
     "model": "11003545"
+  },
+  {
+    "file": "German/My First Tonies/Bauernhof Set - Schwein.nfc",
+    "title": "Bauernhof Set - My First Tonies - Bauernhof Set",
+    "model": "11003561"
   },
   {
     "file": "German/Book Tonies/Kannawoniwasein/Kannawoniwasein.nfc",
@@ -3491,6 +3561,16 @@
     "file": "German/MIRA und das fliegende Haus/MIRA und das fliegende Haus - Der Familienzauber.nfc",
     "title": "MIRA und das fliegende Haus - MIRA und das fliegende Haus - Der Familienzauber",
     "model": "11003773"
+  },
+  {
+    "file": "German/Die Schluempfe/Hefty Schlumpf - Wer ist heftiger & 3 weitere schlumpfige Abenteuer.nfc",
+    "title": "Die Schlümpfe - Hefty Schlumpf - Wer ist heftiger? & 3 weitere schlumpfige Abenteuer",
+    "model": "11003780"
+  },
+  {
+    "file": "German/Checker Tobi/Checker Tobi 3 Das Extra zum Kinofilm.nfc",
+    "title": "Checker Tobi - Checker Tobi 3: Das Extra zum Kinofilm",
+    "model": "11004430"
   },
   {
     "file": "German/TKKG Junior/Auf frischer tat ertappt.nfc",
