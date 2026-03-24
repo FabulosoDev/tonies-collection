@@ -18,7 +18,7 @@
     "error": "Unknown physical content, now digital content"
   },
   {
-    "file": "German/Geschichten vom Loewen/Lila - Der Loewe der nicht Schreiben konnte.nfc",
+    "file": "German/Geschichten vom Loewen/Die Geschichte vom Loewen, der nicht schreiben konnte.nfc",
     "title": "Geschichten vom Löwen - Die Geschichte vom Löwen, der nicht schreiben konnte",
     "model": "01-0000"
   },
@@ -673,6 +673,11 @@
     "model": "01-0191"
   },
   {
+    "file": "German/Der Raeuber Hotzenplotz/Und die Mondrakete.nfc",
+    "title": "Der Räuber Hotzenplotz - Und die Mondrakete",
+    "model": "01-0192"
+  },
+  {
     "file": "German/Pettersson und Findus/Findus zieht um.nfc",
     "title": "Pettersson und Findus - Findus zieht um",
     "model": "01-0193"
@@ -706,6 +711,11 @@
     "file": "German/Feuerwehrmann Sam/In Pontypandy ist was los (Sam).nfc",
     "title": "Feuerwehrmann Sam - In Pontypandy ist was los",
     "model": "01-0200"
+  },
+  {
+    "file": "German/Geschichten vom Loewen/Die Geschichte vom Loewen, der nicht schreiben konnte.nfc",
+    "title": "Geschichten vom Löwen - Die Geschichte vom Löwen, der nicht schreiben konnte",
+    "model": "03-1000"
   },
   {
     "file": "German/Die Playmos/Der Schatz der Teufelsinsel.nfc",
@@ -806,6 +816,11 @@
     "file": "German/Disney/Toy Story.nfc",
     "title": "Disney - Toy Story",
     "model": "10000142"
+  },
+  {
+    "file": "German/Kinderliederzug/Bitte alle einsteigen!.nfc",
+    "title": "Kinderliederzug - Bitte alle einsteigen!",
+    "model": "10000143"
   },
   {
     "file": "German/Mein Lotta-Leben/Alles voller Kaninchen.nfc",
@@ -3506,6 +3521,21 @@
     "file": "German/Astrid Lindgren/Weihnachten mit Astrid Lindgren - Die schoensten Geschichten von Pippi Langstrumpf, Michel, Madita, den Kindern aus Bullerbue u. a.nfc",
     "title": "Astrid Lindgren - Weihnachten mit Astrid Lindgren - Die schönsten Geschichten von Pippi Langstrumpf, Michel, Madita, den Kindern aus Bullerbü u. a.",
     "model": "11003545"
+  },
+  {
+    "file": "German/My First Tonies/Bauernhof Set - Kuh.nfc",
+    "title": "Bauernhof Set - My First Tonies - Bauernhof Set",
+    "model": "11003561"
+  },
+  {
+    "file": "German/My First Tonies/Bauernhof Set - Pferd.nfc",
+    "title": "Bauernhof Set - My First Tonies - Bauernhof Set",
+    "model": "11003561"
+  },
+  {
+    "file": "German/My First Tonies/Bauernhof Set - Schwein.nfc",
+    "title": "Bauernhof Set - My First Tonies - Bauernhof Set",
+    "model": "11003561"
   },
   {
     "file": "German/Book Tonies/Kannawoniwasein/Kannawoniwasein.nfc",
