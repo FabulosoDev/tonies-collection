@@ -3408,6 +3408,11 @@
     "model": "11002663"
   },
   {
+    "file": "German/Kueken Pitti/Oster- und Fruehlingsgeschichten.nfc",
+    "title": "Küken Pitti - Oster- und Frühlingsgeschichten",
+    "model": "11002692"
+  },
+  {
     "file": "German/Book Tonies/Kurt, Einhorn wider Willen/Wer moechte schon ein Einhorn sein.nfc",
     "title": "Kurt, Einhorn wider Willen - Wer möchte schon ein Einhorn sein?",
     "model": "11002700"
@@ -3511,6 +3516,21 @@
     "file": "German/Wieso Weshalb Warum/Profiwissen - Retter im Einsatz.nfc",
     "title": "Wieso? Weshalb? Warum? Profiwissen - Set - Wieso? Weshalb? Warum? Profiwissen - Set",
     "model": "11003255"
+  },
+  {
+    "file": "German/My First Tonies/Reise Set - Flugzeug.nfc",
+    "title": "Reise Set - My First Tonies - Reise Set",
+    "model": "11003539"
+  },
+  {
+    "file": "German/My First Tonies/Reise Set - Schiff.nfc",
+    "title": "Reise Set - My First Tonies - Reise Set",
+    "model": "11003539"
+  },
+  {
+    "file": "German/My First Tonies/Reise Set - Zug.nfc",
+    "title": "Reise Set - My First Tonies - Reise Set",
+    "model": "11003539"
   },
   {
     "file": "German/Astrid Lindgren/Kalle Blomquist - Meisterdetektiv.nfc",
