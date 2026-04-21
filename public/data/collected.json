@@ -3298,6 +3298,16 @@
     "model": "11002277"
   },
   {
+    "file": "German/Cocomelon/Mit JJ durch den Tag.nfc",
+    "title": "Cocomelon - Mit JJ durch den Tag",
+    "model": "11002278"
+  },
+  {
+    "file": "English/Other/Target Bullseye.nfc",
+    "title": "Target Bullseye - None",
+    "model": "11002293"
+  },
+  {
     "file": "German/Schlummerbande/Schlummerjaguar - Einschlafmelodien aus dem Schlummerdschungel.nfc",
     "title": "Schlummerbande - Schlummerjaguar - Einschlafmelodien aus dem Schlummerdschungel",
     "model": "11002362"
@@ -3376,6 +3386,11 @@
     "file": "German/Teenage Mutant Ninja Turtles/Die Abenteuer der Teenage Mutant Ninja Turtles - Leonardo.nfc",
     "title": "Teenage Mutant Ninja Turtles - Die Abenteuer der Teenage Mutant Ninja Turtles: Leonardo",
     "model": "11002597"
+  },
+  {
+    "file": "German/Peppa Pig/Peppa und das neue Baby.nfc",
+    "title": "Peppa Pig - Peppa und das neue Baby",
+    "model": "11002623"
   },
   {
     "file": "German/Sunspeed Explorers/Gruenes Kopenhagen.nfc",
