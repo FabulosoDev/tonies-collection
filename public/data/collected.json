@@ -1458,6 +1458,11 @@
     "model": "10000683"
   },
   {
+    "file": "English/Disney and Pixar/Toy Story 2 - Buzz Lightyear.nfc",
+    "title": "Toy Story - Toy Story 2",
+    "model": "10000684"
+  },
+  {
     "file": "German/Disney/Rapunzel - Neu verfoehnt.nfc",
     "title": "Disney - Rapunzel – Neu verföhnt",
     "model": "10000686"
@@ -1881,6 +1886,11 @@
     "file": "German/Ein Freund wie kein anderer/Ein Freund wie kein anderer.nfc",
     "title": "Ein Freund wie kein anderer - Ein Freund wie kein Anderer",
     "model": "10001327"
+  },
+  {
+    "file": "German/PJ Masks/Ein maechtiges Mondproblem.nfc",
+    "title": "PJ Masks - Ein mächtiges Mondproblem",
+    "model": "10001328"
   },
   {
     "file": "German/Schlummerbande/Gutenachtgeschichten - Schlaf schoen, kleiner Schlummerbaer.nfc",
@@ -3518,6 +3528,11 @@
     "model": "11002997"
   },
   {
+    "file": "German/Schlummerbande/Nachtlicht Tonie - Schlummerkrokodil.nfc",
+    "title": "Schlummerbande - Nachtlicht Tonie - Schlummerkrokodil",
+    "model": "11003006"
+  },
+  {
     "file": "German/Wieso Weshalb Warum/Profiwissen - Die Erde.nfc",
     "title": "Wieso? Weshalb? Warum? Profiwissen - Set - Wieso? Weshalb? Warum? Profiwissen - Set",
     "model": "11003255"
@@ -3536,6 +3551,11 @@
     "file": "German/Wieso Weshalb Warum/Profiwissen - Retter im Einsatz.nfc",
     "title": "Wieso? Weshalb? Warum? Profiwissen - Set - Wieso? Weshalb? Warum? Profiwissen - Set",
     "model": "11003255"
+  },
+  {
+    "file": "German/Der Grueffelo/Der Grueffelo & Das Grueffelokind (Relaunch 2026).nfc",
+    "title": "Der Grüffelo - Der Grüffelo & Das Grüffelokind (Relaunch 2026)",
+    "model": "11003328"
   },
   {
     "file": "German/My First Tonies/Reise Set - Flugzeug.nfc",
@@ -3638,6 +3658,31 @@
     "model": "11003780"
   },
   {
+    "file": "German/Kleiner Otter, grosses Herz/Lieder und Geschichten zum Liebhaben.nfc",
+    "title": "Kleiner Otter, großes Herz - Lieder und Geschichten zum Liebhaben",
+    "model": "11003882"
+  },
+  {
+    "file": "German/Eule findet den Beat/Eule findet den Beat Set - Auf Europatour.nfc",
+    "title": "Eule findet den Beat - Eule findet den Beat Set",
+    "model": "11003994"
+  },
+  {
+    "file": "German/Eule findet den Beat/Eule findet den Beat Set - Ein Entdeckerflug durch die Musikwelt.nfc",
+    "title": "Eule findet den Beat - Eule findet den Beat Set",
+    "model": "11003994"
+  },
+  {
+    "file": "German/Eule findet den Beat/Eule findet den Beat Set - Mit Gefuehl.nfc",
+    "title": "Eule findet den Beat - Eule findet den Beat Set",
+    "model": "11003994"
+  },
+  {
+    "file": "German/Eule findet den Beat/Eule findet den Beat Set - Mit Instrumenten.nfc",
+    "title": "Eule findet den Beat - Eule findet den Beat Set",
+    "model": "11003994"
+  },
+  {
     "file": "German/Checker Tobi/Checker Tobi 3 Das Extra zum Kinofilm.nfc",
     "title": "Checker Tobi - Checker Tobi 3: Das Extra zum Kinofilm",
     "model": "11004430"
@@ -3646,6 +3691,16 @@
     "file": "German/Wundervolle Welt der Tiere/Wundervolle Welt der Tiere.nfc",
     "title": "Wundervolle Welt der Tiere - Wundervolle Welt der Tiere",
     "model": "11004437"
+  },
+  {
+    "file": "German/GROSSE EXPERTEN/Das alte Aegypten.nfc",
+    "title": "GROßE EXPERTEN - Das alte Ägypten",
+    "model": "11004564"
+  },
+  {
+    "file": "German/GROSSE EXPERTEN/Das Mittelalter.nfc",
+    "title": "GROßE EXPERTEN - Das Mittelalter",
+    "model": "11004566"
   },
   {
     "file": "German/TKKG Junior/Auf frischer tat ertappt.nfc",
