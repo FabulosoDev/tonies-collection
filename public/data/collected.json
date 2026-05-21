@@ -1568,6 +1568,11 @@
     "model": "10000795"
   },
   {
+    "file": "English/National Geographic Kids/Dinosaur.nfc",
+    "title": "National Geographic Kids - Dinosaur",
+    "model": "10000799"
+  },
+  {
     "file": "English/DreamWorks/Gabbys Dollhouse.nfc",
     "title": "Gabby's Dollhouse - None",
     "model": "10000802"
@@ -2768,6 +2773,16 @@
     "model": "11000645"
   },
   {
+    "file": "English/PAW Patrol Jungle Pups/Marshall.nfc",
+    "title": "PAW Patrol Jungle Pups - Marshall",
+    "model": "11000646"
+  },
+  {
+    "file": "English/PAW Patrol Jungle Pups/Skye.nfc",
+    "title": "PAW Patrol Jungle Pups - Skye",
+    "model": "11000647"
+  },
+  {
     "file": "German/Hurra Kinderlieder/Hurra Kinderlieder - Best of.nfc",
     "title": "Hurra Kinderlieder - Hurra Kinderlieder - Best of",
     "model": "11000677"
@@ -3583,6 +3598,21 @@
     "model": "11003545"
   },
   {
+    "file": "German/My First Tonies/Dschungel Set - Tiger.nfc",
+    "title": "Dschungel Set - My First Tonies - Dschungel Set",
+    "model": "11003558"
+  },
+  {
+    "file": "German/My First Tonies/Dschungel Set - Affe.nfc",
+    "title": "Dschungel Set - My First Tonies - Dschungel Set",
+    "model": "11003558"
+  },
+  {
+    "file": "German/My First Tonies/Dschungel Set - Papagei.nfc",
+    "title": "Dschungel Set - My First Tonies - Dschungel Set",
+    "model": "11003558"
+  },
+  {
     "file": "German/My First Tonies/Bauernhof Set - Kuh.nfc",
     "title": "Bauernhof Set - My First Tonies - Bauernhof Set",
     "model": "11003561"
@@ -3701,6 +3731,26 @@
     "file": "German/GROSSE EXPERTEN/Das Mittelalter.nfc",
     "title": "GROßE EXPERTEN - Das Mittelalter",
     "model": "11004566"
+  },
+  {
+    "file": "German/Woozle Goozle/Woozle Goozle Set - Elektrizitaet & Sehen.nfc",
+    "title": "Woozle Goozle - Woozle Goozle Set",
+    "model": "11004634"
+  },
+  {
+    "file": "German/Woozle Goozle/Woozle Goozle Set - Insekten & Bienen.nfc",
+    "title": "Woozle Goozle - Woozle Goozle Set",
+    "model": "11004634"
+  },
+  {
+    "file": "German/Woozle Goozle/Woozle Goozle Set - Schlaf & Mond.nfc",
+    "title": "Woozle Goozle - Woozle Goozle Set",
+    "model": "11004634"
+  },
+  {
+    "file": "German/Woozle Goozle/Woozle Goozle Set - Vulkane & Wuesten.nfc",
+    "title": "Woozle Goozle - Woozle Goozle Set",
+    "model": "11004634"
   },
   {
     "file": "German/TKKG Junior/Auf frischer tat ertappt.nfc",
