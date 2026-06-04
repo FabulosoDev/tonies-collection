@@ -3338,6 +3338,11 @@
     "model": "11002362"
   },
   {
+    "file": "German/Schlummerbande/Schlummertukan - Naturklaenge aus dem Schlummerdschungel.nfc",
+    "title": "Schlummerbande - Schlummertukan - Naturklänge aus dem Schlummerdschungel",
+    "model": "11002382"
+  },
+  {
     "file": "German/Schlummerbande/Schlummerkrokodil - Eine Gutenachtgeschichte aus dem Schlummerdschungel.nfc",
     "title": "Schlummerbande - Schlummerkrokodil - Eine Gutenachtgeschichte aus dem Schlummerdschungel",
     "model": "11002390"
@@ -3573,6 +3578,16 @@
     "model": "11003328"
   },
   {
+    "file": "German/Winnie Puuh/I-Aah.nfc",
+    "title": "Winnie Puuh - I-Aah",
+    "model": "11003337"
+  },
+  {
+    "file": "German/Tierische Sportsfreunde/Das grosse Fussballturnier.nfc",
+    "title": "Tierische Sportsfreunde - Das große Fußballturnier",
+    "model": "11003411"
+  },
+  {
     "file": "German/My First Tonies/Reise Set - Flugzeug.nfc",
     "title": "Reise Set - My First Tonies - Reise Set",
     "model": "11003539"
@@ -3598,17 +3613,17 @@
     "model": "11003545"
   },
   {
-    "file": "German/My First Tonies/Dschungel Set - Tiger.nfc",
-    "title": "Dschungel Set - My First Tonies - Dschungel Set",
-    "model": "11003558"
-  },
-  {
     "file": "German/My First Tonies/Dschungel Set - Affe.nfc",
     "title": "Dschungel Set - My First Tonies - Dschungel Set",
     "model": "11003558"
   },
   {
     "file": "German/My First Tonies/Dschungel Set - Papagei.nfc",
+    "title": "Dschungel Set - My First Tonies - Dschungel Set",
+    "model": "11003558"
+  },
+  {
+    "file": "German/My First Tonies/Dschungel Set - Tiger.nfc",
     "title": "Dschungel Set - My First Tonies - Dschungel Set",
     "model": "11003558"
   },
