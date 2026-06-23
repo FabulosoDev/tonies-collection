@@ -3328,6 +3328,11 @@
     "model": "11002278"
   },
   {
+    "file": "German/Bobo Siebenschlaefer/Bobo auf grosser Reise und weitere Folgen.nfc",
+    "title": "Bobo Siebenschläfer - Bobo auf großer Reise und weitere Folgen",
+    "model": "11002283"
+  },
+  {
     "file": "English/Other/Target Bullseye.nfc",
     "title": "Target Bullseye - None",
     "model": "11002293"
@@ -3578,6 +3583,11 @@
     "model": "11003328"
   },
   {
+    "file": "German/Winnie Puuh/Ferkels grosses Abenteuer.nfc",
+    "title": "Winnie Puuh - Ferkels großes Abenteuer",
+    "model": "11003336"
+  },
+  {
     "file": "German/Winnie Puuh/I-Aah.nfc",
     "title": "Winnie Puuh - I-Aah",
     "model": "11003337"
@@ -3728,6 +3738,11 @@
     "model": "11003994"
   },
   {
+    "file": "German/Lieblings-Literatur/Der geheime Garten.nfc",
+    "title": "Lieblings-Literatur - Der geheime Garten",
+    "model": "11004394"
+  },
+  {
     "file": "German/Checker Tobi/Checker Tobi 3 Das Extra zum Kinofilm.nfc",
     "title": "Checker Tobi - Checker Tobi 3: Das Extra zum Kinofilm",
     "model": "11004430"
@@ -3766,6 +3781,16 @@
     "file": "German/Woozle Goozle/Woozle Goozle Set - Vulkane & Wuesten.nfc",
     "title": "Woozle Goozle - Woozle Goozle Set",
     "model": "11004634"
+  },
+  {
+    "file": "German/Lieblings-Literatur/Peter Pan.nfc",
+    "title": "Lieblings-Literatur - Peter Pan",
+    "model": "11004679"
+  },
+  {
+    "file": "German/Sommerby/Ein Sommer in Sommerby.nfc",
+    "title": "Sommerby - Ein Sommer in Sommerby",
+    "model": "11004859"
   },
   {
     "file": "German/TKKG Junior/Auf frischer tat ertappt.nfc",
