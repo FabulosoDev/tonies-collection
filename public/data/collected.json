@@ -2133,6 +2133,11 @@
     "model": "10001691"
   },
   {
+    "file": "German/Pokemon/Pikachu.nfc",
+    "title": "Pokémon - Pikachu",
+    "model": "10001692"
+  },
+  {
     "file": "German/Rolf Zuckowski/Rolfs Hasengeschichte.nfc",
     "title": "Rolf Zuckowski - Rolfs Hasengeschichte",
     "model": "10001693"
@@ -2818,6 +2823,11 @@
     "model": "11000720"
   },
   {
+    "file": "German/Marvel/Marvel - Iron Man.nfc",
+    "title": "Avengers - Iron Man",
+    "model": "11000735"
+  },
+  {
     "file": "German/Lieblings-Klassiker/Der Zauberer von OZ und zwei weitere Klassiker.nfc",
     "title": "Lieblings-Klassiker - Der Zauberer von Oz und zwei weitere Klassiker",
     "model": "11000736"
@@ -3328,6 +3338,11 @@
     "model": "11002278"
   },
   {
+    "file": "German/Bobo Siebenschlaefer/Bobo baggert und weitere Folgen.nfc",
+    "title": "Bobo Siebenschläfer - Bobo baggert und weitere Folgen",
+    "model": "11002281"
+  },
+  {
     "file": "German/Bobo Siebenschlaefer/Bobo auf grosser Reise und weitere Folgen.nfc",
     "title": "Bobo Siebenschläfer - Bobo auf großer Reise und weitere Folgen",
     "model": "11002283"
@@ -3578,9 +3593,24 @@
     "model": "11003255"
   },
   {
+    "file": "German/KLE!NE EXPERTEN/KLE!NE EXPERTEN ... loeschen mit der Feuerwehr.nfc",
+    "title": "KLE!NE EXPERTEN - KLE!NE EXPERTEN ... löschen mit der Feuerwehr",
+    "model": "11003321"
+  },
+  {
     "file": "German/Der Grueffelo/Der Grueffelo & Das Grueffelokind (Relaunch 2026).nfc",
     "title": "Der Grüffelo - Der Grüffelo & Das Grüffelokind (Relaunch 2026)",
     "model": "11003328"
+  },
+  {
+    "file": "German/Marvel/Marvel - Captain America.nfc",
+    "title": "Avengers - Captain America",
+    "model": "11003331"
+  },
+  {
+    "file": "German/Marvel/Marvel - Spider-Man.nfc",
+    "title": "Spider-Man - Spider-Man",
+    "model": "11003334"
   },
   {
     "file": "German/Winnie Puuh/Ferkels grosses Abenteuer.nfc",
@@ -3593,9 +3623,29 @@
     "model": "11003337"
   },
   {
+    "file": "German/SuperKitties/Ginny.nfc",
+    "title": "SuperKitties - SuperKitties - Ginny",
+    "model": "11003409"
+  },
+  {
+    "file": "German/Disney/Disney Pixar - Toy Story 5.nfc",
+    "title": "Toy Story - Toy Story 5",
+    "model": "11003410"
+  },
+  {
     "file": "German/Tierische Sportsfreunde/Das grosse Fussballturnier.nfc",
     "title": "Tierische Sportsfreunde - Das große Fußballturnier",
     "model": "11003411"
+  },
+  {
+    "file": "German/Micky Maus Wunderhaus/Micky Maus Wunderhaus - Mickey.nfc",
+    "title": "Micky Maus Wunderhaus - Micky Maus Wunderhaus - Micky",
+    "model": "11003416"
+  },
+  {
+    "file": "German/Micky Maus Wunderhaus/Micky Maus Wunderhaus - Minnie.nfc",
+    "title": "Micky Maus Wunderhaus - Micky Maus Wunderhaus - Minnie",
+    "model": "11003418"
   },
   {
     "file": "German/My First Tonies/Reise Set - Flugzeug.nfc",
@@ -3708,9 +3758,44 @@
     "model": "11003773"
   },
   {
+    "file": "German/DIKKA - Boom Schakkalakka/DIKKA - Boom Schakkalakka.nfc",
+    "title": "DIKKA - DIKKA - Boom Schakkalakka",
+    "model": "11003779"
+  },
+  {
     "file": "German/Die Schluempfe/Hefty Schlumpf - Wer ist heftiger & 3 weitere schlumpfige Abenteuer.nfc",
     "title": "Die Schlümpfe - Hefty Schlumpf - Wer ist heftiger? & 3 weitere schlumpfige Abenteuer",
     "model": "11003780"
+  },
+  {
+    "file": "German/Pokemon/Bisasam.nfc",
+    "title": "Pokémon - Bisasam",
+    "model": "11003815"
+  },
+  {
+    "file": "German/Pokemon/Glumanda.nfc",
+    "title": "Pokémon - Glumanda",
+    "model": "11003817"
+  },
+  {
+    "file": "German/Pokemon/Schiggy.nfc",
+    "title": "Pokémon - Schiggy",
+    "model": "11003819"
+  },
+  {
+    "file": "German/Disney/Cuddle Tonie Olaf.nfc",
+    "title": "Cuddle Tonie - Olaf",
+    "model": "11003863"
+  },
+  {
+    "file": "German/Disney/Cuddle Tonie Simba.nfc",
+    "title": "Cuddle Tonie - Simba",
+    "model": "11003868"
+  },
+  {
+    "file": "German/Disney/Cuddle Tonie Stitch.nfc",
+    "title": "Cuddle Tonie - Stitch",
+    "model": "11003879"
   },
   {
     "file": "German/Kleiner Otter, grosses Herz/Lieder und Geschichten zum Liebhaben.nfc",
