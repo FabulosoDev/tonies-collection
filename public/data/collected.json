@@ -1,5 +1,41 @@
 [
   {
+    "file": "English/Amelia Bedelia and Friends/Arise and Shine.nfc",
+    "audio_id": "1758737772",
+    "hash": "046a52fb514e1a1899454de412ef1875fd8d31b6",
+    "error": "No metadata found"
+  },
+  {
+    "file": "English/Amelia Bedelia and Friends/Beat the Clock.nfc",
+    "audio_id": "1758737618",
+    "hash": "451ec2915d81f57932cd707599fa54784545db7e",
+    "error": "No metadata found"
+  },
+  {
+    "file": "English/Amelia Bedelia and Friends/Paint the Town.nfc",
+    "audio_id": "1758737851",
+    "hash": "947564736bce9e406e9f0e307d4b37dafaf5a3e3",
+    "error": "No metadata found"
+  },
+  {
+    "file": "English/Amelia Bedelia and Friends/The Cats Meow.nfc",
+    "audio_id": "1758737690",
+    "hash": "00d6bfeef8c8050298b2a91edd4265874bc2765f",
+    "error": "No metadata found"
+  },
+  {
+    "file": "English/Clever Tonies Set/Danny Go/Danny Go - Adventure Beats.nfc",
+    "audio_id": "1757701634",
+    "hash": "755b6adec38d5099b1c1bc592ee705fda7627022",
+    "error": "No metadata found"
+  },
+  {
+    "file": "English/Clever Tonies Set/Danny Go/Danny Go - Dance Party.nfc",
+    "audio_id": "1757702264",
+    "hash": "2110c4d80ab8a1431389917e75467c102a9ecc91",
+    "error": "No metadata found"
+  },
+  {
     "file": "English/Clever Tonies Set/Musicians/Punk Rockers.nfc",
     "audio_id": "1727801746",
     "hash": "5e30c56d8ee95dd06251b640ca1302e72af2d8f4",
@@ -9,6 +45,42 @@
     "file": "English/Clever Tonies Set/Musicians/Trailblazers.nfc",
     "audio_id": "1727801776",
     "hash": "b3c05eaa8218cb275c6fd8794b911b48ca042983",
+    "error": "No metadata found"
+  },
+  {
+    "file": "English/Magic Tree House/Dinosaurs Before Dark.nfc",
+    "audio_id": "1758741476",
+    "hash": "001e7812919ac6facfd5c722d098a8a5890e98a9",
+    "error": "No metadata found"
+  },
+  {
+    "file": "English/Magic Tree House/Pirates Past Noon.nfc",
+    "audio_id": "1758741675",
+    "hash": "0405238ad8b051dbe14de0cc4abbb0898363e53f",
+    "error": "No metadata found"
+  },
+  {
+    "file": "English/The Chronicles of Narnia/Prince Caspian.nfc",
+    "audio_id": "1761087688",
+    "hash": "5afc6d93126938b1b19a1cdcad5021acc1691680",
+    "error": "No metadata found"
+  },
+  {
+    "file": "English/The Chronicles of Narnia/The Horse and His Boy.nfc",
+    "audio_id": "1761086093",
+    "hash": "3cad14c675f326fd24df3ed0db3d2d0bb93cf559",
+    "error": "No metadata found"
+  },
+  {
+    "file": "English/The Chronicles of Narnia/The Lion, the Witch and the Wardrobe.nfc",
+    "audio_id": "1761084545",
+    "hash": "c0f3e45b1e5cf0cf57f859413aeed18cebe33029",
+    "error": "No metadata found"
+  },
+  {
+    "file": "English/The Chronicles of Narnia/The Magicians Nephew.nfc",
+    "audio_id": "1761083152",
+    "hash": "0f1db6eebb41e82ce40647fa5ca5a29a1ed306fe",
     "error": "No metadata found"
   },
   {
@@ -918,6 +990,11 @@
     "model": "10000223"
   },
   {
+    "file": "English/Despicable Me/The Junior Novel.nfc",
+    "title": "Despicable Me - The Junior Novel",
+    "model": "10000228"
+  },
+  {
     "file": "German/Lieblings-Kinderlieder/Spiel- und Bewegungslieder 2.nfc",
     "title": "Lieblings-Kinderlieder - Spiel- und Bewegungslieder 2",
     "model": "10000230"
@@ -1238,6 +1315,11 @@
     "model": "10000501"
   },
   {
+    "file": "English/Favorite Tales/Red Riding Hood and Other Fairy Tale Stories.nfc",
+    "title": "Favorite Tales - Red Riding Hood and Other Fairy Tale Stories",
+    "model": "10000506"
+  },
+  {
     "file": "German/Unter meinem Bett/Unter meinem Bett 5.nfc",
     "title": "Unter meinem Bett - Unter meinem Bett 5",
     "model": "10000507"
@@ -1293,14 +1375,49 @@
     "model": "10000530"
   },
   {
+    "file": "English/Tonies Originals/Favorite Childrens Songs - Animal Songs (Dog).nfc",
+    "title": "Favorite Children's Songs - Playtime Songs",
+    "model": "10000538"
+  },
+  {
     "file": "English/Tonies Originals/Favorite Childrens Songs - Bedtime Songs.nfc",
     "title": "Favorite Children's Songs - Bedtime Songs",
     "model": "10000539"
   },
   {
+    "file": "English/Tonies Originals/Favorite Childrens Songs - Celebration Songs.nfc",
+    "title": "Favorite Children's Songs - Celebration Songs",
+    "model": "10000540"
+  },
+  {
     "file": "English/Peppa Pig/Peppa Pig.nfc",
     "title": "Peppa Pig - On the Road with Peppa",
     "model": "10000543"
+  },
+  {
+    "file": "English/Other/Spot - Fun with Friends.nfc",
+    "title": "Spot's Fun with Friends - None",
+    "model": "10000544"
+  },
+  {
+    "file": "English/Favorite Tales/Rapunzel & Other Fairy Tales.nfc",
+    "title": "Favorite Tales - Rapunzel & Other Fairy Tales",
+    "model": "10000553"
+  },
+  {
+    "file": "English/Favorite Children's Songs/Animal Songs.nfc",
+    "title": "Favorite Children's Songs - Animal Songs",
+    "model": "10000557"
+  },
+  {
+    "file": "English/Favorite Children's Songs/Counting Songs.nfc",
+    "title": "Favorite Children's Songs - Counting Songs",
+    "model": "10000558"
+  },
+  {
+    "file": "English/Favorite Tales/Puss in Boots.nfc",
+    "title": "Favorite Tales - Puss in Boots",
+    "model": "10000569"
   },
   {
     "file": "English/DreamWorks/How to Train Your Dragon.nfc",
@@ -1381,6 +1498,11 @@
     "file": "English/Sesame Street/Cookie Monster.nfc",
     "title": "Sesame Street - Cookie Monster",
     "model": "10000630"
+  },
+  {
+    "file": "English/DreamWorks/Spirit Untamed.nfc",
+    "title": "Spirit Untamed - None",
+    "model": "10000631"
   },
   {
     "file": "English/DreamWorks/Trolls/Poppy.nfc",
@@ -1528,6 +1650,16 @@
     "model": "10000755"
   },
   {
+    "file": "English/Other/Raffi - Baby Beluga.nfc",
+    "title": "Raffi - None",
+    "model": "10000772"
+  },
+  {
+    "file": "English/Blaze & the Monster Machines/Blaze.nfc",
+    "title": "Blaze & the Monster Machines - None",
+    "model": "10000776"
+  },
+  {
     "file": "English/Other/Blues Clues and You.nfc",
     "title": "Blue's Clues & You - None",
     "model": "10000777"
@@ -1541,6 +1673,11 @@
     "file": "English/Pete the Cat/Pete the Cat.nfc",
     "title": "Pete the Cat - None",
     "model": "10000780"
+  },
+  {
+    "file": "English/Other/Corduroy.nfc",
+    "title": "Corduroy - None",
+    "model": "10000781"
   },
   {
     "file": "English/Other/The Very Hungry Caterpillar and Friends.nfc",
@@ -1568,6 +1705,11 @@
     "model": "10000795"
   },
   {
+    "file": "English/Disney/Baby Lullabies.nfc",
+    "title": "Disney - Baby Lullabies",
+    "model": "10000797"
+  },
+  {
     "file": "English/National Geographic Kids/Dinosaur.nfc",
     "title": "National Geographic Kids - Dinosaur",
     "model": "10000799"
@@ -1581,6 +1723,11 @@
     "file": "German/Gute Nacht, Gorilla/Gute Nacht, Gorilla und weitere Einschlafhoerspiele.nfc",
     "title": "Gute Nacht, Gorilla - Gute Nacht, Gorilla und weitere Einschlafhörspiele",
     "model": "10000818"
+  },
+  {
+    "file": "English/Other/The Laurie Berkner Band.nfc",
+    "title": "Laurie Berkner - Laurie Berkner",
+    "model": "10000819"
   },
   {
     "file": "English/Other/The Elf on the Shelf.nfc",
@@ -1673,7 +1820,7 @@
     "model": "10000911"
   },
   {
-    "file": "German/Prinzessin Lillifee/Gute-Nacht-Geschichten - Die verzauberten Seerosen+Die goldene Perle.nfc",
+    "file": "German/Prinzessin Lillifee/Gute-Nacht-Geschichten - Die verzauberten Seerosen & Die goldene Perle.nfc",
     "title": "Prinzessin Lillifee - Gute-Nacht-Geschichten - Die verzauberten Seerosen/Die goldene Perle",
     "model": "10000912"
   },
@@ -1681,6 +1828,11 @@
     "file": "German/Das kleine Hoerbuch vom grossen Glueck/Das kleine Hoerbuch vom grossen Glueck - Die Gluecksfee.nfc",
     "title": "Das kleine Hörbuch vom großen Glück - Das kleine Hörbuch vom großen Glück - Die Glücksfee",
     "model": "10000913"
+  },
+  {
+    "file": "English/Other/Chicka Chicka Boom Boom.nfc",
+    "title": "Chicka Chicka Boom Boom - None",
+    "model": "10000926"
   },
   {
     "file": "German/Minimusiker/Lieder fuer dich 2.nfc",
@@ -1711,6 +1863,11 @@
     "file": "English/DC/Batman.nfc",
     "title": "DC - Batman",
     "model": "10000937"
+  },
+  {
+    "file": "English/Dr Seuss/The Lorax.nfc",
+    "title": "Dr. Seuss - The Lorax",
+    "model": "10000938"
   },
   {
     "file": "German/Disney/Cars 2.nfc",
@@ -1793,6 +1950,16 @@
     "model": "10001074"
   },
   {
+    "file": "English/Other/The Pout-Pout Fish.nfc",
+    "title": "The Pout-Pout Fish - None",
+    "model": "10001082"
+  },
+  {
+    "file": "English/Daniel Tigers Neighborhood/Daniel Tiger.nfc",
+    "title": "Daniel Tiger's Neighborhood - None",
+    "model": "10001083"
+  },
+  {
     "file": "English/Ask the Storybots/Bo.nfc",
     "title": "Ask the StoryBots - Bo",
     "model": "10001092"
@@ -1816,6 +1983,11 @@
     "file": "English/Disney/Tinker Bell.nfc",
     "title": "Disney - Tinker Bell",
     "model": "10001140"
+  },
+  {
+    "file": "English/Favorite Tales/Annie Oakley.nfc",
+    "title": "Favorite Tales - Annie Oakley",
+    "model": "10001152"
   },
   {
     "file": "German/Sesamstrasse/Elmos Mitmachmusik.nfc",
@@ -1953,6 +2125,11 @@
     "model": "10001345"
   },
   {
+    "file": "English/Disney/The Nightmare Before Christmas - Jack Skellington.nfc",
+    "title": "Disney - The Nightmare Before Christmas",
+    "model": "10001358"
+  },
+  {
     "file": "German/Der Grolltroll/Der Grolltroll.nfc",
     "title": "Der Grolltroll - Der Grolltroll – Das Liederalbum",
     "model": "10001367"
@@ -2071,6 +2248,11 @@
     "file": "English/Dr Seuss/Green Eggs & Ham.nfc",
     "title": "Dr. Seuss - Green Eggs & Ham",
     "model": "10001550"
+  },
+  {
+    "file": "English/Disney/Aladdin - Princess Jasmine.nfc",
+    "title": "Disney - Aladdin: Jasmine",
+    "model": "10001551"
   },
   {
     "file": "German/Furzipups, der Knatterdrache/Furzipups - 3 Geschichten und 6 Songs.nfc",
@@ -2203,6 +2385,11 @@
     "model": "10001872"
   },
   {
+    "file": "English/Peanuts/Camp Snoopy.nfc",
+    "title": "Camp Snoopy - None",
+    "model": "10001887"
+  },
+  {
     "file": "German/Lieblings-Kinderlieder/Reiselieder (Neuauflage 2023).nfc",
     "title": "Lieblings-Kinderlieder - Reiselieder (Neuauflage 2023)",
     "model": "10001898"
@@ -2268,7 +2455,7 @@
     "model": "10001991"
   },
   {
-    "file": "German/Mascha und der Baer/Winterschlaf fuer alle + 5 weitere quirlige und lustige Geschichten.nfc",
+    "file": "German/Mascha und der Baer/Winterschlaf fuer alle & 5 weitere quirlige und lustige Geschichten.nfc",
     "title": "Mascha und der Bär - Winterschlaf für alle + 5 weitere quirlige und lustige Geschichten",
     "model": "10001996"
   },
@@ -2338,6 +2525,11 @@
     "model": "10002027"
   },
   {
+    "file": "English/Other/The Little Engine That Could.nfc",
+    "title": "The Little Engine That Could - None",
+    "model": "10002030"
+  },
+  {
     "file": "English/Paw Patrol/Rex.nfc",
     "title": "PAW Patrol - Rex",
     "model": "10002048"
@@ -2361,6 +2553,11 @@
     "file": "English/Other/The Lion Inside.nfc",
     "title": "The Lion Inside - None",
     "model": "10002102"
+  },
+  {
+    "file": "English/Sleepy Friends/Bedtime Stories with Sleepy Bear.nfc",
+    "title": "Sleepy Bear - Bedtime Story from the Sleepy Forest",
+    "model": "10002103"
   },
   {
     "file": "German/Pummel & Friends/Das Pummeleinhorn - Der Herr der Donuts & Alles versalzen.nfc",
@@ -2431,6 +2628,11 @@
     "file": "English/Disney/Encanto.nfc",
     "title": "Disney - Encanto",
     "model": "11000202"
+  },
+  {
+    "file": "English/Animal Adventures/Barry, Buddy & Swansea Jack.nfc",
+    "title": "Animal Adventures - Barry, Buddy & Swansea Jack",
+    "model": "11000211"
   },
   {
     "file": "English/Other/The Velveteen Rabbit.nfc",
@@ -2508,9 +2710,19 @@
     "model": "11000262"
   },
   {
+    "file": "English/Peppa Pig/Learn with Peppa.nfc",
+    "title": "Peppa Pig - Learn with Peppa",
+    "model": "11000263"
+  },
+  {
     "file": "English/Other/Carmen Sandiego.nfc",
     "title": "Carmen Sandiego - None",
     "model": "11000264"
+  },
+  {
+    "file": "English/Other/The King of Kindergarten.nfc",
+    "title": "King of Kindergarten - None",
+    "model": "11000265"
   },
   {
     "file": "English/Paw Patrol/Tracker.nfc",
@@ -2563,7 +2775,7 @@
     "model": "11000289"
   },
   {
-    "file": "German/Sing Kinderlieder/Bagger Mats + seine Freunde - Die schoensten Fahrzeuglieder.nfc",
+    "file": "German/Sing Kinderlieder/Bagger Mats & seine Freunde - Die schoensten Fahrzeuglieder.nfc",
     "title": "Sing Kinderlieder - Bagger Mats & seine Freunde: Die schönsten Fahrzeuglieder",
     "model": "11000290"
   },
@@ -2613,9 +2825,19 @@
     "model": "11000360"
   },
   {
+    "file": "German/Disney Micky Maus & Freunde/Mickys grosses Weihnachtsfest - Eingeschneit im Haus der Maus.nfc",
+    "title": "Micky Maus & Freunde - Mickys großes Weihnachtsfest – Eingeschneit im Haus der Maus",
+    "model": "11000423"
+  },
+  {
     "file": "German/Disney/Mickys grosses Weihnachtsfest.nfc",
     "title": "Micky Maus & Freunde - Mickys großes Weihnachtsfest – Eingeschneit im Haus der Maus",
     "model": "11000423"
+  },
+  {
+    "file": "English/Sleepy Friends/Classical Music with Sleepy Rabbit.nfc",
+    "title": "Sleepy Friends - Classical Music with Sleepy Rabbit",
+    "model": "11000424"
   },
   {
     "file": "German/Peppa Pig/Das Schulfest & 7 weitere Geschichten.nfc",
@@ -2663,6 +2885,11 @@
     "model": "11000441"
   },
   {
+    "file": "English/National Geographic Kids/Ancient Egypt.nfc",
+    "title": "National Geographic Kids - Ancient Egypt",
+    "model": "11000461"
+  },
+  {
     "file": "German/Marvel Spidey und seine Super-Freunde/Spidey und seine Super-Freunde - Das Spidey Team & 3 weitere spannende Abenteuer.nfc",
     "title": "MARVEL Spidey und seine Super-Freunde - Spidey und seine Super-Freunde - Das Spidey Team & 3 weitere spannende Abenteuer",
     "model": "11000462"
@@ -2683,9 +2910,19 @@
     "model": "11000479"
   },
   {
+    "file": "English/Moshi/SleepyPaws.nfc",
+    "title": "Moshi - SleepyPaws",
+    "model": "11000482"
+  },
+  {
     "file": "English/Disney and Pixar/Inside Out.nfc",
     "title": "Disney & Pixar - Inside Out",
     "model": "11000484"
+  },
+  {
+    "file": "English/Other/Piney - The Lonesome Pine.nfc",
+    "title": "Piney - The Lonesome Pine",
+    "model": "11000499"
   },
   {
     "file": "German/Disney/Wish.nfc",
@@ -2728,6 +2965,11 @@
     "model": "11000558"
   },
   {
+    "file": "English/Pokemon/Pikachu.nfc",
+    "title": "Pokémon - Pikachu",
+    "model": "11000561"
+  },
+  {
     "file": "German/DC/Batwheels.nfc",
     "title": "DC: Batwheels - DC - Batwheels",
     "model": "11000593"
@@ -2743,7 +2985,7 @@
     "model": "11000602"
   },
   {
-    "file": "German/Sing Kinderlieder/Milo, das Muellauto-Kind + seine Freunde - Abenteuer in der grossen Stadt.nfc",
+    "file": "German/Sing Kinderlieder/Milo, das Muellauto-Kind & seine Freunde - Abenteuer in der grossen Stadt.nfc",
     "title": "Sing Kinderlieder - Milo, das Müllauto-Kind & seine Freunde - Abenteuer in der großen Stadt",
     "model": "11000604"
   },
@@ -2768,29 +3010,49 @@
     "model": "11000618"
   },
   {
+    "file": "English/Other/The Secret Garden.nfc",
+    "title": "The Secret Garden - None",
+    "model": "11000619"
+  },
+  {
     "file": "French/Other/Gus Le Chevalier Minus.nfc",
     "title": "Gus Le Chevalier Minus - Gus",
     "model": "11000629"
   },
   {
-    "file": "English/Paw Patrol/Jungle Pups Chase.nfc",
+    "file": "English/Other/Duck and Goose.nfc",
+    "title": "Duck & Goose - None",
+    "model": "11000639"
+  },
+  {
+    "file": "English/PAW Patrol Jungle Pups/Jungle Pups Chase.nfc",
     "title": "PAW Patrol Jungle Pups - Chase",
     "model": "11000645"
   },
   {
-    "file": "English/PAW Patrol Jungle Pups/Marshall.nfc",
+    "file": "English/PAW Patrol Jungle Pups/Jungle Pups Marshall.nfc",
     "title": "PAW Patrol Jungle Pups - Marshall",
     "model": "11000646"
   },
   {
-    "file": "English/PAW Patrol Jungle Pups/Skye.nfc",
+    "file": "English/PAW Patrol Jungle Pups/Jungle Pups Skye.nfc",
     "title": "PAW Patrol Jungle Pups - Skye",
     "model": "11000647"
+  },
+  {
+    "file": "English/Other/Story Pirates.nfc",
+    "title": "Story Pirates - None",
+    "model": "11000651"
   },
   {
     "file": "German/Hurra Kinderlieder/Hurra Kinderlieder - Best of.nfc",
     "title": "Hurra Kinderlieder - Hurra Kinderlieder - Best of",
     "model": "11000677"
+  },
+  {
+    "file": "English/Disney and Pixar/Ratatouille.nfc",
+    "title": "Disney - and Pixar Ratatouille",
+    "model": "11000704"
   },
   {
     "file": "German/Disney/Ratatouille.nfc",
@@ -2841,6 +3103,16 @@
     "file": "German/Dreamworks/Kung Fu Panda.nfc",
     "title": "Kung Fu Panda - Kung Fu Panda",
     "model": "11000739"
+  },
+  {
+    "file": "English/Other/KidNation.nfc",
+    "title": "KidNation - KidNation",
+    "model": "11000746"
+  },
+  {
+    "file": "English/Sesame Street/Elmo & Tango.nfc",
+    "title": "Sesame Street - Elmo & Tango",
+    "model": "11000748"
   },
   {
     "file": "English/Sesame Street/Elmo.nfc",
@@ -2918,12 +3190,12 @@
     "model": "11000790"
   },
   {
-    "file": "German/Clever Tonies/GEOlino/Alles ueber Meere + Ozeane.nfc",
+    "file": "German/Clever Tonies/GEOlino/Alles ueber Meere & Ozeane.nfc",
     "title": "GEOlino - GEOlino Mini - Set",
     "model": "11000796"
   },
   {
-    "file": "German/Clever Tonies/GEOlino/Alles ueber Sterne + Planeten.nfc",
+    "file": "German/Clever Tonies/GEOlino/Alles ueber Sterne & Planeten.nfc",
     "title": "GEOlino - GEOlino Mini - Set",
     "model": "11000796"
   },
@@ -2933,7 +3205,7 @@
     "model": "11000796"
   },
   {
-    "file": "German/Clever Tonies/GEOlino/Alles ueber die Arktis + Antarktis.nfc",
+    "file": "German/Clever Tonies/GEOlino/Alles ueber die Arktis & Antarktis.nfc",
     "title": "GEOlino - GEOlino Mini - Set",
     "model": "11000796"
   },
@@ -3023,7 +3295,12 @@
     "model": "11000925"
   },
   {
-    "file": "German/Gabbys Dollhouse/Das Raumschiff + Gabby hat einen Schluckauf.nfc",
+    "file": "German/Adventskalender/Adventskalender 2026 - Milas Weihnachtsreise.nfc",
+    "title": "Adventskalender - Milas Weihnachtsreise",
+    "model": "11000930"
+  },
+  {
+    "file": "German/Gabbys Dollhouse/Das Raumschiff & Gabby hat einen Schluckauf.nfc",
     "title": "Gabby's Dollhouse - Das Raumschiff / Gabby hat einen Schluckauf",
     "model": "11000933"
   },
@@ -3158,6 +3435,16 @@
     "model": "11001146"
   },
   {
+    "file": "English/DreamWorks/Gabbys Dollhouse/Kitty Fairy.nfc",
+    "title": "Gabby's Dollhouse - Kitty Fairy",
+    "model": "11001268"
+  },
+  {
+    "file": "English/Other/Qai Qai - Invisible Universe.nfc",
+    "title": "Qai Qai - Invisible Universe",
+    "model": "11001276"
+  },
+  {
     "file": "German/Schlummerbande/Schlummerpinguin - Weisses Rauschen aus dem Ozean.nfc",
     "title": "Schlummerbande - Schlummerpinguin - Weißes Rauschen aus dem Ozean",
     "model": "11001281"
@@ -3186,6 +3473,36 @@
     "file": "German/BiBiBiber hat da mal ne Frage/Warum leuchten Sterne.nfc",
     "title": "BiBiBiber hat da mal 'ne Frage - Warum leuchten Sterne?",
     "model": "11001338"
+  },
+  {
+    "file": "English/Gracies Corner/Gracies Corner.nfc",
+    "title": "Gracie's Corner - None",
+    "model": "11001341"
+  },
+  {
+    "file": "English/Other/Wicked.nfc",
+    "title": "Wicked - None",
+    "model": "11001343"
+  },
+  {
+    "file": "English/Baby Einstein/Farm Explorers.nfc",
+    "title": "Baby Einstein - Farm Explorers",
+    "model": "11001346"
+  },
+  {
+    "file": "English/Sleepy Time/Sleepy Whale - Lullabies from the Ocean.nfc",
+    "title": "Sleepy Whale - Lullabies from the Ocean",
+    "model": "11001348"
+  },
+  {
+    "file": "English/Disney and Pixar/Finding Dory.nfc",
+    "title": "Disney - and Pixar Finding Dory",
+    "model": "11001363"
+  },
+  {
+    "file": "English/Jurassic World/Camp Cretaceous.nfc",
+    "title": "Jurassic World - Camp Cretaceous",
+    "model": "11001510"
   },
   {
     "file": "German/Schlummerbande/Schlummerente - Eine Klangreise durch den Schlummerwald (Limited Edition).nfc",
@@ -3228,7 +3545,7 @@
     "model": "11001622"
   },
   {
-    "file": "German/Gabbys Dollhouse/Gabby, ich habe die Kaetzchen geschrumpft! + Der Eisbaer Pete.nfc",
+    "file": "German/Gabbys Dollhouse/Gabby, ich habe die Kaetzchen geschrumpft! & Der Eisbaer Pete.nfc",
     "title": "Gabby's Dollhouse - Gabby, ich habe die Kätzchen geschrumpft! / Der Eisbär Pete",
     "model": "11001623"
   },
@@ -3248,12 +3565,52 @@
     "model": "11001763"
   },
   {
-    "file": "German/Gabbys Dollhouse/Der Cupcake-Baum + Die Puppenhausdetektive.nfc",
+    "file": "English/Clever Tonies Set/Crayola Art Adventures/Faces.nfc",
+    "title": "None - None",
+    "model": "11001766"
+  },
+  {
+    "file": "English/Clever Tonies Set/Crayola Art Adventures/Places.nfc",
+    "title": "None - None",
+    "model": "11001766"
+  },
+  {
+    "file": "English/Clever Tonies Set/Crayola Art Adventures/Sounds.nfc",
+    "title": "None - None",
+    "model": "11001766"
+  },
+  {
+    "file": "English/Clever Tonies Set/Crayola Art Adventures/Squiggles.nfc",
+    "title": "None - None",
+    "model": "11001766"
+  },
+  {
+    "file": "English/Clever Tonies Set/Space Explorers Club/Gas & Ice Giants.nfc",
+    "title": "None - None",
+    "model": "11001775"
+  },
+  {
+    "file": "English/Clever Tonies Set/Space Explorers Club/Rocky Planets.nfc",
+    "title": "None - None",
+    "model": "11001775"
+  },
+  {
+    "file": "English/Clever Tonies Set/Space Explorers Club/The Moon.nfc",
+    "title": "None - None",
+    "model": "11001775"
+  },
+  {
+    "file": "English/Clever Tonies Set/Space Explorers Club/The Sun.nfc",
+    "title": "None - None",
+    "model": "11001775"
+  },
+  {
+    "file": "German/Gabbys Dollhouse/Der Cupcake-Baum & Die Puppenhausdetektive.nfc",
     "title": "Gabby's Dollhouse - Der Cupcake-Baum / Die Puppenhausdetektive",
     "model": "11001782"
   },
   {
-    "file": "German/Gabbys Dollhouse/Eroeffnungsfeier im Puppenhaus + Kitty Fees Uebernachtungsparty.nfc",
+    "file": "German/Gabbys Dollhouse/Eroeffnungsfeier im Puppenhaus & Kitty Fees Uebernachtungsparty.nfc",
     "title": "Gabby's Dollhouse - Eröffnungsfeier im Puppenhaus / Kitty Fees Übernachtungsparty",
     "model": "11001833"
   },
@@ -3288,6 +3645,41 @@
     "model": "11001920"
   },
   {
+    "file": "English/Peanuts/A Charlie Brown Christmas (Vince Guaraldi Trio).nfc",
+    "title": "Peanuts - A Charlie Brown Christmas (Vince Guaraldi Trio)",
+    "model": "11001921"
+  },
+  {
+    "file": "English/The Questioneers/Ada Twist and the Perilous Pants.nfc",
+    "title": "None - None",
+    "model": "11001923"
+  },
+  {
+    "file": "English/The Questioneers/Rosie Revere and the Raucous Riveters.nfc",
+    "title": "None - None",
+    "model": "11001933"
+  },
+  {
+    "file": "English/The Questioneers/Iggy Peck and the Mysterious Mansion.nfc",
+    "title": "None - None",
+    "model": "11001934"
+  },
+  {
+    "file": "English/The Questioneers/Sofia Valdez and the Vanishing Vote.nfc",
+    "title": "None - None",
+    "model": "11001935"
+  },
+  {
+    "file": "English/Paw Patrol/Ryder.nfc",
+    "title": "PAW Patrol - Ryder",
+    "model": "11001977"
+  },
+  {
+    "file": "English/Other/Molly of Denali.nfc",
+    "title": "Molly of Denali - None",
+    "model": "11001985"
+  },
+  {
     "file": "German/MIRA und das fliegende Haus/MIRA und das fliegende Haus - Ich bin cool!.nfc",
     "title": "MIRA und das fliegende Haus - MIRA und das fliegende Haus - Set",
     "model": "11001986"
@@ -3313,6 +3705,16 @@
     "model": "11001988"
   },
   {
+    "file": "English/Other/Mister Rogers Neighborhood.nfc",
+    "title": "Mister Rogers' Neighborhood - None",
+    "model": "11002021"
+  },
+  {
+    "file": "English/Dora the Explorer/Dora.nfc",
+    "title": "Dora - None",
+    "model": "11002052"
+  },
+  {
     "file": "German/Bibi Blocksberg/Ausgehext!.nfc",
     "title": "Bibi Blocksberg - Ausgehext!",
     "model": "11002078"
@@ -3321,6 +3723,21 @@
     "file": "German/Europa-Park/Ed & Edda - Grand Prix of Europe.nfc",
     "title": "Europa-Park - Ed & Edda – Grand Prix of Europe",
     "model": "11002141"
+  },
+  {
+    "file": "English/Tales of the Teenage Mutant Ninja Turtles/Leonardo.nfc",
+    "title": "Tales of the Teenage Mutant Ninja Turtles - Leonardo",
+    "model": "11002151"
+  },
+  {
+    "file": "English/Other/Hot Wheels.nfc",
+    "title": "Hot Wheels - None",
+    "model": "11002209"
+  },
+  {
+    "file": "English/Other/Ms Rachel.nfc",
+    "title": "Ms. Rachel - Ms. Rachel",
+    "model": "11002272"
   },
   {
     "file": "German/Lieblings-Kinderlieder/Kindergartenlieder (Neuauflage 2026).nfc",
@@ -3353,6 +3770,11 @@
     "model": "11002293"
   },
   {
+    "file": "English/Other/Caspar Babypants.nfc",
+    "title": "Caspar Babypants - None",
+    "model": "11002301"
+  },
+  {
     "file": "German/Schlummerbande/Schlummerjaguar - Einschlafmelodien aus dem Schlummerdschungel.nfc",
     "title": "Schlummerbande - Schlummerjaguar - Einschlafmelodien aus dem Schlummerdschungel",
     "model": "11002362"
@@ -3381,6 +3803,26 @@
     "file": "German/Giraffenaffen/Die Giraffenaffen Partyhits.nfc",
     "title": "Giraffenaffen - Die Giraffenaffen Partyhits",
     "model": "11002526"
+  },
+  {
+    "file": "English/Clever Tonies Set/Animal World/Wildlife in the Woods/Amongst Giants.nfc",
+    "title": "Animal World - Wildlife In The Woods",
+    "model": "11002546"
+  },
+  {
+    "file": "English/Clever Tonies Set/Animal World/Wildlife in the Woods/Discover the Amazon.nfc",
+    "title": "Animal World - Wildlife In The Woods",
+    "model": "11002546"
+  },
+  {
+    "file": "English/Clever Tonies Set/Animal World/Wildlife in the Woods/Fantastical Forests.nfc",
+    "title": "Animal World - Wildlife In The Woods",
+    "model": "11002546"
+  },
+  {
+    "file": "English/Clever Tonies Set/Animal World/Wildlife in the Woods/Mighty Mangroves.nfc",
+    "title": "Animal World - Wildlife In The Woods",
+    "model": "11002546"
   },
   {
     "file": "German/Buehne frei fuer/Das Immunsystem.nfc",
@@ -3528,6 +3970,11 @@
     "model": "11002722"
   },
   {
+    "file": "German/Pumuckl/Das Weihnachtsgeschenk & Der erste Schnee.nfc",
+    "title": "Pumuckl - Das Weihnachtsgeschenk / Der erste Schnee",
+    "model": "11002818"
+  },
+  {
     "file": "German/Rolf Zuckowski/Rolfs neue Schulweg-Hitparade.nfc",
     "title": "Rolf Zuckowski: Rolfs neue Schulweg-Hitparade - Rolf Zuckowski: Rolfs neue Schulweg-Hitparade",
     "model": "11002915"
@@ -3573,6 +4020,16 @@
     "model": "11003006"
   },
   {
+    "file": "English/All-Star Animals - The Golden Whistle Games/Soccer.nfc",
+    "title": "All-Star Animals - The Golden Whistle Games - Soccer",
+    "model": "11003089"
+  },
+  {
+    "file": "English/Disney/SuperKitties - Ginny.nfc",
+    "title": "Disney - SuperKitties: Ginny",
+    "model": "11003252"
+  },
+  {
     "file": "German/Wieso Weshalb Warum/Profiwissen - Die Erde.nfc",
     "title": "Wieso? Weshalb? Warum? Profiwissen - Set - Wieso? Weshalb? Warum? Profiwissen - Set",
     "model": "11003255"
@@ -3591,6 +4048,11 @@
     "file": "German/Wieso Weshalb Warum/Profiwissen - Retter im Einsatz.nfc",
     "title": "Wieso? Weshalb? Warum? Profiwissen - Set - Wieso? Weshalb? Warum? Profiwissen - Set",
     "model": "11003255"
+  },
+  {
+    "file": "English/Disney and Pixar/Toy Story - Bullseye.nfc",
+    "title": "Disney - and Pixar Toy Story 5: Bullseye",
+    "model": "11003289"
   },
   {
     "file": "German/KLE!NE EXPERTEN/KLE!NE EXPERTEN ... loeschen mit der Feuerwehr.nfc",
@@ -3703,6 +4165,21 @@
     "model": "11003561"
   },
   {
+    "file": "English/My First Tonies/Farm/Cow.nfc",
+    "title": "Farm Set - My First Tonies - Farm Set",
+    "model": "11003562"
+  },
+  {
+    "file": "English/My First Tonies/Farm/Horse.nfc",
+    "title": "Farm Set - My First Tonies - Farm Set",
+    "model": "11003562"
+  },
+  {
+    "file": "English/My First Tonies/Farm/Pig.nfc",
+    "title": "Farm Set - My First Tonies - Farm Set",
+    "model": "11003562"
+  },
+  {
     "file": "German/Book Tonies/Kannawoniwasein/Kannawoniwasein.nfc",
     "title": "Kannawoniwasein - Kannawoniwasein",
     "model": "11003564"
@@ -3738,9 +4215,24 @@
     "model": "11003587"
   },
   {
+    "file": "English/Pokemon/Squirtle.nfc",
+    "title": "Pokémon - Squirtle",
+    "model": "11003602"
+  },
+  {
     "file": "German/Paddington/Die schoensten Geschichten von Paddington.nfc",
     "title": "Paddington - Die schönsten Geschichten von Paddington",
     "model": "11003663"
+  },
+  {
+    "file": "English/Pokemon/Charmander.nfc",
+    "title": "Pokémon - Pokémon: Charmander",
+    "model": "11003696"
+  },
+  {
+    "file": "English/Pokemon/Bulbasaur.nfc",
+    "title": "Pokémon - Pokémon: Bulbasaur",
+    "model": "11003702"
   },
   {
     "file": "German/Clever Tonies/GEOlino/GEOlino Mini - Alles ueber Polizei, Feuerwehr und Rettung.nfc",
@@ -3783,6 +4275,16 @@
     "model": "11003819"
   },
   {
+    "file": "German/Peppa Pig/Schorschs neue Klaenge.nfc",
+    "title": "Peppa Pig - Schorschs neue Klänge",
+    "model": "11003835"
+  },
+  {
+    "file": "German/Nico Sternbaum/Schuettel den Weihnachtsbaum.nfc",
+    "title": "Nico Sternbaum - Schüttel den Weihnachtsbaum",
+    "model": "11003836"
+  },
+  {
     "file": "German/Disney/Cuddle Tonie Olaf.nfc",
     "title": "Cuddle Tonie - Olaf",
     "model": "11003863"
@@ -3821,6 +4323,41 @@
     "file": "German/Eule findet den Beat/Eule findet den Beat Set - Mit Instrumenten.nfc",
     "title": "Eule findet den Beat - Eule findet den Beat Set",
     "model": "11003994"
+  },
+  {
+    "file": "English/Other/Emma Memma.nfc",
+    "title": "Emma Memma - None",
+    "model": "11004139"
+  },
+  {
+    "file": "English/Bluey/Bingo.nfc",
+    "title": "Bluey - Multipack - Bluey, Bingo, Muffin",
+    "model": "11004170"
+  },
+  {
+    "file": "English/Bluey/Bluey.nfc",
+    "title": "Bluey - Multipack - Bluey, Bingo, Muffin",
+    "model": "11004170"
+  },
+  {
+    "file": "English/Bluey/Muffin.nfc",
+    "title": "Bluey - Multipack - Bluey, Bingo, Muffin",
+    "model": "11004170"
+  },
+  {
+    "file": "German/Story Mania/Mello.nfc",
+    "title": "D Mimigs - D Mimigs: Schatz ahoi",
+    "model": "11004190"
+  },
+  {
+    "file": "German/Story Mania/Malva.nfc",
+    "title": "D Mimigs - D Mimigs: Schnappet d Diebin",
+    "model": "11004191"
+  },
+  {
+    "file": "English/The Wiggles/Dorothy The Dinosaur.nfc",
+    "title": "The Wiggles - Dorothy The Dinosaur",
+    "model": "11004232"
   },
   {
     "file": "German/Lieblings-Literatur/Der geheime Garten.nfc",
@@ -3876,6 +4413,11 @@
     "file": "German/Sommerby/Ein Sommer in Sommerby.nfc",
     "title": "Sommerby - Ein Sommer in Sommerby",
     "model": "11004859"
+  },
+  {
+    "file": "German/FC Bayern Muenchen/Die Welt des FC Bayern.nfc",
+    "title": "FC Bayern München - Die Welt des FC Bayern",
+    "model": "11005608"
   },
   {
     "file": "German/TKKG Junior/Auf frischer tat ertappt.nfc",
