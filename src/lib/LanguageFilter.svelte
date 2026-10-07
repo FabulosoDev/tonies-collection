@@ -4,6 +4,7 @@
 
   export let labels = {
     "de-de": "German",
+    "de-ch": "German (Switzerland)",
     "en-gb": "English (UK)",
     "en-us": "English (US)",
     "fr-fr": "French",
