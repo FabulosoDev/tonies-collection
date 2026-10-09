@@ -505,6 +505,11 @@
     "model": "01-0124"
   },
   {
+    "file": "German/Deine Freunde/Das Gelbe von Drei.nfc",
+    "title": "Deine Freunde - Das Gelbe von Drei",
+    "model": "01-0125"
+  },
+  {
     "file": "German/Die Gaeng/D!e Gaeng.nfc",
     "title": "Die Gäng - D!e Gäng",
     "model": "01-0126"
@@ -3460,6 +3465,16 @@
     "model": "11001329"
   },
   {
+    "file": "German/Lichterkinder/Lernen mit LIKI und LUMI - Grosse, bunte Welt.nfc",
+    "title": "Lichterkinder - Lernen mit LIKI und LUMI – Set",
+    "model": "11001333"
+  },
+  {
+    "file": "German/Lichterkinder/Lernen mit LIKI und LUMI - Unsere Umwelt und Natur.nfc",
+    "title": "Lichterkinder - Lernen mit LIKI und LUMI – Set",
+    "model": "11001333"
+  },
+  {
     "file": "German/Lichterkinder/Lernen mit LIKI und LUMI - Rechnen von 0 bis 10.nfc",
     "title": "Lichterkinder - Lernen mit LIKI und LUMI – Set",
     "model": "11001333"
@@ -4020,6 +4035,11 @@
     "model": "11003006"
   },
   {
+    "file": "German/Helene Fischer/Die schoensten Kinderlieder.nfc",
+    "title": "Helene Fischer - Die schönsten Kinderlieder",
+    "model": "11003054"
+  },
+  {
     "file": "English/All-Star Animals - The Golden Whistle Games/Soccer.nfc",
     "title": "All-Star Animals - The Golden Whistle Games - Soccer",
     "model": "11003089"
@@ -4413,6 +4433,51 @@
     "file": "German/Sommerby/Ein Sommer in Sommerby.nfc",
     "title": "Sommerby - Ein Sommer in Sommerby",
     "model": "11004859"
+  },
+  {
+    "file": "German/100 Woerter in den Sprachen dieser Welt/Englisch.nfc",
+    "title": "100 Wörter in den Sprachen dieser Welt - 100 Wörter in den Sprachen dieser Welt - Set",
+    "model": "11004871"
+  },
+  {
+    "file": "German/100 Woerter in den Sprachen dieser Welt/Franzoesisch.nfc",
+    "title": "100 Wörter in den Sprachen dieser Welt - 100 Wörter in den Sprachen dieser Welt - Set",
+    "model": "11004871"
+  },
+  {
+    "file": "German/100 Woerter in den Sprachen dieser Welt/Mandarin.nfc",
+    "title": "100 Wörter in den Sprachen dieser Welt - 100 Wörter in den Sprachen dieser Welt - Set",
+    "model": "11004871"
+  },
+  {
+    "file": "German/100 Woerter in den Sprachen dieser Welt/Spanisch.nfc",
+    "title": "100 Wörter in den Sprachen dieser Welt - 100 Wörter in den Sprachen dieser Welt - Set",
+    "model": "11004871"
+  },
+  {
+    "file": "German/GROSSE EXPERTEN/Piraten.nfc",
+    "title": "GROßE EXPERTEN - Piraten",
+    "model": "11005134"
+  },
+  {
+    "file": "German/GROSSE EXPERTEN/Die Eisenbahn.nfc",
+    "title": "GROßE EXPERTEN - Die Eisenbahn",
+    "model": "11005201"
+  },
+  {
+    "file": "German/Der kleine Vampir/Der kleine Vampir.nfc",
+    "title": "Der kleine Vampir - Der kleine Vampir",
+    "model": "11005217"
+  },
+  {
+    "file": "German/Die Schule der magischen Tiere/Die Schule der magischen Tiere (2026).nfc",
+    "title": "Die Schule der magischen Tiere - Die Schule der magischen Tiere",
+    "model": "11005243"
+  },
+  {
+    "file": "German/Mein Lotta-Leben/Suesser die Esel nie singen.nfc",
+    "title": "Mein Lotta-Leben - Süßer die Esel nie singen",
+    "model": "11005278"
   },
   {
     "file": "German/FC Bayern Muenchen/Die Welt des FC Bayern.nfc",
