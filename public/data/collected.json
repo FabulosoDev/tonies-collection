@@ -3470,12 +3470,12 @@
     "model": "11001333"
   },
   {
-    "file": "German/Lichterkinder/Lernen mit LIKI und LUMI - Unsere Umwelt und Natur.nfc",
+    "file": "German/Lichterkinder/Lernen mit LIKI und LUMI - Rechnen von 0 bis 10.nfc",
     "title": "Lichterkinder - Lernen mit LIKI und LUMI – Set",
     "model": "11001333"
   },
   {
-    "file": "German/Lichterkinder/Lernen mit LIKI und LUMI - Rechnen von 0 bis 10.nfc",
+    "file": "German/Lichterkinder/Lernen mit LIKI und LUMI - Unsere Umwelt und Natur.nfc",
     "title": "Lichterkinder - Lernen mit LIKI und LUMI – Set",
     "model": "11001333"
   },
@@ -4373,6 +4373,11 @@
     "file": "German/Story Mania/Malva.nfc",
     "title": "D Mimigs - D Mimigs: Schnappet d Diebin",
     "model": "11004191"
+  },
+  {
+    "file": "German/Barbie/Du kannst alles sein.nfc",
+    "title": "Barbie - Du kannst alles sein",
+    "model": "11004200"
   },
   {
     "file": "English/The Wiggles/Dorothy The Dinosaur.nfc",
