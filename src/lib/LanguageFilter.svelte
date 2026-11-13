@@ -7,6 +7,7 @@
     "de-ch": "German (Switzerland)",
     "en-gb": "English (UK)",
     "en-us": "English (US)",
+    "es-us": "Spanish (US)",
     "fr-fr": "French",
     unknown: "Unknown",
   };
